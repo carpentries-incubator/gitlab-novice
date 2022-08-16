@@ -303,7 +303,8 @@
 <p>In the chapter on collaboration we learned how to contribute changes to a project that we are a member of. We also learned, in the previous chapter, that we can contribute to other projects by filing issues to report problems or ask questions. This episode we will learn about a way to suggest concrete changes to a GitLab project that we do not have write access on.</p>
 <p>The feature that allows us to do this is called Merge Request, the corresponding feature on GitHub is called Pull Request. As a target for our merge request, we will use our co-learners repository. We we have write access to it, but to learn something new, we will pretend that we don’t.</p>
 <p>We will create a merge request that adds a file listing the contributors, which will solve the issue that we filed during the last episode.</p>
-<section id="create-a-fork"><h2 class="section-heading">Create a Fork</h2>
+<section id="create-a-fork"><h2 class="section-heading">Create a Fork<a class="anchor" aria-label="anchor" href="#create-a-fork"></a>
+</h2>
 <hr class="half-width"><p>Since we are a member of our co-learner’s project we could create a merge request within the project. But again, to learn how to do it for project’s of which we are not a member of, we will make ourselves some extra work.</p>
 <p>So supposedly, we cannot make changes to our co-learner’s project. We need a copy that we can change. Such a copy is called a fork in GitLab’s (and also GitHub’s case). The term can be explained by looking at its use in “fork in the road”. Once we make changes to our copy, the development history will have split.</p>
 <p>To create a fork, we navigate to the homepage of our co-learner’s project. In the upper right corner is a button labeled ”Fork”. The number next to it tells us how many forks of this repository exist on GitLab. We will now increase that number by one by clicking on the button.</p>
@@ -314,14 +315,16 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="unique-project-name" class="callout-inner">
-<h3 class="callout-title">Unique Project Name</h3>
+<h3 class="callout-title">Unique Project Name<a class="anchor" aria-label="anchor" href="#unique-project-name"></a>
+</h3>
 <div class="callout-content">
 <p>If there already is a project with the name or the same slug, GitLab will show you an error message which, at the time of me writing this, can be summarized to “an error has occurred”, which is not very helpful. In that case, reload the page, select a different name and/or slug and try again.</p>
 </div>
 </div>
 </div>
 <p>We are redirected to the fork’s project home page. The fork is full featured project just like the original, however, only the Git repository is copied. So, for example, there are no issues in it, even though the original had at least one.</p>
-</section><section id="create-and-edit-a-file-on-gitlab"><h2 class="section-heading">Create and Edit a File on GitLab</h2>
+</section><section id="create-and-edit-a-file-on-gitlab"><h2 class="section-heading">Create and Edit a File on GitLab<a class="anchor" aria-label="anchor" href="#create-and-edit-a-file-on-gitlab"></a>
+</h2>
 <hr class="half-width"><p>Our goal is to create a file listing contributors to the project. We will do this within GitLab using its file creation and editing features.</p>
 <p>To do that, we click on the button labeled “Web IDE” in the line just below the project’s description. This redirects us to a page with a file browser in a column on the, with most of the screen taken up by a box informing us how to use the Web IDE: “Select a file from the left sidebar to begin editing. Afterwards, you’ll be able to commit your changes.”</p>
 <p>We do not want to edit an existing file, but want to create a new one. To do that we click on the button above the list of files on the left that is marked with an icon representing a sheet of paper with a +-sign on top of it.</p>
@@ -331,7 +334,8 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="all-caps-filenames" class="callout-inner">
-<h3 class="callout-title">All caps filenames</h3>
+<h3 class="callout-title">All caps filenames<a class="anchor" aria-label="anchor" href="#all-caps-filenames"></a>
+</h3>
 <div class="callout-content">
 <p>In software projects it is customary to name certain files with information about a project in all caps. One example we already encountered is the README file. Others are the file containing the license (<code>LICENSE</code>), a file about how to contribute (<code>CONTRIBUTING</code>), or how to install the software (<code>INSTALL</code>).</p>
 <p>Sometimes a file extension indicating the format is appended, usually in lower-case letters.</p>
@@ -353,7 +357,8 @@
 <p>We keep “Create a new branch” with the pre-generated name selected. For our purposes we could also leave the checkbox “Start a new merge request” selected, but we want to go through the merge request creation process separately to get familiar with it, in case we want to create one from changes we pushed from a local repository.</p>
 <p>We do create a new branch and do not commit the changes to the branch called “main”, because it is a good habit. We might want to create multiple independent merge requests for one project, which cannot be done from a single branch. And then there is the option to create merge requests within a project, those cannot come from the branch they are supposed to be merged to, so we need another branch anyway.</p>
 <p>Finally, we click the button labeled “Commit”.</p>
-</section><section id="create-a-merge-request"><h2 class="section-heading">Create a Merge Request</h2>
+</section><section id="create-a-merge-request"><h2 class="section-heading">Create a Merge Request<a class="anchor" aria-label="anchor" href="#create-a-merge-request"></a>
+</h2>
 <hr class="half-width"><p>Having created the commit, we navigate back to the project home page by clicking on the project’s name in the upper left corner.</p>
 <p>We notice that the file that we created is not present in the list of files. This is because GitLab shows the default branch, in our case the branch called “main”, by default. When we click the drop-down field below the description and the sentence starting with “Forked from…”, we get shown a list of all branches, which should be two: “main” and the one generated for our change, something along the lines of “…-patch-12345”. We select the new branch and now the file “CONTRIBUTORS.md” shows up in the list of files.</p>
 <p>To create a merge request, we click on the menu item labeled “Merge requests” in the menu on the left and on the following page on the button labeled “New merge request”.</p>
@@ -367,7 +372,8 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="closing-issues-automatically" class="callout-inner">
-<h3 class="callout-title">Closing Issues Automatically</h3>
+<h3 class="callout-title">Closing Issues Automatically<a class="anchor" aria-label="anchor" href="#closing-issues-automatically"></a>
+</h3>
 <div class="callout-content">
 <p>Whenever a merge request is merged to the default branch of a project and its description or the description of a commit it contains the phrase <code>&lt;keyword&gt; #&lt;number&gt;</code> for one of the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#default-closing-pattern" class="external-link">keywords mentioned in GitLab’s documentation</a>, then the issue with number <code>&lt;number&gt;</code> is closed automatically.</p>
 <p>This can save a few clicks and ensures that closing the issue will not be forgotten.</p>
@@ -386,13 +392,15 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="code-review" class="callout-inner">
-<h3 class="callout-title">Code Review</h3>
+<h3 class="callout-title">Code Review<a class="anchor" aria-label="anchor" href="#code-review"></a>
+</h3>
 <div class="callout-content">
 <p>Being able to comment on individual lines is a useful feature for a practice called code review. Code review entails that a peer of the author of some changes reviews those, before they are merged. This practice is the origin of the merge request feature, but it lends itself well to reviewing text based changes other than to code.</p>
 </div>
 </div>
 </div>
-</section><section id="accept-a-merge-request"><h2 class="section-heading">Accept a Merge Request</h2>
+</section><section id="accept-a-merge-request"><h2 class="section-heading">Accept a Merge Request<a class="anchor" aria-label="anchor" href="#accept-a-merge-request"></a>
+</h2>
 <hr class="half-width"><p>While we were creating the merge request for our co-learner’s repository, they did the same for ours. Now it is time to review and accept the change.</p>
 <p>Navigate to the issue your co-learner created in your repository. At the very bottom of the issue’s history you will see en entry of the form “Co-learner <span class="citation">@colearner</span> mentioned in merge request !1 2 minutes ago”. The merge request reference, ”!1”, is a link. We follow the link by clicking on it.</p>
 <p>This leads us to the merge request page, very similar to the page of our own merge request. The difference, that we are interested in, is the state of the button labeled “Merge”. The button is no longer disabled. Under the button is a bar that informs us that one commit and one merge commit will be added.</p>
@@ -405,7 +413,8 @@
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints</h3>
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#NA"></a>
+</h3>
 <div class="callout-content">
 <ul><li>You can create a project with a copy of another project’s repository by forking it.</li>
 <li>You can suggest changes to a project that you have no write access to through a merge request.</li>
@@ -441,9 +450,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.0" class="external-link">sandpaper (0.9.0)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish" class="external-link">varnish (0.2.3)</a>.</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.3" class="external-link">sandpaper (0.9.3)</a>,
+        <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.3.1)</a>,
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -465,7 +474,7 @@ any links that you are not going to use.
   "identifier": "https://zedif.github.io/gitlab-novice/06-merge-requests.html",
   "dateCreated": "2022-07-19",
   "dateModified": "2022-05-09",
-  "datePublished": "2022-08-09"
+  "datePublished": "2022-08-16"
 }
 
   </script><script>

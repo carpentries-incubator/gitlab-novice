@@ -304,7 +304,8 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="continuous-integrationcontinuous-deployment" class="callout-inner">
-<h3 class="callout-title">Continuous Integration/Continuous Deployment</h3>
+<h3 class="callout-title">Continuous Integration/Continuous Deployment<a class="anchor" aria-label="anchor" href="#continuous-integrationcontinuous-deployment"></a>
+</h3>
 <div class="callout-content">
 <p>The terms continuous integration (CI) and continuous deployment (CD) come from the fields of software engineering and software operation.</p>
 <p>A software project uses CI, if it has setup a process that automatically runs some (or all) tests for a software project, whenever changes are committed or even just proposed (for example through a merge request) to the main branch of a repository. In particular when already done for proposed changes this can help prevent bugs to reach the code base, while freeing the developer of thinking of and running all the tests themselves.</p>
@@ -313,7 +314,8 @@
 </div>
 </div>
 </div>
-<section id="example-configuration"><h2 class="section-heading">Example Configuration</h2>
+<section id="example-configuration"><h2 class="section-heading">Example Configuration<a class="anchor" aria-label="anchor" href="#example-configuration"></a>
+</h2>
 <hr class="half-width"><p>To configure our automatic process, we navigate to our project page and click the menu item labeled “CI/CD” in the main menu on the left.</p>
 <p>The page that this leads to invites us to “use a sample <code>.gitlab-ci.yml</code> template file to explore how CI/CD works.” The GitLab CI is configured by providing a file called <code>.gitlab-ci.yml</code> in the root directory of a project’s repository. Even though we want to learn how CI works in GitLab, we do not follow the invitation, because the example is quite elaborate and targets software developers specifically. Instead, we will use the provided template for Bash.</p>
 <p>We click on the button labeled “Use template” of the entry for Bash in the list at the bottom of the page.</p>
@@ -330,7 +332,8 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="docker" class="callout-inner">
-<h3 class="callout-title">Docker</h3>
+<h3 class="callout-title">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
+</h3>
 <div class="callout-content">
 <p>TODO</p>
 </div>
@@ -341,7 +344,8 @@
 <p>By default a pipeline has three stages, called <code>build</code>, <code>test</code>, and <code>deploy</code>, and their order is important. The terminology comes from software development again. A pipeline is executed by running all jobs of the first stage and if they succeed to continue onto the next stage, continuing until a job fails or all jobs of the last stage succeeded.</p>
 <p>The four jobs in the example are named similar to the stages they are assigned to. The assignment is done through the keyword <code>stage:</code> that can always be found in the second line of a job’s definition.</p>
 <p>The lines following the keyword <code>script:</code> in each section, define the script that will be executed as part of the respective job. In this example, they are all <code>echo</code> statements.</p>
-</section><section id="our-own-configuration"><h2 class="section-heading">Our Own Configuration</h2>
+</section><section id="our-own-configuration"><h2 class="section-heading">Our Own Configuration<a class="anchor" aria-label="anchor" href="#our-own-configuration"></a>
+</h2>
 <hr class="half-width"><p>We will now adapt the script to our requirements.</p>
 <p>First we delete everything.</p>
 <p>Then we define our own stages, because we do not develop software and want to have descriptive names for our use case:</p>
@@ -385,7 +389,8 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="pandoc" class="callout-inner">
-<h3 class="callout-title">Pandoc</h3>
+<h3 class="callout-title">Pandoc<a class="anchor" aria-label="anchor" href="#pandoc"></a>
+</h3>
 <div class="callout-content">
 <p>Pandoc converts text documents from format to another, for example from Markdown to EPUB. It supports many formats for the source documents and even more for the target document.</p>
 <p>The <a href="https://pandoc.org/" class="external-link">project webpage</a> provides a complete list (in text and graphical form).</p>
@@ -401,7 +406,8 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="shared-runners" class="callout-inner">
-<h3 class="callout-title">Shared Runners</h3>
+<h3 class="callout-title">Shared Runners<a class="anchor" aria-label="anchor" href="#shared-runners"></a>
+</h3>
 <div class="callout-content">
 <p>The software that runs CI jobs is called a runner. GitLab provides so called shared runners on its platform for free (within certain usage limits). It does, however, require the user to provide credit card information. This is intended to prevent abuse of the free resource.</p>
 <p>If no such information has been provided running the CI will always fail.</p>
@@ -449,9 +455,9 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.0" class="external-link">sandpaper (0.9.0)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish" class="external-link">varnish (0.2.3)</a>.</p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.3" class="external-link">sandpaper (0.9.3)</a>,
+        <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.3.1)</a>,
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -473,7 +479,7 @@ any links that you are not going to use.
   "identifier": "https://zedif.github.io/gitlab-novice/07-process-automation.html",
   "dateCreated": "2022-07-19",
   "dateModified": "2022-05-16",
-  "datePublished": "2022-08-09"
+  "datePublished": "2022-08-16"
 }
 
   </script><script>
