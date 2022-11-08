@@ -352,9 +352,25 @@
 <section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
-<p>GitLab is a web application for managing software projects. However, the features it provides can also be used for related purposes; for example, issue or task management, document management or project management in general.</p>
-<p>GitLab is open source software and can be run by anyone on their own hardware. The company behind the software runs one so called instance under <a href="https://gitlab.com" class="external-link uri">https://gitlab.com</a> where anyone (resident in a country or territory not sanction by the USA) can create an account and use it within certain limits for free. But there are also instances run by diverse people and institutions from hobbyists over small NGOs to large organizations (e.g. <a href="https://gitlab.dlr.de/" class="external-link uri">https://gitlab.dlr.de/</a>). Those are not necessarily publicly accessible.</p>
-<p>GitHub is a direct competitor to, and probably inspiration for, GitLab. Unlike GitLab, GitHub is not open source software, but large customers can run their own instances. With respect to the content covered by this lesson they are very similar and only differ in details. So, if you are already familiar with using GitHub, all this lesson can probably teach you is how concepts already familiar to you from GitHub are called in GitLab.</p>
+<p>GitLab is a web application for managing software projects. However,
+the features it provides can also be used for related purposes; for
+example, issue or task management, document management or project
+management in general.</p>
+<p>GitLab is open source software and can be run by anyone on their own
+hardware. The company behind the software runs one so called instance
+under <a href="https://gitlab.com" class="external-link uri">https://gitlab.com</a>
+where anyone (resident in a country or territory not sanction by the
+USA) can create an account and use it within certain limits for free.
+But there are also instances run by diverse people and institutions from
+hobbyists over small NGOs to large organizations (e.g. <a href="https://gitlab.dlr.de/" class="external-link uri">https://gitlab.dlr.de/</a>).
+Those are not necessarily publicly accessible.</p>
+<p>GitHub is a direct competitor to, and probably inspiration for,
+GitLab. Unlike GitLab, GitHub is not open source software, but large
+customers can run their own instances. With respect to the content
+covered by this lesson they are very similar and only differ in details.
+So, if you are already familiar with using GitHub, all this lesson can
+probably teach you is how concepts already familiar to you from GitHub
+are called in GitLab.</p>
 </section><section id="finding-projects"><h2 class="section-heading">Finding Projects<a class="anchor" aria-label="anchor" href="#finding-projects"></a>
 </h2>
 <hr class="half-width">
@@ -366,19 +382,26 @@
 <h3 class="callout-title">Log in to GitLab<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
-<p>Navigate to to GitLab.com’s <a href="https://gitlab.com/user/sign_in" class="external-link">sign in page</a> and log in to your account. Once logged in, have a look at what projects you can see in the first three tabs (“Your projects”, “Starred projects”, and “Explore projects”). Play around with the filters and sort settings.</p>
+<p>Navigate to to GitLab.com’s <a href="https://gitlab.com/user/sign_in" class="external-link">sign in page</a> and log in to
+your account. Once logged in, have a look at what projects you can see
+in the first three tabs (“Your projects”, “Starred projects”, and
+“Explore projects”). Play around with the filters and sort settings.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
 </div>
-<p>When we log into GitLab for the first time, we are greeted by a welcome page, offering us four ways to move forward:</p>
+<p>When we log into GitLab for the first time, we are greeted by a
+welcome page, offering us four ways to move forward:</p>
 <ul>
 <li>“Create a project”</li>
 <li>“Create a group”</li>
 <li>“Explore public projects”</li>
 <li>“Learn more about GitLab”</li>
 </ul>
-<p>We will cover how to create a project and a group in the next episode. For now, we want to learn how to navigate GitLab. For that we select “Explore public projects”. This leads us to the projects overview page. The project is the main organizational unit of GitLab.</p>
+<p>We will cover how to create a project and a group in the next
+episode. For now, we want to learn how to navigate GitLab. For that we
+select “Explore public projects”. This leads us to the projects overview
+page. The project is the main organizational unit of GitLab.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -387,16 +410,36 @@
 <h3 class="callout-title">Homepage<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>The welcome page is only shown as long as we are not a member of any project yet. On instances other than on GitLab.com it might not be shown at all. In the case the configured home page is shown.</p>
-<p>The project overview page is the default homepage. However, the homepage is a configuration option for GitLab instances as well as users. You may have changed that setting and on other instances an administrator might have done so.</p>
-<p>You can always navigate to the project overview page by selecting one of the subentries of the “Projects” option in the menu accessible from the menu button on the left side of the top menu bar.</p>
+<p>The welcome page is only shown as long as we are not a member of any
+project yet. On instances other than on GitLab.com it might not be shown
+at all. In the case the configured home page is shown.</p>
+<p>The project overview page is the default homepage. However, the
+homepage is a configuration option for GitLab instances as well as
+users. You may have changed that setting and on other instances an
+administrator might have done so.</p>
+<p>You can always navigate to the project overview page by selecting one
+of the subentries of the “Projects” option in the menu accessible from
+the menu button on the left side of the top menu bar.</p>
 </div>
 </div>
 </div>
-<p>Depending on whether you have used GitLab before or have been assigned to a group by someone else you may see some or no projects on the first two tabs, “Your projects” and “Starred projects”. But on GitLab’s own instance you will certainly see projects on the “Explore projects” tab. For example, while writing the lesson material the tab looked like this:</p>
-<figure><img src="../fig/project-list.png" alt="Project overview page with tab “Explore projects” and subtab “Most stars” open. The tab shows a list of projects with icon, name, descriptions, and four statistical values for each entry." class="figure mx-auto d-block"><figcaption>Project overview page</figcaption></figure><p>The first tab, “Your projects”, lists all projects that you are a member of. When you create a project you automatically become a member and others can add you as a member to a project. We will learn about another way to become a member of a project in the <a href="04-groups.html">episode on groups</a>.</p>
-<p>The second tab, “Starred projects”, lists projects that you have “starred”. In this context “starring” it is similar to bookmarks in a browser. Every project homepage shows a widget in the upper right corner labeled “Star”. By pressing it you “star” or bookmark the project.</p>
-<p>The third tab, “Explore projects”, lists all projects that you can access. This includes all projects from the “Your projects” tab as well as all projects that are publicly visible.</p>
+<p>Depending on whether you have used GitLab before or have been
+assigned to a group by someone else you may see some or no projects on
+the first two tabs, “Your projects” and “Starred projects”. But on
+GitLab’s own instance you will certainly see projects on the “Explore
+projects” tab. For example, while writing the lesson material the tab
+looked like this:</p>
+<figure><img src="../fig/project-list.png" alt="Project overview page with tab “Explore projects” and subtab “Most stars” open. The tab shows a list of projects with icon, name, descriptions, and four statistical values for each entry." class="figure mx-auto d-block"><figcaption>Project overview page</figcaption></figure><p>The first tab, “Your projects”, lists all projects that you are a
+member of. When you create a project you automatically become a member
+and others can add you as a member to a project. We will learn about
+another way to become a member of a project in the <a href="04-groups.html">episode on groups</a>.</p>
+<p>The second tab, “Starred projects”, lists projects that you have
+“starred”. In this context “starring” it is similar to bookmarks in a
+browser. Every project homepage shows a widget in the upper right corner
+labeled “Star”. By pressing it you “star” or bookmark the project.</p>
+<p>The third tab, “Explore projects”, lists all projects that you can
+access. This includes all projects from the “Your projects” tab as well
+as all projects that are publicly visible.</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -405,16 +448,35 @@
 <h3 class="callout-title">Visiblity<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
-<p>GitLab offers three settings for the visibility of a project: public, internal, and private. Publicly visible projects can be looked at by anyone that can access the GitLab instance, projects with internal visibility can be looked at by anyone logged in to the instance, while projects with private visibility can only be locked at by its members.</p>
-<p>On GitLab.com the visibility “internal” is disabled. Everyone can create an account, log in to the instance, and thus could look at any project of internal visibility anyway.</p>
-<p>Self-hosted instances might also disable some visibility types. For example, the public visibility might be disabled, to prevent users from publishing something to the whole internet.</p>
+<p>GitLab offers three settings for the visibility of a project: public,
+internal, and private. Publicly visible projects can be looked at by
+anyone that can access the GitLab instance, projects with internal
+visibility can be looked at by anyone logged in to the instance, while
+projects with private visibility can only be locked at by its
+members.</p>
+<p>On GitLab.com the visibility “internal” is disabled. Everyone can
+create an account, log in to the instance, and thus could look at any
+project of internal visibility anyway.</p>
+<p>Self-hosted instances might also disable some visibility types. For
+example, the public visibility might be disabled, to prevent users from
+publishing something to the whole internet.</p>
 </div>
 </div>
 </div>
-<p>When working with GitLab, most of the time you will want to access projects you are already a member of (in the GitLab sense). In that case the list on the “Your projects” will be all you need to find the project you are looking for. When the list becomes long, the search field next to the tabs allows you to filter the projects by name, just as the placeholder text suggests.</p>
-<p>You can also use that search field on the “Explore projects” tab to search through all projects that you can look at.</p>
-<p>The search field in the top menu bar can also be used to find projects. It shows other search results, too, but clearly labels what is what.</p>
-<p>Finally, you can use the search field under the “Projects” in the menu accessible from the menu button on the left side of the top menu bar to search for projects.</p>
+<p>When working with GitLab, most of the time you will want to access
+projects you are already a member of (in the GitLab sense). In that case
+the list on the “Your projects” will be all you need to find the project
+you are looking for. When the list becomes long, the search field next
+to the tabs allows you to filter the projects by name, just as the
+placeholder text suggests.</p>
+<p>You can also use that search field on the “Explore projects” tab to
+search through all projects that you can look at.</p>
+<p>The search field in the top menu bar can also be used to find
+projects. It shows other search results, too, but clearly labels what is
+what.</p>
+<p>Finally, you can use the search field under the “Projects” in the
+menu accessible from the menu button on the left side of the top menu
+bar to search for projects.</p>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -423,7 +485,8 @@
 <h3 class="callout-title">Finding a project<a class="anchor" aria-label="anchor" href="#challenge1"></a>
 </h3>
 <div class="callout-content">
-<p>Use the search methods GitLab provides to find the project page for the software “Inkscape”.</p>
+<p>Use the search methods GitLab provides to find the project page for
+the software “Inkscape”.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -435,9 +498,11 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>The project page is located at <a href="https://gitlab.com/inkscape/inkscape" class="external-link uri">https://gitlab.com/inkscape/inkscape</a>. If you found yourself at <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> you found the group page of the Inkscape community.</p>
+<p>The project page is located at <a href="https://gitlab.com/inkscape/inkscape" class="external-link uri">https://gitlab.com/inkscape/inkscape</a>. If you found
+yourself at <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> you found the group page of
+the Inkscape community.</p>
 </div>
 </div>
 </div>
@@ -445,12 +510,21 @@
 </section><section id="finding-groups"><h2 class="section-heading">Finding Groups<a class="anchor" aria-label="anchor" href="#finding-groups"></a>
 </h2>
 <hr class="half-width">
-<p>The second organizational entity, next to projects, are groups. Groups can contain projects and other groups. So groups can be used to give structure to the organization of multiple projects. In a later episode, when we talk about members of groups and projects, we learn about another use for groups.</p>
-<p>Groups and projects work somewhat similar to directories and files in the file system. Every group and every project can be contained in only one group and a group cannot contain itself.</p>
-<p>To make our lives easier later on, we introduce to terms regarding a group’s position ins this system:</p>
+<p>The second organizational entity, next to projects, are groups.
+Groups can contain projects and other groups. So groups can be used to
+give structure to the organization of multiple projects. In a later
+episode, when we talk about members of groups and projects, we learn
+about another use for groups.</p>
+<p>Groups and projects work somewhat similar to directories and files in
+the file system. Every group and every project can be contained in only
+one group and a group cannot contain itself.</p>
+<p>To make our lives easier later on, we introduce to terms regarding a
+group’s position ins this system:</p>
 <ul>
-<li>A group not contained in another group is called <strong>top-level group</strong>.</li>
-<li>A group contain in another group is called a <strong>subgroup</strong> of that group.</li>
+<li>A group not contained in another group is called <strong>top-level
+group</strong>.</li>
+<li>A group contain in another group is called a
+<strong>subgroup</strong> of that group.</li>
 </ul>
 <div id="challenge2" class="callout challenge">
 <div class="callout-square">
@@ -460,7 +534,8 @@
 <h3 class="callout-title">Top-level groups and Subgroup<a class="anchor" aria-label="anchor" href="#challenge2"></a>
 </h3>
 <div class="callout-content">
-<p>On the group page <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> identify the top-level group’s name and one subgroup or contained project of that group.</p>
+<p>On the group page <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> identify the top-level
+group’s name and one subgroup or contained project of that group.</p>
 <p>Hint: Note that groups cannot be starred.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
@@ -473,19 +548,27 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
-<li>The top-level groups name is Inkscape as it is written at the top of the main content.</li>
-<li>Any entry in the list “Subgroups and projects” is a subgroup of contained project.</li>
+<li>The top-level groups name is Inkscape as it is written at the top of
+the main content.</li>
+<li>Any entry in the list “Subgroups and projects” is a subgroup of
+contained project.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<p>Similar as for projects, GitLab provides an overview page for groups. You can navigate there by selecting “Groups” and then “Your groups” or “Explore groups” in the menu accessible from the menu button on the left side of the top menu bar.</p>
-<p>The two tabs on that page, “Your groups” and “Explore public groups” work analogously to their corresponding tabs on the project overview page discussed above.</p>
-<p>For finding groups there are analogous search options as mentioned for projects before.</p>
+<p>Similar as for projects, GitLab provides an overview page for groups.
+You can navigate there by selecting “Groups” and then “Your groups” or
+“Explore groups” in the menu accessible from the menu button on the left
+side of the top menu bar.</p>
+<p>The two tabs on that page, “Your groups” and “Explore public groups”
+work analogously to their corresponding tabs on the project overview
+page discussed above.</p>
+<p>For finding groups there are analogous search options as mentioned
+for projects before.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -496,16 +579,22 @@
 <div class="callout-content">
 <ul>
 <li>Projects are GitLab’s primary entity of organization.</li>
-<li>Projects you have access to are listed in the “Your projects” tab on the project overview page.</li>
-<li>The project overview page is GitLab’s homepage unless configured differently.</li>
-<li>You can search for projects in the top menu, the top search bar and on the “Explore projects” tab of project overview page.</li>
-<li>A project’s visibility can be set to either private, internal, or public.</li>
+<li>Projects you have access to are listed in the “Your projects” tab on
+the project overview page.</li>
+<li>The project overview page is GitLab’s homepage unless configured
+differently.</li>
+<li>You can search for projects in the top menu, the top search bar and
+on the “Explore projects” tab of project overview page.</li>
+<li>A project’s visibility can be set to either private, internal, or
+public.</li>
 <li>On some instances a visibility class is disabled.</li>
 <li>Groups can contain projects and other groups.</li>
 <li>A top-level group is a group not contained in another.</li>
 <li>A subgroup is a group contained in another.</li>
-<li>Groups you have access to are listed in the “Your groups” tab on the group overview page.</li>
-<li>You can search for groups in the top menu, the top search bar and on the “Explore groups” tab of group overview page.</li>
+<li>Groups you have access to are listed in the “Your groups” tab on the
+group overview page.</li>
+<li>You can search for groups in the top menu, the top search bar and on
+the “Explore groups” tab of group overview page.</li>
 </ul>
 </div>
 </div>
@@ -554,13 +643,27 @@ any links that you are not going to use.
 <section id="creating-a-project"><h2 class="section-heading">Creating a Project<a class="anchor" aria-label="anchor" href="#creating-a-project"></a>
 </h2>
 <hr class="half-width">
-<p>After knowing how to find groups and projects. We want to go from passively browsing GitLab to actively using it. We are going to create a project and connect a local Git repository to it.</p>
-<p>To create a project, click on the button with the “+” symbol in the top menu bar and select “New project/repository”.</p>
-<p>Multiple options are presented for how to create the new project. In this lesson we will only look at, and use, the first option: “Create blank project”. So click on that.</p>
+<p>After knowing how to find groups and projects. We want to go from
+passively browsing GitLab to actively using it. We are going to create a
+project and connect a local Git repository to it.</p>
+<p>To create a project, click on the button with the “+” symbol in the
+top menu bar and select “New project/repository”.</p>
+<p>Multiple options are presented for how to create the new project. In
+this lesson we will only look at, and use, the first option: “Create
+blank project”. So click on that.</p>
 <p>This leads to the following page:</p>
-<figure><img src="../fig/create-project.png" alt="Create blank project form with text input fields labeled “Project name”, “Project URL”, “Project slug”, “Project description (optional)”, “Project deployment target (optional)”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, and two checkboxes labeled “Initialize repository with a README” and “Enable Static Application Security Testing (SAST)”." class="figure mx-auto d-block"><figcaption>Create blank project form</figcaption></figure><p>The “Project name” field is for just that, the project name. Its value has no other purpose and can be changed at anytime without indirect consequences (the direct consequence being, that its name will be different). We will call it “Research Diary”.</p>
-<p>As we fill in the project name, a project slug gets suggested in the respective field. The project slug is the last part of the project’s, and the associated Git repository’s, URL or web address.</p>
-<p>If the user belongs to at least one group, the URL’s middle part can be chosen in the drop-down field labeled “Project URL”, which defaults to the current user’s username. This is the location for a user’s project (and groups). Other options in the drop-down list are the groups in which the current user may create projects.</p>
+<figure><img src="../fig/create-project.png" alt="Create blank project form with text input fields labeled “Project name”, “Project URL”, “Project slug”, “Project description (optional)”, “Project deployment target (optional)”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, and two checkboxes labeled “Initialize repository with a README” and “Enable Static Application Security Testing (SAST)”." class="figure mx-auto d-block"><figcaption>Create blank project form</figcaption></figure><p>The “Project name” field is for just that, the project name. Its
+value has no other purpose and can be changed at anytime without
+indirect consequences (the direct consequence being, that its name will
+be different). We will call it “Research Diary”.</p>
+<p>As we fill in the project name, a project slug gets suggested in the
+respective field. The project slug is the last part of the project’s,
+and the associated Git repository’s, URL or web address.</p>
+<p>If the user belongs to at least one group, the URL’s middle part can
+be chosen in the drop-down field labeled “Project URL”, which defaults
+to the current user’s username. This is the location for a user’s
+project (and groups). Other options in the drop-down list are the groups
+in which the current user may create projects.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -569,11 +672,18 @@ any links that you are not going to use.
 <h3 class="callout-title">Project URL and Project Slug<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>The two fields under labels “Project URL” and “Project slug” are the only fields in this form for which changing the value later might cause problems. Since they determine the URL under which the project’s pages and the project’s Git repository can be found, changing them later might brake links and bookmarks as well as connections from Git repositories on other systems, for example on contributors’ machines.</p>
+<p>The two fields under labels “Project URL” and “Project slug” are the
+only fields in this form for which changing the value later might cause
+problems. Since they determine the URL under which the project’s pages
+and the project’s Git repository can be found, changing them later might
+brake links and bookmarks as well as connections from Git repositories
+on other systems, for example on contributors’ machines.</p>
 </div>
 </div>
 </div>
-<p>The project description appears in many lists and on some pages under the project’s name. We add a concise description: “My research diary, a collection of Markdown files”</p>
+<p>The project description appears in many lists and on some pages under
+the project’s name. We add a concise description: “My research diary, a
+collection of Markdown files”</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -582,15 +692,32 @@ any links that you are not going to use.
 <h3 class="callout-title">Markdown<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
-<p>Markdown is a markup language, like HTML on which the World Wide Web is based or wikitext used to write Wikipedia’s content. Its markup directives, indicating for example that something is a headline or a list item, are such that they serve their purpose even in the plain text form.</p>
-<p>There exist many variants (or flavors) of Markdown and GitLab has <a href="https://docs.gitlab.com/ee/user/markdown.html" class="external-link">its own</a>. Other than for rendering Markdown files in repositories on its web interface, GitLab allows for Markdown input in many of its interface’s text fields, such as issue descriptions or comments.</p>
-<p>This will be pointed out as we get to use these fields during the lesson.</p>
+<p>Markdown is a markup language, like HTML on which the World Wide Web
+is based or wikitext used to write Wikipedia’s content. Its markup
+directives, indicating for example that something is a headline or a
+list item, are such that they serve their purpose even in the plain text
+form.</p>
+<p>There exist many variants (or flavors) of Markdown and GitLab has <a href="https://docs.gitlab.com/ee/user/markdown.html" class="external-link">its own</a>. Other
+than for rendering Markdown files in repositories on its web interface,
+GitLab allows for Markdown input in many of its interface’s text fields,
+such as issue descriptions or comments.</p>
+<p>This will be pointed out as we get to use these fields during the
+lesson.</p>
 </div>
 </div>
 </div>
-<p>We ignore the field labeled “Project deployment target (optional)”.</p>
-<p>The choice of radio button under label “Visibility Level” determines the project’s visibility. As mentioned in the previous episode “Finding Projects and Groups”, the visibility “Internal” is disabled on GitLab.com, so only “Private”, the default, and “Public” are available. We choose “Private”.</p>
-<p>If, as per default, the checkbox “Initialize repository with a README” is checked, the project’s repository will be initialized with a commit that adds a file called <code>README.md</code>. Otherwise, a the project will start with an empty repository. We will be adding such a file later ourselves, so we uncheck the box.</p>
+<p>We ignore the field labeled “Project deployment target
+(optional)”.</p>
+<p>The choice of radio button under label “Visibility Level” determines
+the project’s visibility. As mentioned in the previous episode “Finding
+Projects and Groups”, the visibility “Internal” is disabled on
+GitLab.com, so only “Private”, the default, and “Public” are available.
+We choose “Private”.</p>
+<p>If, as per default, the checkbox “Initialize repository with a
+README” is checked, the project’s repository will be initialized with a
+commit that adds a file called <code>README.md</code>. Otherwise, a the
+project will start with an empty repository. We will be adding such a
+file later ourselves, so we uncheck the box.</p>
 <div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -599,47 +726,86 @@ any links that you are not going to use.
 <h3 class="callout-title">README<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
-<p>A project’s README file usually contains basic information about the project: what it contains, how it can be used (for example build or installed, if it is a software project), how to contribute, how to get help, and licensing information.</p>
-<p>It is common to write README files in Markdown format, indicated by the filename suffix <code>.md</code>.</p>
-<p>Platforms like GitLab show the contents of a project’s README file on its homepage; if it is in Markdown format, in its rendered form.</p>
+<p>A project’s README file usually contains basic information about the
+project: what it contains, how it can be used (for example build or
+installed, if it is a software project), how to contribute, how to get
+help, and licensing information.</p>
+<p>It is common to write README files in Markdown format, indicated by
+the filename suffix <code>.md</code>.</p>
+<p>Platforms like GitLab show the contents of a project’s README file on
+its homepage; if it is in Markdown format, in its rendered form.</p>
 </div>
 </div>
 </div>
-<p>We will ignore any other fields that may be visible depending on the GitLab instances configuration.</p>
-<p>After clicking the “Create project” button, GitLab creates the project and redirects us to the project’s homepage, which looks similar to this:</p>
-<figure><img src="../fig/new-project.png" alt="Project homepage for a new project. On the left, a menu leading to other project pages: Project Information, Issues, Merge requests, CI/CD, Security &amp; Compliance, Deployments, Monitor, Infrastructure, Packages &amp; Registries, Analytics, Wiki, Snippets, and Settings. On the right, taking up the major part of the width, the project page: Starting at the top, the project’s name “Research Diary“, followed by its descriptions “My research diary, a collection of Markdown files”, an encouragement to “Invite your team” with a button “Invite members”, the statement that “The repository for this project is empty” with various buttons for getting initial content into the repository. At the bottom, the beginning of instructions on how to push an existing repository are visible, but cut off." class="figure mx-auto d-block"><figcaption>Fresh project homepage</figcaption></figure><p>The page is split into the menu on the left and the project overview on the right.</p>
-<p>The menu leads to pages related to various properties, processes, and content of the project. It is visible on each of these pages. The number of menu entries may seem overwhelming, in particular when one notices that the entries have subentries. However, it is not necessary to know what hides behind all these entries to use GitLab. Following this lesson, we will get to know parts of what lies behind the entries “Project Information”, “Issues”, “Merge requests”, “CI/CD”, “Wiki”, and “Settings”.</p>
-<p>The project overview shows (from the top): The project’s avatar (or icon), name and description; a prompt to invite team members (we will cover members later on); a statement that our repository is currently empty with buttons for several options to add content to it; and finally the beginning of the instructions on how to push a local repository to this project’s repository to fill it with content. We will follow them in just a bit.</p>
-<p>The project overview page will look slightly different, once we have content in its repository. We will have another look at the page then.</p>
+<p>We will ignore any other fields that may be visible depending on the
+GitLab instances configuration.</p>
+<p>After clicking the “Create project” button, GitLab creates the
+project and redirects us to the project’s homepage, which looks similar
+to this:</p>
+<figure><img src="../fig/new-project.png" alt="Project homepage for a new project. On the left, a menu leading to other project pages: Project Information, Issues, Merge requests, CI/CD, Security &amp; Compliance, Deployments, Monitor, Infrastructure, Packages &amp; Registries, Analytics, Wiki, Snippets, and Settings. On the right, taking up the major part of the width, the project page: Starting at the top, the project’s name “Research Diary“, followed by its descriptions “My research diary, a collection of Markdown files”, an encouragement to “Invite your team” with a button “Invite members”, the statement that “The repository for this project is empty” with various buttons for getting initial content into the repository. At the bottom, the beginning of instructions on how to push an existing repository are visible, but cut off." class="figure mx-auto d-block"><figcaption>Fresh project homepage</figcaption></figure><p>The page is split into the menu on the left and the project overview
+on the right.</p>
+<p>The menu leads to pages related to various properties, processes, and
+content of the project. It is visible on each of these pages. The number
+of menu entries may seem overwhelming, in particular when one notices
+that the entries have subentries. However, it is not necessary to know
+what hides behind all these entries to use GitLab. Following this
+lesson, we will get to know parts of what lies behind the entries
+“Project Information”, “Issues”, “Merge requests”, “CI/CD”, “Wiki”, and
+“Settings”.</p>
+<p>The project overview shows (from the top): The project’s avatar (or
+icon), name and description; a prompt to invite team members (we will
+cover members later on); a statement that our repository is currently
+empty with buttons for several options to add content to it; and finally
+the beginning of the instructions on how to push a local repository to
+this project’s repository to fill it with content. We will follow them
+in just a bit.</p>
+<p>The project overview page will look slightly different, once we have
+content in its repository. We will have another look at the page
+then.</p>
 <div id="callout4" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="change-name-description-visibility-or-avatar" class="callout-inner">
-<h3 class="callout-title">Change Name, Description, Visibility, or Avatar<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Change Name, Description, Visibility, or
+Avatar<a class="anchor" aria-label="anchor" href="#callout4"></a>
 </h3>
 <div class="callout-content">
-<p>Click on the “Settings” menu entry and change any of the project’s name, description, visibility, and avatar. Do not forget to click the “Save changes” button once you are done.</p>
+<p>Click on the “Settings” menu entry and change any of the project’s
+name, description, visibility, and avatar. Do not forget to click the
+“Save changes” button once you are done.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
 </div>
-<p>The project overview page presents us with many options to add content to the project’s repository directly in GitLab. However, we will fill the project from a local Git repository. To do that, we need a local Git repository with some content.</p>
+<p>The project overview page presents us with many options to add
+content to the project’s repository directly in GitLab. However, we will
+fill the project from a local Git repository. To do that, we need a
+local Git repository with some content.</p>
 </section><section id="configuring-git"><h2 class="section-heading">Configuring Git<a class="anchor" aria-label="anchor" href="#configuring-git"></a>
 </h2>
 <hr class="half-width">
-<p>Before we initialize a local Git repository, we make sure that Git is properly configured.</p>
+<p>Before we initialize a local Git repository, we make sure that Git is
+properly configured.</p>
 <p>To check for our name and email address, We run</p>
 <pre><code>$ git config --global --get user.name</code></pre>
 <p>{: .language-bash}</p>
 <p>and</p>
 <pre><code>$ git config --global --get user.email</code></pre>
 <p>{: .language-bash}</p>
-<p>If both return sensible values, we are good to go. Otherwise we provide the missing values, for example:</p>
+<p>If both return sensible values, we are good to go. Otherwise we
+provide the missing values, for example:</p>
 <pre><code>$ git config --global user.name "Some Novice"
 $ git config --global user.email "some.novice@example.com"</code></pre>
 <p>{: .language-bash}</p>
-<p>It is now common to name the default branch <code>main</code>, rather than <code>master</code> as is still the default in Git. For more information see, for example, the <a href="https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/" class="external-link">announcement of GitLab to change the default branch</a> Since the discussion on this topic has started, Git has introduced a configuration value for the initial branch created by the <code>git init</code> command. We will use this, to make sure that all future repositories created locally start with a branch called <code>main</code>:</p>
+<p>It is now common to name the default branch <code>main</code>, rather
+than <code>master</code> as is still the default in Git. For more
+information see, for example, the <a href="https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/" class="external-link">announcement
+of GitLab to change the default branch</a> Since the discussion on this
+topic has started, Git has introduced a configuration value for the
+initial branch created by the <code>git init</code> command. We will use
+this, to make sure that all future repositories created locally start
+with a branch called <code>main</code>:</p>
 <pre><code>$ git config --global init.defaultBranch main</code></pre>
 </section><section id="creating-a-local-repository"><h2 class="section-heading">Creating a Local Repository<a class="anchor" aria-label="anchor" href="#creating-a-local-repository"></a>
 </h2>
@@ -652,7 +818,10 @@ $ git config --global user.email "some.novice@example.com"</code></pre>
 <h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#callout5"></a>
 </h3>
 <div class="callout-content">
-<p>In Markdown, headlines are marked by one up to six <code>#</code> characters followed by a space character in front of the text. The number of <code>#</code> characters indicates the heading’s level, with 1 being the most significant.</p>
+<p>In Markdown, headlines are marked by one up to six <code>#</code>
+characters followed by a space character in front of the text. The
+number of <code>#</code> characters indicates the heading’s level, with
+1 being the most significant.</p>
 <p>For example, a level 3 headline:</p>
 <pre><code><span><span class="co">### Interesting Section Title</span></span></code></pre>
 </div>
@@ -663,11 +832,14 @@ $ git config --global user.email "some.novice@example.com"</code></pre>
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="research-diarys-initial-content-required" class="callout-inner">
-<h3 class="callout-title">Research Diary’s Initial Content (Required)<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Research Diary’s Initial Content
+(Required)<a class="anchor" aria-label="anchor" href="#challenge1"></a>
 </h3>
 <div class="callout-content">
-<p>Create a Git repository anywhere on your computer. Add a README file in markdown format that describes the repository’s future contents.</p>
-<p>Remember to use a <a href="https://cbea.ms/git-commit/" class="external-link">good commit message</a> for your commit.</p>
+<p>Create a Git repository anywhere on your computer. Add a README file
+in markdown format that describes the repository’s future contents.</p>
+<p>Remember to use a <a href="https://cbea.ms/git-commit/" class="external-link">good commit
+message</a> for your commit.</p>
 <p>This exercise should take about 10 minutes.</p>
 </div>
 </div>
@@ -681,11 +853,13 @@ $ git config --global user.email "some.novice@example.com"</code></pre>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>We start by creating and navigating to a new directory, <code>research-diary</code>. There we initialize a git repository.</p>
+<p>We start by creating and navigating to a new directory,
+<code>research-diary</code>. There we initialize a git repository.</p>
 <pre><code>$ mkdir research-diary
 $ cd research-diary
 $ git init</code></pre>
-<p>Next we create a file called <code>README.md</code> with the following content using our preferred text editor.</p>
+<p>Next we create a file called <code>README.md</code> with the
+following content using our preferred text editor.</p>
 <pre><code># Research Diary
 
 This repository contains our research diary.
@@ -698,7 +872,9 @@ $ git commit -m "Add README.md"</code></pre>
 </div>
 </div>
 </div>
-<p>Checking the status of the git repository, we should see that it exists and that there are no changes in the working directory or in the stating area:</p>
+<p>Checking the status of the git repository, we should see that it
+exists and that there are no changes in the working directory or in the
+stating area:</p>
 <pre><code>$ git status</code></pre>
 <p>{: .language-bash}</p>
 <pre><code>On branch main
@@ -712,7 +888,10 @@ nothing to commit, working tree clean</code></pre>
 </section><section id="connecting-local-and-remote-repository"><h2 class="section-heading">Connecting Local and Remote Repository<a class="anchor" aria-label="anchor" href="#connecting-local-and-remote-repository"></a>
 </h2>
 <hr class="half-width">
-<p>Having thus created our local repository, we want to save it to our repository in GitLab. To that end, we have a look at the project overview page again; this time at the instructions toward the bottom of the page. They read:</p>
+<p>Having thus created our local repository, we want to save it to our
+repository in GitLab. To that end, we have a look at the project
+overview page again; this time at the instructions toward the bottom of
+the page. They read:</p>
 <blockquote>
 <p><strong>Git global setup</strong></p>
 <pre><code>git config --global user.name "Some Novice"
@@ -740,9 +919,18 @@ git push -u origin --all
 git push -u origin --tags</code></pre>
 </blockquote>
 <p>We already covered the global setup.</p>
-<p>The next three sets of instructions are mutually exclusive. The first is not for us, because we already created a repository. Neither is the second, because although we have a directory with contents, its already a Git repository. That leaves us with the third option, which is the one applicable to our situation: “Push an existing Git repository.”</p>
-<p>Transferring our changes to a remote repository is called <strong>push</strong>ing, because we are sending the changes from us, the local repository, to somewhere else, a remote repository. Later on we will “<strong>pull</strong>” changes from a remote repository, completing the analogy.</p>
-<p>Going back to the shell, we configure our project’s repository as a remote in our local repository:</p>
+<p>The next three sets of instructions are mutually exclusive. The first
+is not for us, because we already created a repository. Neither is the
+second, because although we have a directory with contents, its already
+a Git repository. That leaves us with the third option, which is the one
+applicable to our situation: “Push an existing Git repository.”</p>
+<p>Transferring our changes to a remote repository is called
+<strong>push</strong>ing, because we are sending the changes from us,
+the local repository, to somewhere else, a remote repository. Later on
+we will “<strong>pull</strong>” changes from a remote repository,
+completing the analogy.</p>
+<p>Going back to the shell, we configure our project’s repository as a
+remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
 <p>{: .language-bash}</p>
 <div id="callout6" class="callout callout">
@@ -751,21 +939,33 @@ git push -u origin --tags</code></pre>
 </div>
 <div id="https-vs-git" class="callout-inner">
 <h3 class="callout-title">
-<a href="https://" class="external-link uri">https://</a> vs git@<a class="anchor" aria-label="anchor" href="#callout6"></a>
+<a href="https://" class="external-link uri">https://</a> vs
+git@<a class="anchor" aria-label="anchor" href="#callout6"></a>
 </h3>
 <div class="callout-content">
-<p>We assume throughout this lesson that the user has no SSH key is configured, because we do not want to make the setup of such a key a prerequisite.</p>
-<p>If however, a user has configured an SSH key for their account, GitLab would default to showing links to repositories in the form for Git over SSH instead.</p>
+<p>We assume throughout this lesson that the user has no SSH key is
+configured, because we do not want to make the setup of such a key a
+prerequisite.</p>
+<p>If however, a user has configured an SSH key for their account,
+GitLab would default to showing links to repositories in the form for
+Git over SSH instead.</p>
 <p>For example, without a configured key GitLab shows</p>
 <p><code>https://gitlab.com/somenovice/research.git</code></p>
-<p>for our example repository, whereas with a configured key it would show</p>
+<p>for our example repository, whereas with a configured key it would
+show</p>
 <p><code>git@gitlab.com:somenovice/research.git</code>.</p>
-<p>The HTTPS link still works if a SSH key is configured, it is only no longer shown by default.</p>
+<p>The HTTPS link still works if a SSH key is configured, it is only no
+longer shown by default.</p>
 </div>
 </div>
 </div>
-<p>We instruct Git to add a remote called <code>origin</code> with the last part as the address. Make sure to copy that last part from the project overview page, because it represents the Git address of your project’s repository on GitLab. It will be different for everyone.</p>
-<p>Note also, that we skipped the second line of the instructions. It renames an existing remote <code>origin</code> to <code>old-origin</code>, but we have no existing remote.</p>
+<p>We instruct Git to add a remote called <code>origin</code> with the
+last part as the address. Make sure to copy that last part from the
+project overview page, because it represents the Git address of your
+project’s repository on GitLab. It will be different for everyone.</p>
+<p>Note also, that we skipped the second line of the instructions. It
+renames an existing remote <code>origin</code> to
+<code>old-origin</code>, but we have no existing remote.</p>
 <div id="callout7" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -774,13 +974,24 @@ git push -u origin --tags</code></pre>
 <h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#callout7"></a>
 </h3>
 <div class="callout-content">
-<p>Apart from following restrictions that Git puts on remote names, which can be avoided without much thought by using only letters, numbers, underscores, and hyphens, we should choose meaningful names for remotes, in particular, when we add multiple remotes to a local repository.</p>
-<p>In most examples, <code>origin</code> is used as the name for a remote, because it is the name of the remote created when cloning a repository. It is a meaningful name for the main remote repository, if there is one. This together with its ubiquitous use make it a very good name.</p>
-<p>In other cases, we might call a remote to a private copy of the main repository after our username or server it is located on, for example <code>uni</code> for a university GitLab instance.</p>
+<p>Apart from following restrictions that Git puts on remote names,
+which can be avoided without much thought by using only letters,
+numbers, underscores, and hyphens, we should choose meaningful names for
+remotes, in particular, when we add multiple remotes to a local
+repository.</p>
+<p>In most examples, <code>origin</code> is used as the name for a
+remote, because it is the name of the remote created when cloning a
+repository. It is a meaningful name for the main remote repository, if
+there is one. This together with its ubiquitous use make it a very good
+name.</p>
+<p>In other cases, we might call a remote to a private copy of the main
+repository after our username or server it is located on, for example
+<code>uni</code> for a university GitLab instance.</p>
 </div>
 </div>
 </div>
-<p>Finally, we push our changes to the remote repository. The command will prompt for our user name and password:</p>
+<p>Finally, we push our changes to the remote repository. The command
+will prompt for our user name and password:</p>
 <pre><code>$ git push -u origin --all</code></pre>
 <p>{: .language-bash}</p>
 <pre><code>Enumerating objects: 3, done.
@@ -791,23 +1002,58 @@ To https://gitlab.com/somenovice/research-diary.git
  * [new branch]      main -&gt; main
 branch 'main' set up to track 'origin/main'.</code></pre>
 <p>{: .output}</p>
-<p>Having successfully pushed our commit to the GitLab repository, we change to our browser and navigate to the project (or reload it, if we still have it open). We will be greeted by the project homepage, similar to the following screenshot:</p>
-<figure><img src="../fig/first-push.png" alt="Project homepage of a project. On the left, a menu leading to other project pages. On the right, taking up most of the width, the project homepage. Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 72KB files, 72 KB Storage). Under these we see the description: “My research diary, a collection of Markdown files”. In the next line we see a drop-down field for branches showing “main”, the project slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”, “Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by a box giving information on the last commit of the current branch: the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button. This is followed by some buttons that allow to add or upload new files or setup some of GitLab features for the project. Next is a list of files, in this case only `README.md`, with information when it was last updated and through which commit. Finally, we see a rendering of `README.md`." class="figure mx-auto d-block"><figcaption>Project homepage after first push</figcaption></figure><p>Let us look at what has changed compared to its initial state. The interface elements encouraging us to add members to the project are gone. Of course, we can still navigate to the project’s Members later on, if we need to. We also, correctly, no longer get told that the repository is empty and the instructions on how to push content to the repository have vanished.</p>
-<p>Instead, we see some statistics below the project’s title: 1 Commit, 1 Branch, 0 Tags, 72 KB Files, 72 KB Storage. They double as buttons other project pages.</p>
-<p>Below the description is a new button bar, followed by a box presenting information on last commit of the currently select branch.</p>
-<p>The buttons below, that we saw earlier, allow us to add specific files or navigate to the configuration of certain GitLab features. Note that one button changed from reading “Add README” to just “README”, since we added <code>README.md</code>. The button is now a link to the latest version of that file in the current branch.</p>
-<p>Then we see a list of files. So far, there is only <code>README.md</code>. The list also tells us through which commit it was last changed and when that commit was created.</p>
-<p>Finally, we see the markdown file <code>README.md</code> rendered. Because having a README-file in the root directory of a repository is a widespread convention, GitLab (and other platforms like it) usually render it on a project’s homepage.</p>
+<p>Having successfully pushed our commit to the GitLab repository, we
+change to our browser and navigate to the project (or reload it, if we
+still have it open). We will be greeted by the project homepage, similar
+to the following screenshot:</p>
+<figure><img src="../fig/first-push.png" alt="Project homepage of a project. On the left, a menu leading to other project pages. On the right, taking up most of the width, the project homepage. Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 72KB files, 72 KB Storage). Under these we see the description: “My research diary, a collection of Markdown files”. In the next line we see a drop-down field for branches showing “main”, the project slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”, “Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by a box giving information on the last commit of the current branch: the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button. This is followed by some buttons that allow to add or upload new files or setup some of GitLab features for the project. Next is a list of files, in this case only `README.md`, with information when it was last updated and through which commit. Finally, we see a rendering of `README.md`." class="figure mx-auto d-block"><figcaption>Project homepage after first push</figcaption></figure><p>Let us look at what has changed compared to its initial state. The
+interface elements encouraging us to add members to the project are
+gone. Of course, we can still navigate to the project’s Members later
+on, if we need to. We also, correctly, no longer get told that the
+repository is empty and the instructions on how to push content to the
+repository have vanished.</p>
+<p>Instead, we see some statistics below the project’s title: 1 Commit,
+1 Branch, 0 Tags, 72 KB Files, 72 KB Storage. They double as buttons
+other project pages.</p>
+<p>Below the description is a new button bar, followed by a box
+presenting information on last commit of the currently select
+branch.</p>
+<p>The buttons below, that we saw earlier, allow us to add specific
+files or navigate to the configuration of certain GitLab features. Note
+that one button changed from reading “Add README” to just “README”,
+since we added <code>README.md</code>. The button is now a link to the
+latest version of that file in the current branch.</p>
+<p>Then we see a list of files. So far, there is only
+<code>README.md</code>. The list also tells us through which commit it
+was last changed and when that commit was created.</p>
+<p>Finally, we see the markdown file <code>README.md</code> rendered.
+Because having a README-file in the root directory of a repository is a
+widespread convention, GitLab (and other platforms like it) usually
+render it on a project’s homepage.</p>
 </section><section id="archiving-a-project"><h2 class="section-heading">Archiving a Project<a class="anchor" aria-label="anchor" href="#archiving-a-project"></a>
 </h2>
 <hr class="half-width">
-<p>We just went through the beginning of a GitLab project’s life cycle. At its end, if it has one, a project gets archived (or deleted). We will now go through the process of archiving a project, without completing the step.</p>
+<p>We just went through the beginning of a GitLab project’s life cycle.
+At its end, if it has one, a project gets archived (or deleted). We will
+now go through the process of archiving a project, without completing
+the step.</p>
 <p>Using the menu on the left, we navigate to the projects settings.</p>
-<p>At the bottom the page, we find a section named “Advanced”. We hit the “Expand” button right next to it and scroll down the page.</p>
-<p>Notice that many of buttons here are not the usual blue or white, but after scrolling a little they are red. This indicates that we should be careful about clicking them. Things might break or get deleted.</p>
-<p>Scrolling back up, we find a section labeled “Archive Project”. Clicking the button will not delete the project. Instead it will be placed in a read-only mode. Everything will be preserved but nothing can be changed anymore. In addition, the project no longer shows up in search results and on the page for exploring projects.</p>
-<p>Most of the time archiving a project is preferable to deleting it, in particular when it comes to research projects. <strong>Do not archive the project now! We will work with it throughout this lesson.</strong></p>
-<p>At the bottom of the page is also a section for deleting a project, in case you ever think that is the right thing to do.</p>
+<p>At the bottom the page, we find a section named “Advanced”. We hit
+the “Expand” button right next to it and scroll down the page.</p>
+<p>Notice that many of buttons here are not the usual blue or white, but
+after scrolling a little they are red. This indicates that we should be
+careful about clicking them. Things might break or get deleted.</p>
+<p>Scrolling back up, we find a section labeled “Archive Project”.
+Clicking the button will not delete the project. Instead it will be
+placed in a read-only mode. Everything will be preserved but nothing can
+be changed anymore. In addition, the project no longer shows up in
+search results and on the page for exploring projects.</p>
+<p>Most of the time archiving a project is preferable to deleting it, in
+particular when it comes to research projects. <strong>Do not archive
+the project now! We will work with it throughout this
+lesson.</strong></p>
+<p>At the bottom of the page is also a section for deleting a project,
+in case you ever think that is the right thing to do.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -817,10 +1063,14 @@ branch 'main' set up to track 'origin/main'.</code></pre>
 </h3>
 <div class="callout-content">
 <ul>
-<li>Creating a GitLab project requires not more than a few clicks and providing a name.</li>
-<li>Changing the name of description of a GitLab project after creation has no indirect consequences.</li>
-<li>You can fill a fresh GitLab project’s repository by pushing a local repository.</li>
-<li>You can archive a project (and you can delete a project, but often should not.)</li>
+<li>Creating a GitLab project requires not more than a few clicks and
+providing a name.</li>
+<li>Changing the name of description of a GitLab project after creation
+has no indirect consequences.</li>
+<li>You can fill a fresh GitLab project’s repository by pushing a local
+repository.</li>
+<li>You can archive a project (and you can delete a project, but often
+should not.)</li>
 </ul>
 </div>
 </div>
@@ -868,15 +1118,43 @@ any links that you are not going to use.
 <section id="adding-project-members"><h2 class="section-heading">Adding Project Members<a class="anchor" aria-label="anchor" href="#adding-project-members"></a>
 </h2>
 <hr class="half-width">
-<p>So far, each of you has created a GitLab project that no one but you can contribute to; depending on the visibility setting, no one but you might be able to even see it.</p>
-<p>Git and GitLab can be and is used for one-person projects. But we want our colleagues to contribute to our research diary, when they keep tabs on our experiments for us on the weekends. To achieve this, we will grant others access to our GitLab project.</p>
-<p>Using the menu on the left side of the project homepage (or nearly any other project page), we navigate to the project members page hovering over or clicking on “Project Information” and then clicking on “Members” in the submenu. The project member page should look similar to the following screenshot:</p>
-<figure><img src="../fig/initial-members.png" alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, when access was granted, the member’s maximum role and the membership expiration date. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member, 2 weeks ago by himself, Maintainer, and no Expiration date." class="figure mx-auto d-block"><figcaption>Project members page</figcaption></figure><p>On the page we can see the page title, “Project members”, three buttons to the left of the title, and a filterable table of members, currently only listing ourselves.</p>
-<p>The table shows our full name and account name, why we are a member of this project, when we got access—at the moment we created the project—what our maximum role is—more on that in a bit—and a disabled membership expiration date widget.</p>
-<p>For practice we will all add an instructor to our project and remove them again right away. Click the button labeled “Invite members”, type in the username your instructors provided you with into the search field, make sure that “Guest” is selected as a role, and click the button labeled “Invite”.</p>
-<p>After reloading the page, your instructor should now be listed next to you in the table. Unlike in your row, you can change the role and the expiration date of this new entry. There also is a new, red button in this row labeled “Remove member”.</p>
-<p>The role determines what the member is allowed to do in the project. A maintainer has full rights, a guest almost none. GitLab’s handbook gives a detailed <a href="https://docs.gitlab.com/ee/user/permissions.html" class="external-link">overview</a> of the different roles’ permissions.</p>
-<p>Now, we are going to remove the instructor from your project’s members again. Click the button labeled “Remove member” in the instructor’s row then click the button of the same name in the popup dialog. The page reloads itself and the entry vanishes from the table.</p>
+<p>So far, each of you has created a GitLab project that no one but you
+can contribute to; depending on the visibility setting, no one but you
+might be able to even see it.</p>
+<p>Git and GitLab can be and is used for one-person projects. But we
+want our colleagues to contribute to our research diary, when they keep
+tabs on our experiments for us on the weekends. To achieve this, we will
+grant others access to our GitLab project.</p>
+<p>Using the menu on the left side of the project homepage (or nearly
+any other project page), we navigate to the project members page
+hovering over or clicking on “Project Information” and then clicking on
+“Members” in the submenu. The project member page should look similar to
+the following screenshot:</p>
+<figure><img src="../fig/initial-members.png" alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, when access was granted, the member’s maximum role and the membership expiration date. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member, 2 weeks ago by himself, Maintainer, and no Expiration date." class="figure mx-auto d-block"><figcaption>Project members page</figcaption></figure><p>On the page we can see the page title, “Project members”, three
+buttons to the left of the title, and a filterable table of members,
+currently only listing ourselves.</p>
+<p>The table shows our full name and account name, why we are a member
+of this project, when we got access—at the moment we created the
+project—what our maximum role is—more on that in a bit—and a disabled
+membership expiration date widget.</p>
+<p>For practice we will all add an instructor to our project and remove
+them again right away. Click the button labeled “Invite members”, type
+in the username your instructors provided you with into the search
+field, make sure that “Guest” is selected as a role, and click the
+button labeled “Invite”.</p>
+<p>After reloading the page, your instructor should now be listed next
+to you in the table. Unlike in your row, you can change the role and the
+expiration date of this new entry. There also is a new, red button in
+this row labeled “Remove member”.</p>
+<p>The role determines what the member is allowed to do in the project.
+A maintainer has full rights, a guest almost none. GitLab’s handbook
+gives a detailed <a href="https://docs.gitlab.com/ee/user/permissions.html" class="external-link">overview</a> of
+the different roles’ permissions.</p>
+<p>Now, we are going to remove the instructor from your project’s
+members again. Click the button labeled “Remove member” in the
+instructor’s row then click the button of the same name in the popup
+dialog. The page reloads itself and the entry vanishes from the
+table.</p>
 <div id="discussion1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -885,8 +1163,10 @@ any links that you are not going to use.
 <h3 class="callout-title">Adding Members<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
-<p>Get into pairs and add each other with the role “Developer” to your projects.</p>
-<p>The “Developer” role grants just enough permissions for all the collaborative tasks we will practice in this lesson.</p>
+<p>Get into pairs and add each other with the role “Developer” to your
+projects.</p>
+<p>The “Developer” role grants just enough permissions for all the
+collaborative tasks we will practice in this lesson.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -894,8 +1174,11 @@ any links that you are not going to use.
 </section><section id="contribute-changes-to-project-repository"><h2 class="section-heading">Contribute Changes to Project Repository<a class="anchor" aria-label="anchor" href="#contribute-changes-to-project-repository"></a>
 </h2>
 <hr class="half-width">
-<p>Now, everyone should be the member of one of your co-learners’ projects. We will now add an diary entry for imaginary work that we did on their experiments last weekend.</p>
-<p>First, we clone their repositories into the directory <code>rd-colleague</code>.</p>
+<p>Now, everyone should be the member of one of your co-learners’
+projects. We will now add an diary entry for imaginary work that we did
+on their experiments last weekend.</p>
+<p>First, we clone their repositories into the directory
+<code>rd-colleague</code>.</p>
 <pre><code>$ git clone https://gitlab.com/someothernovice/research-diary.git rd-colleague</code></pre>
 <pre><code>Cloning into 'research-diary'...
 Username for 'https://gitlab.com': somenovice
@@ -906,11 +1189,14 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0</code></pre>
 <p>Moving into the directory</p>
 <pre><code>$ cd rd-colleague</code></pre>
-<p>we check its contents. If your colleague did everything we did, it should contain a single file, <code>README.md</code>.</p>
+<p>we check its contents. If your colleague did everything we did, it
+should contain a single file, <code>README.md</code>.</p>
 <pre><code>$ ls</code></pre>
 <pre><code><span><span class="va">README.md</span></span></code></pre>
-<p>Now we are sure that everything is in order with the cloned repository and we can add our lab entry.</p>
-<p>First we create a file, named <code>2022-03-13.md</code> after the date on which we did the work, listing the work we did:</p>
+<p>Now we are sure that everything is in order with the cloned
+repository and we can add our lab entry.</p>
+<p>First we create a file, named <code>2022-03-13.md</code> after the
+date on which we did the work, listing the work we did:</p>
 <pre><code>* Injected transformational fluid into moss sample.
 * Moss turned into several butterflys. SUCCESS!</code></pre>
 <p>Then we add the file as part of a new commit to the repository:</p>
@@ -927,7 +1213,10 @@ $ git commit -m "Record work on experiment A-13"</code></pre>
 <h3 class="callout-title">Markdown Lists<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>Lists can be represented in Markdown by starting their items with a <code>*</code> character followed by a space. If an list item wraps over multiple lines, lines following the first are started with sufficient spaces to align the lines text with the first line’s text.</p>
+<p>Lists can be represented in Markdown by starting their items with a
+<code>*</code> character followed by a space. If an list item wraps over
+multiple lines, lines following the first are started with sufficient
+spaces to align the lines text with the first line’s text.</p>
 <p>For example:</p>
 <pre><code>* First item
 * Second item with enough text to make us wrap to a second
@@ -954,7 +1243,10 @@ Writing objects: 100% (3/3), 388 bytes | 388.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://gitlab.com/somenovice/research-diary.git
    2dd2c21..4eac24c  main -&gt; main</code></pre>
-<p>We have now recorded in pairs lab work we carried out for a colleague during the last weekend. Curious what our colleagues did for us, we navigate back to the directory of our own repository in the shell, for example:</p>
+<p>We have now recorded in pairs lab work we carried out for a colleague
+during the last weekend. Curious what our colleagues did for us, we
+navigate back to the directory of our own repository in the shell, for
+example:</p>
 <pre><code>$ cd ../research-diary</code></pre>
 <p>There, we pull the changes that our colleagues previously pushed.</p>
 <pre><code>$ git pull</code></pre>
@@ -965,11 +1257,14 @@ Fast-forward
  2022-03-13.md | 2 ++
  1 file changed, 2 insertions(+)
  create mode 100644 2022-03-13.md</code></pre>
-<p>From the output’s last line, we can already see that a single file, <code>2022-03-13.md</code> was added. Letting the shell write out the files contents shows us, what our colleague did:</p>
+<p>From the output’s last line, we can already see that a single file,
+<code>2022-03-13.md</code> was added. Letting the shell write out the
+files contents shows us, what our colleague did:</p>
 <pre><code>$ cat 2022-03-13.md</code></pre>
 <pre><code>* Injected transformational fluid into moss sample.
 * Moss turned into several butterflys. SUCCESS!</code></pre>
-<p>We successfully collaborated through GitLab on a project of text files.</p>
+<p>We successfully collaborated through GitLab on a project of text
+files.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -979,10 +1274,14 @@ Fast-forward
 </h3>
 <div class="callout-content">
 <ul>
-<li>Adding others as members allows them to directly contribute to your projects</li>
-<li>Members with sufficient rights can independently contribute to repositories</li>
-<li>You update your local repositories relative to the GitLab repository with the <code>git pull</code> command</li>
-<li>You send changes committed in your local repository to the GitLab repository with the <code>git push</code> command.</li>
+<li>Adding others as members allows them to directly contribute to your
+projects</li>
+<li>Members with sufficient rights can independently contribute to
+repositories</li>
+<li>You update your local repositories relative to the GitLab repository
+with the <code>git pull</code> command</li>
+<li>You send changes committed in your local repository to the GitLab
+repository with the <code>git push</code> command.</li>
 </ul>
 </div>
 </div>
@@ -1008,7 +1307,8 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How can I organize the projects of my (research) group and my collaborations?</li>
+<li>How can I organize the projects of my (research) group and my
+collaborations?</li>
 </ul>
 </div>
 </div>
@@ -1021,7 +1321,8 @@ any links that you are not going to use.
 <li>Create a group.</li>
 <li>Move a project.</li>
 <li>Add a member to a group.</li>
-<li>Explain how the members of a group relate to its subgroups and projects.</li>
+<li>Explain how the members of a group relate to its subgroups and
+projects.</li>
 <li>Delete a group.</li>
 </ul>
 </div>
@@ -1029,43 +1330,88 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>In the first episode, we already got to know groups; GitLab’s way to organize projects. A group might hold a projects of a research group or those of a research project with contributors from multiple institutions. Together with members and their permissions they can be used to manage access to multiple repositories (for example, restrict access to certain repositories to staff while others may be accessed by student assistants as well).</p>
-<p>In this episode we will create (and delete) a group, move our project, and learn how members of a group relate to its subgroups and projects.</p>
+<p>In the first episode, we already got to know groups; GitLab’s way to
+organize projects. A group might hold a projects of a research group or
+those of a research project with contributors from multiple
+institutions. Together with members and their permissions they can be
+used to manage access to multiple repositories (for example, restrict
+access to certain repositories to staff while others may be accessed by
+student assistants as well).</p>
+<p>In this episode we will create (and delete) a group, move our
+project, and learn how members of a group relate to its subgroups and
+projects.</p>
 <section id="creating-a-group"><h2 class="section-heading">Creating a Group<a class="anchor" aria-label="anchor" href="#creating-a-group"></a>
 </h2>
 <hr class="half-width">
-<p>In the top menu bar, we open the drop-down menu labeled with a boxed plus and select the menu item “New Group”. On the next page, we select “Create group”, because that is what we want to do.</p>
+<p>In the top menu bar, we open the drop-down menu labeled with a boxed
+plus and select the menu item “New Group”. On the next page, we select
+“Create group”, because that is what we want to do.</p>
 <p>This leads to the following page:</p>
-<figure><img src="../fig/create-group.png" alt="Create group form with text input fields labeled “Group name”, “Group URL”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, a drop-down field labeled “Role”, a radio button element labeled “Who will be using this group?” with options “My company or team” and “Just me”, a drop-down field labeled “What will you use this group for?” and an text input field labeled “Email 1” with a button to add more under the heading “Invite members (optional)”." class="figure mx-auto d-block"><figcaption>Create group form</figcaption></figure><p>Choose any name for the group, for example a fictional research group like “Ant-Sized Elephants’ Applications Lab”. When you move the focus out of the input field, for example by pressing the tabulator key, GitLab will suggest a URL for the group. Usually, we might want to adapt it, but for now all we care about that it is available.</p>
-<p>You can leave the group’s visibility private. The visibility of a group works like that of a project.</p>
-<p>We will leave the remaining fields as they are and create the group by clicking the blue button labeled “Create group”. GitLab will navigate to the group home page, listing the group’s subgroups and projects (currently none).</p>
-<p>Now, we will have a look at how to create a project in the new group.</p>
-<p>In the top menu bar, we open the drop-down menu labeled with a boxed plus and select the menu item “New Project”. On the next page, we select “Create blank project”.</p>
-<p>This leads to the create blank project form page. We do not really want to create a project. Instead we have a look at the drop-down field under the heading “Project URL”. It will either show your username or one of the groups you belong to.</p>
-<p>If the field does not show the URL of the group that we just created, clicking on the field should open a drop-down list which includes it and allows us to select it.</p>
-<p>Submitting the form with our group’s URL selected would create a project in that group.</p>
+<figure><img src="../fig/create-group.png" alt="Create group form with text input fields labeled “Group name”, “Group URL”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, a drop-down field labeled “Role”, a radio button element labeled “Who will be using this group?” with options “My company or team” and “Just me”, a drop-down field labeled “What will you use this group for?” and an text input field labeled “Email 1” with a button to add more under the heading “Invite members (optional)”." class="figure mx-auto d-block"><figcaption>Create group form</figcaption></figure><p>Choose any name for the group, for example a fictional research group
+like “Ant-Sized Elephants’ Applications Lab”. When you move the focus
+out of the input field, for example by pressing the tabulator key,
+GitLab will suggest a URL for the group. Usually, we might want to adapt
+it, but for now all we care about that it is available.</p>
+<p>You can leave the group’s visibility private. The visibility of a
+group works like that of a project.</p>
+<p>We will leave the remaining fields as they are and create the group
+by clicking the blue button labeled “Create group”. GitLab will navigate
+to the group home page, listing the group’s subgroups and projects
+(currently none).</p>
+<p>Now, we will have a look at how to create a project in the new
+group.</p>
+<p>In the top menu bar, we open the drop-down menu labeled with a boxed
+plus and select the menu item “New Project”. On the next page, we select
+“Create blank project”.</p>
+<p>This leads to the create blank project form page. We do not really
+want to create a project. Instead we have a look at the drop-down field
+under the heading “Project URL”. It will either show your username or
+one of the groups you belong to.</p>
+<p>If the field does not show the URL of the group that we just created,
+clicking on the field should open a drop-down list which includes it and
+allows us to select it.</p>
+<p>Submitting the form with our group’s URL selected would create a
+project in that group.</p>
 </section><section id="move-project-to-group"><h2 class="section-heading">Move Project to Group<a class="anchor" aria-label="anchor" href="#move-project-to-group"></a>
 </h2>
 <hr class="half-width">
 <p>We will now move our project to our group.</p>
-<p>On the side menu, we select “Settings” then “General”. On that page, we expand the section labeled “Advanced” and scroll down to the subsection labeled “Transfer Project”.</p>
-<p>Now, please read the subsections notes, with an emphasis on the list of things to be aware of.</p>
+<p>On the side menu, we select “Settings” then “General”. On that page,
+we expand the section labeled “Advanced” and scroll down to the
+subsection labeled “Transfer Project”.</p>
+<p>Now, please read the subsections notes, with an emphasis on the list
+of things to be aware of.</p>
 <p>A few comments on the last two items of the list:</p>
-<p>The second to last tells us that we will need to update our local repositories to point to the new location. Because we are moving the project to a group from our own projects, the URL will change. So the URL we specified when adding the remote to our local repository will no longer be valid. We will test this, but will not change the URL, because we will move the project back in a bit.</p>
-<p>The last item on the list informs us about potential visibility changes. For example, moving a public project to a private group, will cause the project to become private.</p>
-<p>Having carefully read and thought about the warnings, we are ready to move our project. We select the group that we previously created from the drop-down field and click the button labeled “Transfer project”.</p>
-<p>A dialog appears and we confirm, that we are sure, by typing in the name of our project and clicking the button labeled “Confirm”.</p>
+<p>The second to last tells us that we will need to update our local
+repositories to point to the new location. Because we are moving the
+project to a group from our own projects, the URL will change. So the
+URL we specified when adding the remote to our local repository will no
+longer be valid. We will test this, but will not change the URL, because
+we will move the project back in a bit.</p>
+<p>The last item on the list informs us about potential visibility
+changes. For example, moving a public project to a private group, will
+cause the project to become private.</p>
+<p>Having carefully read and thought about the warnings, we are ready to
+move our project. We select the group that we previously created from
+the drop-down field and click the button labeled “Transfer project”.</p>
+<p>A dialog appears and we confirm, that we are sure, by typing in the
+name of our project and clicking the button labeled “Confirm”.</p>
 <p>The project will be transferred to the group.</p>
-<p>To test that the URL changed, we switch to the shell and navigate to the directory containing our repository; <strong>Not the repository of our co-learner</strong>!</p>
+<p>To test that the URL changed, we switch to the shell and navigate to
+the directory containing our repository; <strong>Not the repository of
+our co-learner</strong>!</p>
 <p>Running</p>
 <pre><code>git remote get-url origin</code></pre>
 <p>{: .language-bash}</p>
-<p>should tell us that our project points to the old project URL. So, let us try to run</p>
+<p>should tell us that our project points to the old project URL. So,
+let us try to run</p>
 <pre><code>git pull</code></pre>
 <p>{: .language-bash}</p>
 <pre><code>Already up to date.</code></pre>
 <p>{: .output}</p>
-<p>That result is unexpected. The reason for this is that <a href="https://docs.gitlab.com/ee/user/project/repository/#what-happens-when-a-repository-path-changes" class="external-link">GitLab will redirect the old URLs to the new ones, as long as the old URLs do not point to a new project.</a></p>
+<p>That result is unexpected. The reason for this is that <a href="https://docs.gitlab.com/ee/user/project/repository/#what-happens-when-a-repository-path-changes" class="external-link">GitLab
+will redirect the old URLs to the new ones, as long as the old URLs do
+not point to a new project.</a></p>
 </section><section id="adding-members-to-group"><h2 class="section-heading">Adding Members to Group<a class="anchor" aria-label="anchor" href="#adding-members-to-group"></a>
 </h2>
 <hr class="half-width">
@@ -1077,8 +1423,10 @@ any links that you are not going to use.
 <h3 class="callout-title">Adding Members<a class="anchor" aria-label="anchor" href="#challenge1"></a>
 </h3>
 <div class="callout-content">
-<p>Add your instructor as a member of your group with the role of “Guest”. The process is the same as to add members to a project.</p>
-<p>Hint: After adding a member, you might need to reload the members page to see the new member in the list.</p>
+<p>Add your instructor as a member of your group with the role of
+“Guest”. The process is the same as to add members to a project.</p>
+<p>Hint: After adding a member, you might need to reload the members
+page to see the new member in the list.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -1095,19 +1443,31 @@ any links that you are not going to use.
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
 <li>Navigate to the group home page.</li>
-<li>Select “Group information”, then “Members” from the side bar menu.</li>
+<li>Select “Group information”, then “Members” from the side bar
+menu.</li>
 <li>Click the “Invite members” button.</li>
-<li>Fill in the dialog to invite your instructor with the “Guest” role.</li>
+<li>Fill in the dialog to invite your instructor with the “Guest”
+role.</li>
 <li>Click the “Invite” button.</li>
 </ol>
 </div>
 </div>
 </div>
 </div>
-<p>After adding a member to the group, we have look at the member list of our research diary project.</p>
-<p>The list has three entries: ourselves, our co-learner, and our instructor. We have the “Owner” role and, as its creator, are a direct member of the project. Our co-learner has the “Developer” role that we assigned them and are also a direct member of the project, as we added them directly to the project.</p>
-<p>The entry we are really interested in is that of the instructor. We added them as a “Guest” to the group. Now, they show up in the list of this project with the same role. The reason is, as the column “Source” tells us, that our project is in our group, and our instructor is a member of that group.</p>
-<p>That means, <strong>projects and groups inherit the members of the group they belong to</strong>.</p>
+<p>After adding a member to the group, we have look at the member list
+of our research diary project.</p>
+<p>The list has three entries: ourselves, our co-learner, and our
+instructor. We have the “Owner” role and, as its creator, are a direct
+member of the project. Our co-learner has the “Developer” role that we
+assigned them and are also a direct member of the project, as we added
+them directly to the project.</p>
+<p>The entry we are really interested in is that of the instructor. We
+added them as a “Guest” to the group. Now, they show up in the list of
+this project with the same role. The reason is, as the column “Source”
+tells us, that our project is in our group, and our instructor is a
+member of that group.</p>
+<p>That means, <strong>projects and groups inherit the members of the
+group they belong to</strong>.</p>
 <div id="discussion1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -1124,7 +1484,9 @@ any links that you are not going to use.
 </section><section id="delete-group"><h2 class="section-heading">Delete Group<a class="anchor" aria-label="anchor" href="#delete-group"></a>
 </h2>
 <hr class="half-width">
-<p>Now that our group is empty again, we will delete it, to be polite users of free resources. (If you created a group, that you actually intend to keep, do not delete it.)</p>
+<p>Now that our group is empty again, we will delete it, to be polite
+users of free resources. (If you created a group, that you actually
+intend to keep, do not delete it.)</p>
 <div id="challenge2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1133,7 +1495,9 @@ any links that you are not going to use.
 <h3 class="callout-title">Delete a Group<a class="anchor" aria-label="anchor" href="#challenge2"></a>
 </h3>
 <div class="callout-content">
-<p>Delete your group. You find the deletion form at the same position in the group’s settings, as the project deletion form in a project’s settings.</p>
+<p>Delete your group. You find the deletion form at the same position in
+the group’s settings, as the project deletion form in a project’s
+settings.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -1170,7 +1534,8 @@ any links that you are not going to use.
 <ul>
 <li>Groups and subgroups are used to organize projects.</li>
 <li>Groups can have members.</li>
-<li>Projects and groups inherit members from the group they belong to.</li>
+<li>Projects and groups inherit members from the group they belong
+to.</li>
 </ul>
 </div>
 </div>
@@ -1219,11 +1584,23 @@ any links that you are not going to use.
 <section id="create-issue"><h2 class="section-heading">Create Issue<a class="anchor" aria-label="anchor" href="#create-issue"></a>
 </h2>
 <hr class="half-width">
-<p>Before our excursion to learn about groups, we contributed lab notes to our co-learner’s repository. Having done that, we think we should be listed as contributors in the documentation of that repository. Since, we want our co-learner to do the honors, we create an issue in their repository, to document our desire.</p>
-<p>Issues are a feature of GitLab that allows us to organize tasks by project and by group (and its descendant groups and projects). By default anyone that has read access to a project can file issues. This usually makes sense, because users can report their problems and ask their questions that way, even when they are not supposed change anything themselves.</p>
-<p>With our co-learner’s help, we navigate to their project. On the side bar menu on the left we click the entry labeled “Issues” and on the following page we click on the button labeled “New issue”.</p>
+<p>Before our excursion to learn about groups, we contributed lab notes
+to our co-learner’s repository. Having done that, we think we should be
+listed as contributors in the documentation of that repository. Since,
+we want our co-learner to do the honors, we create an issue in their
+repository, to document our desire.</p>
+<p>Issues are a feature of GitLab that allows us to organize tasks by
+project and by group (and its descendant groups and projects). By
+default anyone that has read access to a project can file issues. This
+usually makes sense, because users can report their problems and ask
+their questions that way, even when they are not supposed change
+anything themselves.</p>
+<p>With our co-learner’s help, we navigate to their project. On the side
+bar menu on the left we click the entry labeled “Issues” and on the
+following page we click on the button labeled “New issue”.</p>
 <p>This leads us to the following form:</p>
-<figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title” with subscript “Add description templates to help your contributors communicate effectively!”, the second and third word being a link, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description”, a check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example “Recognize outside contributors” and a description:</p>
+<figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title” with subscript “Add description templates to help your contributors communicate effectively!”, the second and third word being a link, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description”, a check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example
+“Recognize outside contributors” and a description:</p>
 <pre><code>Outside contributors should be mentioned in the project’s documentation. Their
 names could be listed in one of the following locations:
 
@@ -1237,12 +1614,20 @@ names could be listed in one of the following locations:
 <h3 class="callout-title">Markdown Code Spans and Blocks<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>Markdown provides syntax for formatting text in a monospaced font, this is usually used to typeset code, because code is usually written to be readable in such fonts.</p>
-<p>For a monospaced snippet within a normal paragraph, enclose the snippet in a single backquote (also called backtick or grave accent), for example</p>
+<p>Markdown provides syntax for formatting text in a monospaced font,
+this is usually used to typeset code, because code is usually written to
+be readable in such fonts.</p>
+<p>For a monospaced snippet within a normal paragraph, enclose the
+snippet in a single backquote (also called backtick or grave accent),
+for example</p>
 <pre><code>The filename `README.md` will be set in a monospaced font.</code></pre>
 <p>will be typeset as:</p>
-<p>The filename <code>README.md</code> will be set in a monospaced font.</p>
-<p>For a whole block of monospaced text, for example some lines of code, start and end the block with a line consisting of three or more backquotes, where the number should match for start and end, for example</p>
+<p>The filename <code>README.md</code> will be set in a monospaced
+font.</p>
+<p>For a whole block of monospaced text, for example some lines of code,
+start and end the block with a line consisting of three or more
+backquotes, where the number should match for start and end, for
+example</p>
 <pre><code>```
 # This python code will also be set in a monospaced font, which preserves
 # relative indentation between lines.
@@ -1257,43 +1642,117 @@ def some_function():
 </div>
 </div>
 </div>
-<p>We assign the new issue to our co-learner by selecting their account in the drop-down field labeled “Assignee”.</p>
-<p>Then we click the button labeled “Create issue”. This redirects us to the new issue’s page. Near top we see its title followed by its description. That we created the issue is mentioned above the title. A text field below the description can be used to create a comment and a side bar on left lists more fields that could be used to further specify properties of that issue.</p>
+<p>We assign the new issue to our co-learner by selecting their account
+in the drop-down field labeled “Assignee”.</p>
+<p>Then we click the button labeled “Create issue”. This redirects us to
+the new issue’s page. Near top we see its title followed by its
+description. That we created the issue is mentioned above the title. A
+text field below the description can be used to create a comment and a
+side bar on left lists more fields that could be used to further specify
+properties of that issue.</p>
 </section><section id="add-a-label"><h2 class="section-heading">Add a Label<a class="anchor" aria-label="anchor" href="#add-a-label"></a>
 </h2>
 <hr class="half-width">
-<p>One of those, the field labeled ”Labels”, we will get to know, now.</p>
-<p>We want to know when our co-learner starts to work on the issue. To communicate that fact through GitLab’s issue system we can use its Label feature. Issues can be defined for groups and projects. In the case of groups they are then also available to all its descendant groups and projects.</p>
-<p>So, if we want to assign a label to the issue, we first have to create it. We click on the “Edit” link next to the “Label” field in the side bar. This opens a small dialog titled ”Assign labels”. If we had already defined labels, they would be listed here.</p>
-<p>Since have not, we click the link “Create project label” in the small dialog. A new dialog opens titled “Create project label”. We call it “WIP” for work in progress and select our preferred color. Colors are often used to group labels, for example one color for labels referring to the subproject or subsystem the issue relates to, another color for the current progress of the issue (like our WIP label), etc. Then we click the button labeled “Create”.</p>
-<p>This brings us back to the “Assign labels” dialog, this time with our new label listed. We select our label by clicking it and close the dialog by clicking on the x in the upper right corner.</p>
+<p>One of those, the field labeled ”Labels”, we will get to know,
+now.</p>
+<p>We want to know when our co-learner starts to work on the issue. To
+communicate that fact through GitLab’s issue system we can use its Label
+feature. Issues can be defined for groups and projects. In the case of
+groups they are then also available to all its descendant groups and
+projects.</p>
+<p>So, if we want to assign a label to the issue, we first have to
+create it. We click on the “Edit” link next to the “Label” field in the
+side bar. This opens a small dialog titled ”Assign labels”. If we had
+already defined labels, they would be listed here.</p>
+<p>Since have not, we click the link “Create project label” in the small
+dialog. A new dialog opens titled “Create project label”. We call it
+“WIP” for work in progress and select our preferred color. Colors are
+often used to group labels, for example one color for labels referring
+to the subproject or subsystem the issue relates to, another color for
+the current progress of the issue (like our WIP label), etc. Then we
+click the button labeled “Create”.</p>
+<p>This brings us back to the “Assign labels” dialog, this time with our
+new label listed. We select our label by clicking it and close the
+dialog by clicking on the x in the upper right corner.</p>
 </section><section id="comment-on-an-issue"><h2 class="section-heading">Comment on an Issue<a class="anchor" aria-label="anchor" href="#comment-on-an-issue"></a>
 </h2>
 <hr class="half-width">
-<p>We provided a generic description of the issue in its description, but we want to make sure that our co-learner does not forget to include us. We intend to write a comment regarding our inclusion.</p>
-<p>To support our case we want to reference our contribution. For this, we can use another feature of GitLab’s markdown: When we mention a commit of the project’s repository by its identifier, GitLab will automatically convert it to a link to the page of the commit.</p>
-<p>We navigate to the project’s commit history by clicking the submenu item “Commits” of the menu item “Repository” in the side menu. There we find our commit at the top with its short identifier shown on the right. Right next to that short identifier is a button with an icon that looks like a clipboard. As its tooltip tells us, clicking it will copy the commit SHA (identifier). So, we click on the button.</p>
-<p>We navigate back to our issue by clicking the menu item “Issues” in the side menu and clicking on the title of our issue in the opened list.</p>
-<p>Using the copied commit identifier, we formulate our commit similar to</p>
+<p>We provided a generic description of the issue in its description,
+but we want to make sure that our co-learner does not forget to include
+us. We intend to write a comment regarding our inclusion.</p>
+<p>To support our case we want to reference our contribution. For this,
+we can use another feature of GitLab’s markdown: When we mention a
+commit of the project’s repository by its identifier, GitLab will
+automatically convert it to a link to the page of the commit.</p>
+<p>We navigate to the project’s commit history by clicking the submenu
+item “Commits” of the menu item “Repository” in the side menu. There we
+find our commit at the top with its short identifier shown on the right.
+Right next to that short identifier is a button with an icon that looks
+like a clipboard. As its tooltip tells us, clicking it will copy the
+commit SHA (identifier). So, we click on the button.</p>
+<p>We navigate back to our issue by clicking the menu item “Issues” in
+the side menu and clicking on the title of our issue in the opened
+list.</p>
+<p>Using the copied commit identifier, we formulate our commit similar
+to</p>
 <pre><code>Please mention me as a contributor due to commit
 4eac24cafbcebc4f0d528bd2e1246a4624265085.</code></pre>
-<p>and click the button labeled “Comment”. We notice, that GitLab uses and shortened version of the commits identifier for the link text, which makes it slightly more readable.</p>
-<p>Before we move on, please note the button labeled “Close issue” under the comment text field. An issue starts in the open state and can be closed by clicking this button. When we type something into the comment field the label of the button changes to “Comment &amp; close issue”, so we can add a final comment before closing the issue.</p>
-<p>This is a very important feature, allowing us to distinguish between issues that have yet to be dealt with and those that have already been dealt with. We do not, in general, delete issues, because they are often useful to check whether a certain issue was already discussed or has already come up in the past.</p>
+<p>and click the button labeled “Comment”. We notice, that GitLab uses
+and shortened version of the commits identifier for the link text, which
+makes it slightly more readable.</p>
+<p>Before we move on, please note the button labeled “Close issue” under
+the comment text field. An issue starts in the open state and can be
+closed by clicking this button. When we type something into the comment
+field the label of the button changes to “Comment &amp; close issue”, so
+we can add a final comment before closing the issue.</p>
+<p>This is a very important feature, allowing us to distinguish between
+issues that have yet to be dealt with and those that have already been
+dealt with. We do not, in general, delete issues, because they are often
+useful to check whether a certain issue was already discussed or has
+already come up in the past.</p>
 </section><section id="issue-boards"><h2 class="section-heading">Issue Boards<a class="anchor" aria-label="anchor" href="#issue-boards"></a>
 </h2>
 <hr class="half-width">
-<p>Now, we will have a look at boards, a feature that uses labels to visually organize a project’s issues.</p>
-<p>We navigate to our project’s issue board by clicking the submenu item “Boards” of the menu item “Issues” in the side menu.</p>
+<p>Now, we will have a look at boards, a feature that uses labels to
+visually organize a project’s issues.</p>
+<p>We navigate to our project’s issue board by clicking the submenu item
+“Boards” of the menu item “Issues” in the side menu.</p>
 <p>The following page loads:</p>
-<figure><img src="../fig/board.png" alt="Issue board page with a menu bar on the left and content on the right. At the top of the content area is a drop-down field with “Development” selected followed by a button labeled “New board” a search field, a check box labeled “Show labels”, and two buttons the first labeled “Edit board”, the second “Create list”. Below these elements are two columns, each with a title bar, one titled “Open”, the other “Closed”. In the “Open” column there is a box representing an issue, showing its title “Recognize outside contributors”, a label “WIP”, the issue number “#1” and an avatar of a user." class="figure mx-auto d-block"><figcaption>Issue board page</figcaption></figure><p>GitLab creates on board, called “Development”, by default for each project. This is the board we see. It has two so called lists configured, labeled “Open” and “Closed”, that list all open and closed issues of the project, respectively. These two lists cannot be deleted.</p>
-<p>We will now create another list for issues that are work in progress, that is those that are labeled “WIP”.</p>
-<p>We click on the button labeled “Create List”. A new list appears to the right of the “Closed” list. We are prompted to select a label. We select our label “WIP” and click the button labeled “Add to board”.</p>
-<p>The new list is created between the “Open” and “Closed” lists. Those two will always be on the left and right end, respectively. We can reorder the lists created by us however we want between these two.</p>
-<p>Note, that our issue is initially show in the “Open” and our new list. When we reload the page, it disappears from the “Open” list. In general, open issues that belong to one of the lists due to their labels will not appear in the “Open” list. Closed issues, however, will always only appear in the “Closed” list.</p>
-<p>Boards can not only be used to get an overview of a project’s issues. They can also be used to manipulate their labels. If we drag an issue from one list to another, the label of the originating list will be removed and that of the target list will be added (unless it is one of the “Open” and “Closed” lists). Moving an issue to the “Closed” list will close the issue, while moving an issue out of the “Closed” list will open it.</p>
-<p>We note that we added the “WIP” label to our issue, however, that is not accurate. Our co-learner should add the label whenever they start to work on it. To remove the label we drag the issue to the “Open” list.</p>
-<p>We click on the issue’s title to navigate to its page. Initially the comment text field was directly under the description. By now, there is a list that chronicles the changes to the issue. It starts with the assignment to our co-learner (still from creating the issue), next we see that the “WIP” label was added by us, then comes our comment, and finally it lists that we removed the ”WIP” label again.</p>
+<figure><img src="../fig/board.png" alt="Issue board page with a menu bar on the left and content on the right. At the top of the content area is a drop-down field with “Development” selected followed by a button labeled “New board” a search field, a check box labeled “Show labels”, and two buttons the first labeled “Edit board”, the second “Create list”. Below these elements are two columns, each with a title bar, one titled “Open”, the other “Closed”. In the “Open” column there is a box representing an issue, showing its title “Recognize outside contributors”, a label “WIP”, the issue number “#1” and an avatar of a user." class="figure mx-auto d-block"><figcaption>Issue board page</figcaption></figure><p>GitLab creates on board, called “Development”, by default for each
+project. This is the board we see. It has two so called lists
+configured, labeled “Open” and “Closed”, that list all open and closed
+issues of the project, respectively. These two lists cannot be
+deleted.</p>
+<p>We will now create another list for issues that are work in progress,
+that is those that are labeled “WIP”.</p>
+<p>We click on the button labeled “Create List”. A new list appears to
+the right of the “Closed” list. We are prompted to select a label. We
+select our label “WIP” and click the button labeled “Add to board”.</p>
+<p>The new list is created between the “Open” and “Closed” lists. Those
+two will always be on the left and right end, respectively. We can
+reorder the lists created by us however we want between these two.</p>
+<p>Note, that our issue is initially show in the “Open” and our new
+list. When we reload the page, it disappears from the “Open” list. In
+general, open issues that belong to one of the lists due to their labels
+will not appear in the “Open” list. Closed issues, however, will always
+only appear in the “Closed” list.</p>
+<p>Boards can not only be used to get an overview of a project’s issues.
+They can also be used to manipulate their labels. If we drag an issue
+from one list to another, the label of the originating list will be
+removed and that of the target list will be added (unless it is one of
+the “Open” and “Closed” lists). Moving an issue to the “Closed” list
+will close the issue, while moving an issue out of the “Closed” list
+will open it.</p>
+<p>We note that we added the “WIP” label to our issue, however, that is
+not accurate. Our co-learner should add the label whenever they start to
+work on it. To remove the label we drag the issue to the “Open”
+list.</p>
+<p>We click on the issue’s title to navigate to its page. Initially the
+comment text field was directly under the description. By now, there is
+a list that chronicles the changes to the issue. It starts with the
+assignment to our co-learner (still from creating the issue), next we
+see that the “WIP” label was added by us, then comes our comment, and
+finally it lists that we removed the ”WIP” label again.</p>
 <p>This helps keep track of who did what with an issue</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -1356,17 +1815,47 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>In the chapter on collaboration we learned how to contribute changes to a project that we are a member of. We also learned, in the previous chapter, that we can contribute to other projects by filing issues to report problems or ask questions. This episode we will learn about a way to suggest concrete changes to a GitLab project that we do not have write access on.</p>
-<p>The feature that allows us to do this is called Merge Request, the corresponding feature on GitHub is called Pull Request. As a target for our merge request, we will use our co-learners repository. We we have write access to it, but to learn something new, we will pretend that we don’t.</p>
-<p>We will create a merge request that adds a file listing the contributors, which will solve the issue that we filed during the last episode.</p>
+<p>In the chapter on collaboration we learned how to contribute changes
+to a project that we are a member of. We also learned, in the previous
+chapter, that we can contribute to other projects by filing issues to
+report problems or ask questions. This episode we will learn about a way
+to suggest concrete changes to a GitLab project that we do not have
+write access on.</p>
+<p>The feature that allows us to do this is called Merge Request, the
+corresponding feature on GitHub is called Pull Request. As a target for
+our merge request, we will use our co-learners repository. We we have
+write access to it, but to learn something new, we will pretend that we
+don’t.</p>
+<p>We will create a merge request that adds a file listing the
+contributors, which will solve the issue that we filed during the last
+episode.</p>
 <section id="create-a-fork"><h2 class="section-heading">Create a Fork<a class="anchor" aria-label="anchor" href="#create-a-fork"></a>
 </h2>
 <hr class="half-width">
-<p>Since we are a member of our co-learner’s project we could create a merge request within the project. But again, to learn how to do it for project’s of which we are not a member of, we will make ourselves some extra work.</p>
-<p>So supposedly, we cannot make changes to our co-learner’s project. We need a copy that we can change. Such a copy is called a fork in GitLab’s (and also GitHub’s case). The term can be explained by looking at its use in “fork in the road”. Once we make changes to our copy, the development history will have split.</p>
-<p>To create a fork, we navigate to the homepage of our co-learner’s project. In the upper right corner is a button labeled ”Fork”. The number next to it tells us how many forks of this repository exist on GitLab. We will now increase that number by one by clicking on the button.</p>
-<p>This redirects us to a form that looks like a reduced version of the “Create new project” form. Since we do not want to make a real fork of the project, that is project that develops in a different direction than the original, but rather suggest a change to the original, we will leave almost everything as it is.</p>
-<p>What we need to do is select a namespace. We will use our user namespace, so we select ourselves in the drop-down list under ”Project URL”. We set the visibility to private, because we will make the changes public (to those able to see the original project) once we create the merge request. Then we click the “Fork project” button.</p>
+<p>Since we are a member of our co-learner’s project we could create a
+merge request within the project. But again, to learn how to do it for
+project’s of which we are not a member of, we will make ourselves some
+extra work.</p>
+<p>So supposedly, we cannot make changes to our co-learner’s project. We
+need a copy that we can change. Such a copy is called a fork in GitLab’s
+(and also GitHub’s case). The term can be explained by looking at its
+use in “fork in the road”. Once we make changes to our copy, the
+development history will have split.</p>
+<p>To create a fork, we navigate to the homepage of our co-learner’s
+project. In the upper right corner is a button labeled ”Fork”. The
+number next to it tells us how many forks of this repository exist on
+GitLab. We will now increase that number by one by clicking on the
+button.</p>
+<p>This redirects us to a form that looks like a reduced version of the
+“Create new project” form. Since we do not want to make a real fork of
+the project, that is project that develops in a different direction than
+the original, but rather suggest a change to the original, we will leave
+almost everything as it is.</p>
+<p>What we need to do is select a namespace. We will use our user
+namespace, so we select ourselves in the drop-down list under ”Project
+URL”. We set the visibility to private, because we will make the changes
+public (to those able to see the original project) once we create the
+merge request. Then we click the “Fork project” button.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1375,18 +1864,37 @@ any links that you are not going to use.
 <h3 class="callout-title">Unique Project Name<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>If there already is a project with the name or the same slug, GitLab will show you an error message which, at the time of me writing this, can be summarized to “an error has occurred”, which is not very helpful. In that case, reload the page, select a different name and/or slug and try again.</p>
+<p>If there already is a project with the name or the same slug, GitLab
+will show you an error message which, at the time of me writing this,
+can be summarized to “an error has occurred”, which is not very helpful.
+In that case, reload the page, select a different name and/or slug and
+try again.</p>
 </div>
 </div>
 </div>
-<p>We are redirected to the fork’s project home page. The fork is full featured project just like the original, however, only the Git repository is copied. So, for example, there are no issues in it, even though the original had at least one.</p>
+<p>We are redirected to the fork’s project home page. The fork is full
+featured project just like the original, however, only the Git
+repository is copied. So, for example, there are no issues in it, even
+though the original had at least one.</p>
 </section><section id="create-and-edit-a-file-on-gitlab"><h2 class="section-heading">Create and Edit a File on GitLab<a class="anchor" aria-label="anchor" href="#create-and-edit-a-file-on-gitlab"></a>
 </h2>
 <hr class="half-width">
-<p>Our goal is to create a file listing contributors to the project. We will do this within GitLab using its file creation and editing features.</p>
-<p>To do that, we click on the button labeled “Web IDE” in the line just below the project’s description. This redirects us to a page with a file browser in a column on the, with most of the screen taken up by a box informing us how to use the Web IDE: “Select a file from the left sidebar to begin editing. Afterwards, you’ll be able to commit your changes.”</p>
-<p>We do not want to edit an existing file, but want to create a new one. To do that we click on the button above the list of files on the left that is marked with an icon representing a sheet of paper with a +-sign on top of it.</p>
-<p>A pop-up dialog prompts us for a name, which we will provide: “CONTRIBUTORS.md” followed by clicking the button labeled “Create file”.</p>
+<p>Our goal is to create a file listing contributors to the project. We
+will do this within GitLab using its file creation and editing
+features.</p>
+<p>To do that, we click on the button labeled “Web IDE” in the line just
+below the project’s description. This redirects us to a page with a file
+browser in a column on the, with most of the screen taken up by a box
+informing us how to use the Web IDE: “Select a file from the left
+sidebar to begin editing. Afterwards, you’ll be able to commit your
+changes.”</p>
+<p>We do not want to edit an existing file, but want to create a new
+one. To do that we click on the button above the list of files on the
+left that is marked with an icon representing a sheet of paper with a
++-sign on top of it.</p>
+<p>A pop-up dialog prompts us for a name, which we will provide:
+“CONTRIBUTORS.md” followed by clicking the button labeled “Create
+file”.</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1395,13 +1903,23 @@ any links that you are not going to use.
 <h3 class="callout-title">All caps filenames<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
-<p>In software projects it is customary to name certain files with information about a project in all caps. One example we already encountered is the README file. Others are the file containing the license (<code>LICENSE</code>), a file about how to contribute (<code>CONTRIBUTING</code>), or how to install the software (<code>INSTALL</code>).</p>
-<p>Sometimes a file extension indicating the format is appended, usually in lower-case letters.</p>
+<p>In software projects it is customary to name certain files with
+information about a project in all caps. One example we already
+encountered is the README file. Others are the file containing the
+license (<code>LICENSE</code>), a file about how to contribute
+(<code>CONTRIBUTING</code>), or how to install the software
+(<code>INSTALL</code>).</p>
+<p>Sometimes a file extension indicating the format is appended, usually
+in lower-case letters.</p>
 </div>
 </div>
 </div>
-<p>We see the result of our action in two ways: A file named “CONTRIBUTORS.md” appeared in the list of files on the left and a tab labeled “CONTRIBUTORS.md” showing an text editor appeared in the space to the right of the list of files.</p>
-<p>We will now add something similar the following lines in the editor:</p>
+<p>We see the result of our action in two ways: A file named
+“CONTRIBUTORS.md” appeared in the list of files on the left and a tab
+labeled “CONTRIBUTORS.md” showing an text editor appeared in the space
+to the right of the list of files.</p>
+<p>We will now add something similar the following lines in the
+editor:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1409,23 +1927,56 @@ any links that you are not going to use.
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conner Learner</span></code></pre>
 </div>
-<p>Then we click the button labeled “Create a commit”. The view to the left of the list of files gets split into to columns. On the left side we see the old version of the file (it did not exist, so nothing is shown) and on the right side we see the new version with additions marked in green. If we had removed anything from the old version those lines would have been marked red on the left side.</p>
-<p>Since everything looks as expected—one new file with called “CONTRIBUTORS.md” with the lines we just typed in—we change the commit message to</p>
+<p>Then we click the button labeled “Create a commit”. The view to the
+left of the list of files gets split into to columns. On the left side
+we see the old version of the file (it did not exist, so nothing is
+shown) and on the right side we see the new version with additions
+marked in green. If we had removed anything from the old version those
+lines would have been marked red on the left side.</p>
+<p>Since everything looks as expected—one new file with called
+“CONTRIBUTORS.md” with the lines we just typed in—we change the commit
+message to</p>
 <pre><code>Add CONTRIBUTORS.md</code></pre>
-<p>We keep “Create a new branch” with the pre-generated name selected. For our purposes we could also leave the checkbox “Start a new merge request” selected, but we want to go through the merge request creation process separately to get familiar with it, in case we want to create one from changes we pushed from a local repository.</p>
-<p>We do create a new branch and do not commit the changes to the branch called “main”, because it is a good habit. We might want to create multiple independent merge requests for one project, which cannot be done from a single branch. And then there is the option to create merge requests within a project, those cannot come from the branch they are supposed to be merged to, so we need another branch anyway.</p>
+<p>We keep “Create a new branch” with the pre-generated name selected.
+For our purposes we could also leave the checkbox “Start a new merge
+request” selected, but we want to go through the merge request creation
+process separately to get familiar with it, in case we want to create
+one from changes we pushed from a local repository.</p>
+<p>We do create a new branch and do not commit the changes to the branch
+called “main”, because it is a good habit. We might want to create
+multiple independent merge requests for one project, which cannot be
+done from a single branch. And then there is the option to create merge
+requests within a project, those cannot come from the branch they are
+supposed to be merged to, so we need another branch anyway.</p>
 <p>Finally, we click the button labeled “Commit”.</p>
 </section><section id="create-a-merge-request"><h2 class="section-heading">Create a Merge Request<a class="anchor" aria-label="anchor" href="#create-a-merge-request"></a>
 </h2>
 <hr class="half-width">
-<p>Having created the commit, we navigate back to the project home page by clicking on the project’s name in the upper left corner.</p>
-<p>We notice that the file that we created is not present in the list of files. This is because GitLab shows the default branch, in our case the branch called “main”, by default. When we click the drop-down field below the description and the sentence starting with “Forked from…”, we get shown a list of all branches, which should be two: “main” and the one generated for our change, something along the lines of “…-patch-12345”. We select the new branch and now the file “CONTRIBUTORS.md” shows up in the list of files.</p>
-<p>To create a merge request, we click on the menu item labeled “Merge requests” in the menu on the left and on the following page on the button labeled “New merge request”.</p>
+<p>Having created the commit, we navigate back to the project home page
+by clicking on the project’s name in the upper left corner.</p>
+<p>We notice that the file that we created is not present in the list of
+files. This is because GitLab shows the default branch, in our case the
+branch called “main”, by default. When we click the drop-down field
+below the description and the sentence starting with “Forked from…”, we
+get shown a list of all branches, which should be two: “main” and the
+one generated for our change, something along the lines of
+“…-patch-12345”. We select the new branch and now the file
+“CONTRIBUTORS.md” shows up in the list of files.</p>
+<p>To create a merge request, we click on the menu item labeled “Merge
+requests” in the menu on the left and on the following page on the
+button labeled “New merge request”.</p>
 <p>This gets us to the following dialog:</p>
-<figure><img src="../fig/merge-request.png" alt="New merge request page. On the left, a menu leading to other project pages. ON the right, taking up the major part of the width, the new merge request page: Below the page title, there are two UI elements side-by-side. The one on the left, titled ”Source branch”, has two drop-down fields, one to select the project, the other to select the branch. The former reads “fiveop/research-diary-2”, the latter “Select source branch”. The one on the right, titled “Target branch”, has the same two drop-down fields. In this case the former reads “somenovice/research-diary” and the latter ”main”. Belowthe two drop-down fields there is a box with information about the last commit on the “main” branch: message, author, relative author date and short identifier." class="figure mx-auto d-block"><figcaption>New merge request page</figcaption></figure><p>On the left side, we select the branch generated for our change. Once done, a box with details of the last commit on that branch appears below the drop-down fields on the left.</p>
-<p>We click the button labeled “Compare branches and continue”. On the following page, we can see that a merge request has it’s own title and description. They are prefilled with the newest commit message of the source branch. To connect this merge request with the issue we filed, we write</p>
+<figure><img src="../fig/merge-request.png" alt="New merge request page. On the left, a menu leading to other project pages. ON the right, taking up the major part of the width, the new merge request page: Below the page title, there are two UI elements side-by-side. The one on the left, titled ”Source branch”, has two drop-down fields, one to select the project, the other to select the branch. The former reads “fiveop/research-diary-2”, the latter “Select source branch”. The one on the right, titled “Target branch”, has the same two drop-down fields. In this case the former reads “somenovice/research-diary” and the latter ”main”. Belowthe two drop-down fields there is a box with information about the last commit on the “main” branch: message, author, relative author date and short identifier." class="figure mx-auto d-block"><figcaption>New merge request page</figcaption></figure><p>On the left side, we select the branch generated for our change. Once
+done, a box with details of the last commit on that branch appears below
+the drop-down fields on the left.</p>
+<p>We click the button labeled “Compare branches and continue”. On the
+following page, we can see that a merge request has it’s own title and
+description. They are prefilled with the newest commit message of the
+source branch. To connect this merge request with the issue we filed, we
+write</p>
 <pre><code><span><span class="va">Resolves</span> <span class="co">#1</span></span></code></pre>
-<p>in the merge request description. Everything else, we leave with its default value or in its default state, including the two checkboxes.</p>
+<p>in the merge request description. Everything else, we leave with its
+default value or in its default state, including the two checkboxes.</p>
 <div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1434,18 +1985,53 @@ any links that you are not going to use.
 <h3 class="callout-title">Closing Issues Automatically<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
-<p>Whenever a merge request is merged to the default branch of a project and its description or the description of a commit it contains the phrase <code>&lt;keyword&gt; #&lt;number&gt;</code> for one of the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#default-closing-pattern" class="external-link">keywords mentioned in GitLab’s documentation</a>, then the issue with number <code>&lt;number&gt;</code> is closed automatically.</p>
-<p>This can save a few clicks and ensures that closing the issue will not be forgotten.</p>
+<p>Whenever a merge request is merged to the default branch of a project
+and its description or the description of a commit it contains the
+phrase <code>&lt;keyword&gt; #&lt;number&gt;</code> for one of the <a href="https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#default-closing-pattern" class="external-link">keywords
+mentioned in GitLab’s documentation</a>, then the issue with number
+<code>&lt;number&gt;</code> is closed automatically.</p>
+<p>This can save a few clicks and ensures that closing the issue will
+not be forgotten.</p>
 </div>
 </div>
 </div>
-<p>The first, labeled ”Delete source branch when merge request is accepted”, is selected and thus let’s GitLab clean up after us; we no longer need the branch once it has been merged.</p>
-<p>The second, labeled “Squash commits when merge request is accepted”, is not selected. If it were, GitLab would merge all commits of the merge request, that is all commits on the source branch since it was branched off the target branch, into one commit before merging. In our case, there is only one commit, so it would serve no purpose.</p>
-<p>We click the button labeled “Create merge request”. This leads us to the page for the created merge request. It looks similar to the page for an issue. The main difference are the tabs, their headers being located just below the title: “Overview” (the one that is shown initially), “Commits”, and “Changes”.</p>
-<p>Clicking on the tab header labeled “Commits”, we see a list of all the commits of this merge request, which in our case is the commit we created.</p>
-<p>Clicking on the tab header labeled “Changes”, we see a so called diff for each of the changed files. In our case a file was added, so all the lines in the file are new, indicated by the plus sign at the beginning of each line.</p>
-<p>Back on the “Overview” tab, below the description there is a technical description of the merge request, starting with “Request to merge…”, followed by a button to “Approve“ the merge request. By default this is optional, a project can be configured to require approval by a certain group of members for a merge request to be possible. Then there is a grayed-out button labeled “Merge”, followed by text that we need to ask someone with write access to click it. We will do exactly that in a moment. Note also, that the box around it mentions that the merge request mentions the issue. This can be easily overlooked, if the mention happens in a commit message of the merge request.</p>
-<p>Finally at the bottom, we see that a merge request can be commented on, just like an issue. But for merge request there is more. Navigating to the “Changes” tab and hovering the mouse over a line number, we see a speech bubble button appear at the start of the line. When we press it, a text field for a comment appears. We can use that to comment on individual lines. This feature allows to separate discussions of different changes of a merge request.</p>
+<p>The first, labeled ”Delete source branch when merge request is
+accepted”, is selected and thus let’s GitLab clean up after us; we no
+longer need the branch once it has been merged.</p>
+<p>The second, labeled “Squash commits when merge request is accepted”,
+is not selected. If it were, GitLab would merge all commits of the merge
+request, that is all commits on the source branch since it was branched
+off the target branch, into one commit before merging. In our case,
+there is only one commit, so it would serve no purpose.</p>
+<p>We click the button labeled “Create merge request”. This leads us to
+the page for the created merge request. It looks similar to the page for
+an issue. The main difference are the tabs, their headers being located
+just below the title: “Overview” (the one that is shown initially),
+“Commits”, and “Changes”.</p>
+<p>Clicking on the tab header labeled “Commits”, we see a list of all
+the commits of this merge request, which in our case is the commit we
+created.</p>
+<p>Clicking on the tab header labeled “Changes”, we see a so called diff
+for each of the changed files. In our case a file was added, so all the
+lines in the file are new, indicated by the plus sign at the beginning
+of each line.</p>
+<p>Back on the “Overview” tab, below the description there is a
+technical description of the merge request, starting with “Request to
+merge…”, followed by a button to “Approve“ the merge request. By default
+this is optional, a project can be configured to require approval by a
+certain group of members for a merge request to be possible. Then there
+is a grayed-out button labeled “Merge”, followed by text that we need to
+ask someone with write access to click it. We will do exactly that in a
+moment. Note also, that the box around it mentions that the merge
+request mentions the issue. This can be easily overlooked, if the
+mention happens in a commit message of the merge request.</p>
+<p>Finally at the bottom, we see that a merge request can be commented
+on, just like an issue. But for merge request there is more. Navigating
+to the “Changes” tab and hovering the mouse over a line number, we see a
+speech bubble button appear at the start of the line. When we press it,
+a text field for a comment appears. We can use that to comment on
+individual lines. This feature allows to separate discussions of
+different changes of a merge request.</p>
 <div id="callout4" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1454,20 +2040,46 @@ any links that you are not going to use.
 <h3 class="callout-title">Code Review<a class="anchor" aria-label="anchor" href="#callout4"></a>
 </h3>
 <div class="callout-content">
-<p>Being able to comment on individual lines is a useful feature for a practice called code review. Code review entails that a peer of the author of some changes reviews those, before they are merged. This practice is the origin of the merge request feature, but it lends itself well to reviewing text based changes other than to code.</p>
+<p>Being able to comment on individual lines is a useful feature for a
+practice called code review. Code review entails that a peer of the
+author of some changes reviews those, before they are merged. This
+practice is the origin of the merge request feature, but it lends itself
+well to reviewing text based changes other than to code.</p>
 </div>
 </div>
 </div>
 </section><section id="accept-a-merge-request"><h2 class="section-heading">Accept a Merge Request<a class="anchor" aria-label="anchor" href="#accept-a-merge-request"></a>
 </h2>
 <hr class="half-width">
-<p>While we were creating the merge request for our co-learner’s repository, they did the same for ours. Now it is time to review and accept the change.</p>
-<p>Navigate to the issue your co-learner created in your repository. At the very bottom of the issue’s history you will see en entry of the form “Co-learner <span class="citation">@colearner</span> mentioned in merge request !1 2 minutes ago”. The merge request reference, ”!1”, is a link. We follow the link by clicking on it.</p>
-<p>This leads us to the merge request page, very similar to the page of our own merge request. The difference, that we are interested in, is the state of the button labeled “Merge”. The button is no longer disabled. Under the button is a bar that informs us that one commit and one merge commit will be added.</p>
-<p>The merge commit serves as a common descendant of the heads of your main branch and the branch on which your co-learner based their merge request. We can change the commit message of the merge commit, by clicking on the bar informing us about the number of added commits, but we are happy with its contents.</p>
-<p>We click on the button labeled “Merge”. After a few seconds the box that allowed us to merge is replaced by a box that informs us about the successful merge.</p>
-<p>In particular, there still is a sentence informing us that the merge request mentions an issue. Our intention was for that issue to be closed, so we click on the issue reference, for example “#1”, to check.</p>
-<p>On the issue page, we can see that indeed the issue was closed. The last entry in the issue’s history reads similar to “Co-learner closed via commit abcdef12 just now”, informing us why the issue was closed.</p>
+<p>While we were creating the merge request for our co-learner’s
+repository, they did the same for ours. Now it is time to review and
+accept the change.</p>
+<p>Navigate to the issue your co-learner created in your repository. At
+the very bottom of the issue’s history you will see en entry of the form
+“Co-learner <span class="citation">@colearner</span> mentioned in merge
+request !1 2 minutes ago”. The merge request reference, ”!1”, is a link.
+We follow the link by clicking on it.</p>
+<p>This leads us to the merge request page, very similar to the page of
+our own merge request. The difference, that we are interested in, is the
+state of the button labeled “Merge”. The button is no longer disabled.
+Under the button is a bar that informs us that one commit and one merge
+commit will be added.</p>
+<p>The merge commit serves as a common descendant of the heads of your
+main branch and the branch on which your co-learner based their merge
+request. We can change the commit message of the merge commit, by
+clicking on the bar informing us about the number of added commits, but
+we are happy with its contents.</p>
+<p>We click on the button labeled “Merge”. After a few seconds the box
+that allowed us to merge is replaced by a box that informs us about the
+successful merge.</p>
+<p>In particular, there still is a sentence informing us that the merge
+request mentions an issue. Our intention was for that issue to be
+closed, so we click on the issue reference, for example “#1”, to
+check.</p>
+<p>On the issue page, we can see that indeed the issue was closed. The
+last entry in the issue’s history reads similar to “Co-learner closed
+via commit abcdef12 just now”, informing us why the issue was
+closed.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1477,9 +2089,12 @@ any links that you are not going to use.
 </h3>
 <div class="callout-content">
 <ul>
-<li>You can create a project with a copy of another project’s repository by forking it.</li>
-<li>You can suggest changes to a project that you have no write access to through a merge request.</li>
-<li>You can close issues by use of certain keywords in merge request descriptions or commit messages.</li>
+<li>You can create a project with a copy of another project’s repository
+by forking it.</li>
+<li>You can suggest changes to a project that you have no write access
+to through a merge request.</li>
+<li>You can close issues by use of certain keywords in merge request
+descriptions or commit messages.</li>
 </ul>
 </div>
 </div>
@@ -1515,46 +2130,89 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Setup a process to run automatically when a commit is pushed to a repository.</li>
-<li>Safely use secrets in a process automatically triggered by GitLab.</li>
+<li>Setup a process to run automatically when a commit is pushed to a
+repository.</li>
+<li>Safely use secrets in a process automatically triggered by
+GitLab.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>We have setup our project, collaborated with our colleagues; we fill our research diary every day. Now it is time to make use of it.</p>
-<p>We think about using part of our daily commute by train to review what happened in the past. We always have our e-reader with us, so ideally we would like to have an version of our diary in EPUB format.</p>
-<p>Just as much based in reality as the rest of this lesson’s story, we know how to do that, but we do not want to do it by hand. Instead, we are going to let GitLab automatically build us an EPUB file, whenever our repository changes. To achieve it, we will us the feature that GitLab files under “CI/CD”, which stands for Continuous Integration/Continuous Deployment.</p>
+<p>We have setup our project, collaborated with our colleagues; we fill
+our research diary every day. Now it is time to make use of it.</p>
+<p>We think about using part of our daily commute by train to review
+what happened in the past. We always have our e-reader with us, so
+ideally we would like to have an version of our diary in EPUB
+format.</p>
+<p>Just as much based in reality as the rest of this lesson’s story, we
+know how to do that, but we do not want to do it by hand. Instead, we
+are going to let GitLab automatically build us an EPUB file, whenever
+our repository changes. To achieve it, we will us the feature that
+GitLab files under “CI/CD”, which stands for Continuous
+Integration/Continuous Deployment.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="continuous-integrationcontinuous-deployment" class="callout-inner">
-<h3 class="callout-title">Continuous Integration/Continuous Deployment<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<h3 class="callout-title">Continuous Integration/Continuous
+Deployment<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>The terms continuous integration (CI) and continuous deployment (CD) come from the fields of software engineering and software operation.</p>
-<p>A software project uses CI, if it has setup a process that automatically runs some (or all) tests for a software project, whenever changes are committed or even just proposed (for example through a merge request) to the main branch of a repository. In particular when already done for proposed changes this can help prevent bugs to reach the code base, while freeing the developer of thinking of and running all the tests themselves.</p>
-<p>CD is a process that updates the software on the production machines (deploys) as soon as a new change reaches the code base, generally after having passed the CI process.</p>
-<p>Both processes can be implemented by running scripts, called jobs, triggered either by changes to the code base or by the successful completion of other jobs, which lead to the CI/CD feature of GitLab.</p>
+<p>The terms continuous integration (CI) and continuous deployment (CD)
+come from the fields of software engineering and software operation.</p>
+<p>A software project uses CI, if it has setup a process that
+automatically runs some (or all) tests for a software project, whenever
+changes are committed or even just proposed (for example through a merge
+request) to the main branch of a repository. In particular when already
+done for proposed changes this can help prevent bugs to reach the code
+base, while freeing the developer of thinking of and running all the
+tests themselves.</p>
+<p>CD is a process that updates the software on the production machines
+(deploys) as soon as a new change reaches the code base, generally after
+having passed the CI process.</p>
+<p>Both processes can be implemented by running scripts, called jobs,
+triggered either by changes to the code base or by the successful
+completion of other jobs, which lead to the CI/CD feature of GitLab.</p>
 </div>
 </div>
 </div>
 <section id="example-configuration"><h2 class="section-heading">Example Configuration<a class="anchor" aria-label="anchor" href="#example-configuration"></a>
 </h2>
 <hr class="half-width">
-<p>To configure our automatic process, we navigate to our project page and click the menu item labeled “CI/CD” in the main menu on the left.</p>
-<p>The page that this leads to invites us to “use a sample <code>.gitlab-ci.yml</code> template file to explore how CI/CD works.” The GitLab CI is configured by providing a file called <code>.gitlab-ci.yml</code> in the root directory of a project’s repository. Even though we want to learn how CI works in GitLab, we do not follow the invitation, because the example is quite elaborate and targets software developers specifically. Instead, we will use the provided template for Bash.</p>
-<p>We click on the button labeled “Use template” of the entry for Bash in the list at the bottom of the page.</p>
-<p>This leads us to an editor for the <code>.gitlab-ci.yml</code> file that is prefilled from the selected template. The file is expected to be written in the <a href="https://yaml.org/" class="external-link">YAML</a> file format, hence the file extension <code>.yml</code>. We will go through the example line by line. Afterwards we will adapt it to our needs.</p>
-<p>The first few lines, starting with the symbol <code>#</code>, are comments notifying us of where to find further information. The last of these lines is the exception, which is a comment on the first functional line:</p>
+<p>To configure our automatic process, we navigate to our project page
+and click the menu item labeled “CI/CD” in the main menu on the
+left.</p>
+<p>The page that this leads to invites us to “use a sample
+<code>.gitlab-ci.yml</code> template file to explore how CI/CD works.”
+The GitLab CI is configured by providing a file called
+<code>.gitlab-ci.yml</code> in the root directory of a project’s
+repository. Even though we want to learn how CI works in GitLab, we do
+not follow the invitation, because the example is quite elaborate and
+targets software developers specifically. Instead, we will use the
+provided template for Bash.</p>
+<p>We click on the button labeled “Use template” of the entry for Bash
+in the list at the bottom of the page.</p>
+<p>This leads us to an editor for the <code>.gitlab-ci.yml</code> file
+that is prefilled from the selected template. The file is expected to be
+written in the <a href="https://yaml.org/" class="external-link">YAML</a> file format, hence
+the file extension <code>.yml</code>. We will go through the example
+line by line. Afterwards we will adapt it to our needs.</p>
+<p>The first few lines, starting with the symbol <code>#</code>, are
+comments notifying us of where to find further information. The last of
+these lines is the exception, which is a comment on the first functional
+line:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> busybox:latest</span></span></code></pre>
 </div>
-<p>This line states that the scripts that are provided later on should be executed in Docker containers build from the stated Docker image. Busybox is a very small Linux distribution, reduced to the bare minimum, and it provides a shell.</p>
+<p>This line states that the scripts that are provided later on should
+be executed in Docker containers build from the stated Docker image.
+Busybox is a very small Linux distribution, reduced to the bare minimum,
+and it provides a shell.</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1567,17 +2225,33 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<p>Now follow to blocks starting with <code>before_script:</code> and <code>after_script:</code>. We will ignore those.</p>
-<p>The remaining four blocks, <code>build1:</code>, <code>test1:</code>, <code>test2:</code>, and <code>deploy1:</code>, each define a so called job. A job defines a script and represents one non-divisible unit of a CI/CD process. Together the jobs defined in a project’s <code>.gitlab-ci.yml</code> file form a so called pipeline.</p>
-<p>By default a pipeline has three stages, called <code>build</code>, <code>test</code>, and <code>deploy</code>, and their order is important. The terminology comes from software development again. A pipeline is executed by running all jobs of the first stage and if they succeed to continue onto the next stage, continuing until a job fails or all jobs of the last stage succeeded.</p>
-<p>The four jobs in the example are named similar to the stages they are assigned to. The assignment is done through the keyword <code>stage:</code> that can always be found in the second line of a job’s definition.</p>
-<p>The lines following the keyword <code>script:</code> in each section, define the script that will be executed as part of the respective job. In this example, they are all <code>echo</code> statements.</p>
+<p>Now follow to blocks starting with <code>before_script:</code> and
+<code>after_script:</code>. We will ignore those.</p>
+<p>The remaining four blocks, <code>build1:</code>, <code>test1:</code>,
+<code>test2:</code>, and <code>deploy1:</code>, each define a so called
+job. A job defines a script and represents one non-divisible unit of a
+CI/CD process. Together the jobs defined in a project’s
+<code>.gitlab-ci.yml</code> file form a so called pipeline.</p>
+<p>By default a pipeline has three stages, called <code>build</code>,
+<code>test</code>, and <code>deploy</code>, and their order is
+important. The terminology comes from software development again. A
+pipeline is executed by running all jobs of the first stage and if they
+succeed to continue onto the next stage, continuing until a job fails or
+all jobs of the last stage succeeded.</p>
+<p>The four jobs in the example are named similar to the stages they are
+assigned to. The assignment is done through the keyword
+<code>stage:</code> that can always be found in the second line of a
+job’s definition.</p>
+<p>The lines following the keyword <code>script:</code> in each section,
+define the script that will be executed as part of the respective job.
+In this example, they are all <code>echo</code> statements.</p>
 </section><section id="our-own-configuration"><h2 class="section-heading">Our Own Configuration<a class="anchor" aria-label="anchor" href="#our-own-configuration"></a>
 </h2>
 <hr class="half-width">
 <p>We will now adapt the script to our requirements.</p>
 <p>First we delete everything.</p>
-<p>Then we define our own stages, because we do not develop software and want to have descriptive names for our use case:</p>
+<p>Then we define our own stages, because we do not develop software and
+want to have descriptive names for our use case:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1585,8 +2259,11 @@ any links that you are not going to use.
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> check</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> create</span></span></code></pre>
 </div>
-<p>In the first stage, we will do some testing, in the second we will create an EPUB format version of our research diary.</p>
-<p>We call the first job <code>check-for-mds</code> and in it make sure, that at least one Markdown file exists, because otherwise someone must have accidentally removed them all.</p>
+<p>In the first stage, we will do some testing, in the second we will
+create an EPUB format version of our research diary.</p>
+<p>We call the first job <code>check-for-mds</code> and in it make sure,
+that at least one Markdown file exists, because otherwise someone must
+have accidentally removed them all.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1596,8 +2273,14 @@ any links that you are not going to use.
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> compgen -G '*.md'</span></span></code></pre>
 </div>
-<p>We use the docker image <code>bash</code>, because Bash provides the <code>compgen</code> command that allows us to check for the existence of files. We also state that the job belongs to the stage <code>check</code>. Finally, we provide the script. It tests for the existence of any files with names ending in <code>.md</code>.</p>
-<p>Whenever the job <code>check-for-mds</code> successfully completes, we want to create the EPUB format version of our research diary. We define a second job and call it <code>create-epub</code>.</p>
+<p>We use the docker image <code>bash</code>, because Bash provides the
+<code>compgen</code> command that allows us to check for the existence
+of files. We also state that the job belongs to the stage
+<code>check</code>. Finally, we provide the script. It tests for the
+existence of any files with names ending in <code>.md</code>.</p>
+<p>Whenever the job <code>check-for-mds</code> successfully completes,
+we want to create the EPUB format version of our research diary. We
+define a second job and call it <code>create-epub</code>.</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1612,7 +2295,14 @@ any links that you are not going to use.
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> diary.epub</span></span></code></pre>
 </div>
-<p>After giving the name of the job, we again provide an Docker image in which the job should run. Since we want to use pandoc to convert our Markdown files into an EPUB file, we use the official pandoc Docker image. The next line, with the keyword <code>entrypoint</code> is necessary, because the pandoc Docker image is configured to directly run pandoc, when started in a container (pandoc is configured as its entrypoint). However, GitLab CI expects to run scripts in the Docker container, thus expects the Docker images to start a shell.</p>
+<p>After giving the name of the job, we again provide an Docker image in
+which the job should run. Since we want to use pandoc to convert our
+Markdown files into an EPUB file, we use the official pandoc Docker
+image. The next line, with the keyword <code>entrypoint</code> is
+necessary, because the pandoc Docker image is configured to directly run
+pandoc, when started in a container (pandoc is configured as its
+entrypoint). However, GitLab CI expects to run scripts in the Docker
+container, thus expects the Docker images to start a shell.</p>
 <div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1621,15 +2311,29 @@ any links that you are not going to use.
 <h3 class="callout-title">Pandoc<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
-<p>Pandoc converts text documents from format to another, for example from Markdown to EPUB. It supports many formats for the source documents and even more for the target document.</p>
-<p>The <a href="https://pandoc.org/" class="external-link">project webpage</a> provides a complete list (in text and graphical form).</p>
+<p>Pandoc converts text documents from format to another, for example
+from Markdown to EPUB. It supports many formats for the source documents
+and even more for the target document.</p>
+<p>The <a href="https://pandoc.org/" class="external-link">project webpage</a> provides a
+complete list (in text and graphical form).</p>
 </div>
 </div>
 </div>
-<p>Next, we specify the stage, followed by the script. It runs pandoc on all files ending in <code>.md</code> in the current directory and instructs it to output a file <code>diary.epub</code>. Pandoc deduces from the file extension that it should be in EPUB format.</p>
-<p>The final three lines, starting with the keyword <code>artifacts</code>, specify that GitLab CI should save the file <code>diary.epub</code> from the Docker container the job runs in and provide it for download on its web interface.</p>
-<p>This completes our GitLab CI configuration.There are a lot more configuration options, for example to have a process run only for commits to certain branches, that are documented in <a href="https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html" class="external-link">GitLab’s Handbook</a></p>
-<p>We change the commit message to ”Configure CI“, leave the branch as it is (<code>main</code>), and click the button labeled “Commit changes”.</p>
+<p>Next, we specify the stage, followed by the script. It runs pandoc on
+all files ending in <code>.md</code> in the current directory and
+instructs it to output a file <code>diary.epub</code>. Pandoc deduces
+from the file extension that it should be in EPUB format.</p>
+<p>The final three lines, starting with the keyword
+<code>artifacts</code>, specify that GitLab CI should save the file
+<code>diary.epub</code> from the Docker container the job runs in and
+provide it for download on its web interface.</p>
+<p>This completes our GitLab CI configuration.There are a lot more
+configuration options, for example to have a process run only for
+commits to certain branches, that are documented in <a href="https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html" class="external-link">GitLab’s
+Handbook</a></p>
+<p>We change the commit message to ”Configure CI”, leave the branch as
+it is (<code>main</code>), and click the button labeled “Commit
+changes”.</p>
 <div id="callout4" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1638,20 +2342,44 @@ any links that you are not going to use.
 <h3 class="callout-title">Shared Runners<a class="anchor" aria-label="anchor" href="#callout4"></a>
 </h3>
 <div class="callout-content">
-<p>The software that runs CI jobs is called a runner. GitLab provides so called shared runners on its platform for free (within certain usage limits). It does, however, require the user to provide credit card information. This is intended to prevent abuse of the free resource.</p>
-<p>If no such information has been provided running the CI will always fail.</p>
-<p>Alternatively, the organizers of a course based on this material could setup their own runner and help learners to configure their projects to use that runner.</p>
+<p>The software that runs CI jobs is called a runner. GitLab provides so
+called shared runners on its platform for free (within certain usage
+limits). It does, however, require the user to provide credit card
+information. This is intended to prevent abuse of the free resource.</p>
+<p>If no such information has been provided running the CI will always
+fail.</p>
+<p>Alternatively, the organizers of a course based on this material
+could setup their own runner and help learners to configure their
+projects to use that runner.</p>
 <p>On other instances the situation can be different.</p>
 </div>
 </div>
 </div>
-<p>Clicking the button does not cause a change in page. Instead, we are informed at the top of the page about the status of the pipeline run that was initiated by committing the <code>.gitlab-ci.yml</code> to the repository.</p>
-<p>To get a better overview, we select “CI/CD” from the main menu on the right side. This brings us to the list of pipeline runs. We should see exactly one entry in the list, as we have just configured the CI.</p>
-<p>A blue, red, or green box in the “Status” column informs on the left informs us about the state of the pipeline. Blue indicates a running pipeline, red a failed pipeline, and green a pipeline that successfully completed. Below the status box we have the runtime of the pipeline and below that information about when it was started.</p>
-<p>In the ”Pipeline” column, we see the first line of the commit that triggered the pipeline run, the number of the pipeline run, for example <code>#11071</code>, the branch the commit is part of as well as the short identifier of the commit. Most of these serve as links to pages for their respective entities.</p>
-<p>The ”Triggerer” column tells us who caused the pipeline run. In our case that’s the author of the commit.</p>
-<p>The ”Stages” column visualizes the stages and their state. In addition to the colors discussed above, there are stages colored in grey. They are waiting for their predecessor stages (or need to be manually triggered, if configured that way).</p>
-<p>We wait until our pipeline ran through. It should complete without error.</p>
+<p>Clicking the button does not cause a change in page. Instead, we are
+informed at the top of the page about the status of the pipeline run
+that was initiated by committing the <code>.gitlab-ci.yml</code> to the
+repository.</p>
+<p>To get a better overview, we select “CI/CD” from the main menu on the
+right side. This brings us to the list of pipeline runs. We should see
+exactly one entry in the list, as we have just configured the CI.</p>
+<p>A blue, red, or green box in the “Status” column informs on the left
+informs us about the state of the pipeline. Blue indicates a running
+pipeline, red a failed pipeline, and green a pipeline that successfully
+completed. Below the status box we have the runtime of the pipeline and
+below that information about when it was started.</p>
+<p>In the ”Pipeline” column, we see the first line of the commit that
+triggered the pipeline run, the number of the pipeline run, for example
+<code>#11071</code>, the branch the commit is part of as well as the
+short identifier of the commit. Most of these serve as links to pages
+for their respective entities.</p>
+<p>The ”Triggerer” column tells us who caused the pipeline run. In our
+case that’s the author of the commit.</p>
+<p>The ”Stages” column visualizes the stages and their state. In
+addition to the colors discussed above, there are stages colored in
+grey. They are waiting for their predecessor stages (or need to be
+manually triggered, if configured that way).</p>
+<p>We wait until our pipeline ran through. It should complete without
+error.</p>
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
@@ -1660,16 +2388,26 @@ any links that you are not going to use.
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
-<p>The behavior of the CI is the most fragile step of this course. There are some outside influences that can cause the pipeline to fail. This needs to be handled on a case by case basis.</p>
+<p>The behavior of the CI is the most fragile step of this course. There
+are some outside influences that can cause the pipeline to fail. This
+needs to be handled on a case by case basis.</p>
 </div>
 </div>
 </div>
 </div>
-<p>We click on the button labeled by the three dots on the right of the entry. In the menu that opens, we see that it provides a link to download artifacts of the pipeline. We click on the link labeled “create-epub:archive”, which causes our browser to download a file called <code>artifacts.zip</code>.</p>
-<p>In that archive, we find the file <code>diary.epub</code> that was build by our second job, <code>create-epub</code>.</p>
-<p>If you have an ebook viewer, you can verify that it contains the contents of all Markdown our files. (We ignore the fact, that the order might not make sense at all. For that we would need to improve the script that builds the EPUB file.)</p>
+<p>We click on the button labeled by the three dots on the right of the
+entry. In the menu that opens, we see that it provides a link to
+download artifacts of the pipeline. We click on the link labeled
+“create-epub:archive”, which causes our browser to download a file
+called <code>artifacts.zip</code>.</p>
+<p>In that archive, we find the file <code>diary.epub</code> that was
+build by our second job, <code>create-epub</code>.</p>
+<p>If you have an ebook viewer, you can verify that it contains the
+contents of all Markdown our files. (We ignore the fact, that the order
+might not make sense at all. For that we would need to improve the
+script that builds the EPUB file.)</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
@@ -1723,7 +2461,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
-  "dateCreated": "2022-10-11",
+  "dateCreated": "2022-11-08",
   "dateModified": "2022-11-08",
   "datePublished": "2022-11-08"
 }

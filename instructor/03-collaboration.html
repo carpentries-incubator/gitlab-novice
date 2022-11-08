@@ -306,15 +306,43 @@
 </div>
 <section id="adding-project-members"><h2 class="section-heading">Adding Project Members<a class="anchor" aria-label="anchor" href="#adding-project-members"></a>
 </h2>
-<hr class="half-width"><p>So far, each of you has created a GitLab project that no one but you can contribute to; depending on the visibility setting, no one but you might be able to even see it.</p>
-<p>Git and GitLab can be and is used for one-person projects. But we want our colleagues to contribute to our research diary, when they keep tabs on our experiments for us on the weekends. To achieve this, we will grant others access to our GitLab project.</p>
-<p>Using the menu on the left side of the project homepage (or nearly any other project page), we navigate to the project members page hovering over or clicking on “Project Information” and then clicking on “Members” in the submenu. The project member page should look similar to the following screenshot:</p>
-<figure><img src="../fig/initial-members.png" alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, when access was granted, the member’s maximum role and the membership expiration date. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member, 2 weeks ago by himself, Maintainer, and no Expiration date." class="figure mx-auto d-block"><figcaption>Project members page</figcaption></figure><p>On the page we can see the page title, “Project members”, three buttons to the left of the title, and a filterable table of members, currently only listing ourselves.</p>
-<p>The table shows our full name and account name, why we are a member of this project, when we got access—at the moment we created the project—what our maximum role is—more on that in a bit—and a disabled membership expiration date widget.</p>
-<p>For practice we will all add an instructor to our project and remove them again right away. Click the button labeled “Invite members”, type in the username your instructors provided you with into the search field, make sure that “Guest” is selected as a role, and click the button labeled “Invite”.</p>
-<p>After reloading the page, your instructor should now be listed next to you in the table. Unlike in your row, you can change the role and the expiration date of this new entry. There also is a new, red button in this row labeled “Remove member”.</p>
-<p>The role determines what the member is allowed to do in the project. A maintainer has full rights, a guest almost none. GitLab’s handbook gives a detailed <a href="https://docs.gitlab.com/ee/user/permissions.html" class="external-link">overview</a> of the different roles’ permissions.</p>
-<p>Now, we are going to remove the instructor from your project’s members again. Click the button labeled “Remove member” in the instructor’s row then click the button of the same name in the popup dialog. The page reloads itself and the entry vanishes from the table.</p>
+<hr class="half-width"><p>So far, each of you has created a GitLab project that no one but you
+can contribute to; depending on the visibility setting, no one but you
+might be able to even see it.</p>
+<p>Git and GitLab can be and is used for one-person projects. But we
+want our colleagues to contribute to our research diary, when they keep
+tabs on our experiments for us on the weekends. To achieve this, we will
+grant others access to our GitLab project.</p>
+<p>Using the menu on the left side of the project homepage (or nearly
+any other project page), we navigate to the project members page
+hovering over or clicking on “Project Information” and then clicking on
+“Members” in the submenu. The project member page should look similar to
+the following screenshot:</p>
+<figure><img src="../fig/initial-members.png" alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, when access was granted, the member’s maximum role and the membership expiration date. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member, 2 weeks ago by himself, Maintainer, and no Expiration date." class="figure mx-auto d-block"><figcaption>Project members page</figcaption></figure><p>On the page we can see the page title, “Project members”, three
+buttons to the left of the title, and a filterable table of members,
+currently only listing ourselves.</p>
+<p>The table shows our full name and account name, why we are a member
+of this project, when we got access—at the moment we created the
+project—what our maximum role is—more on that in a bit—and a disabled
+membership expiration date widget.</p>
+<p>For practice we will all add an instructor to our project and remove
+them again right away. Click the button labeled “Invite members”, type
+in the username your instructors provided you with into the search
+field, make sure that “Guest” is selected as a role, and click the
+button labeled “Invite”.</p>
+<p>After reloading the page, your instructor should now be listed next
+to you in the table. Unlike in your row, you can change the role and the
+expiration date of this new entry. There also is a new, red button in
+this row labeled “Remove member”.</p>
+<p>The role determines what the member is allowed to do in the project.
+A maintainer has full rights, a guest almost none. GitLab’s handbook
+gives a detailed <a href="https://docs.gitlab.com/ee/user/permissions.html" class="external-link">overview</a> of
+the different roles’ permissions.</p>
+<p>Now, we are going to remove the instructor from your project’s
+members again. Click the button labeled “Remove member” in the
+instructor’s row then click the button of the same name in the popup
+dialog. The page reloads itself and the entry vanishes from the
+table.</p>
 <div id="discussion1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -323,16 +351,21 @@
 <h3 class="callout-title">Adding Members<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
-<p>Get into pairs and add each other with the role “Developer” to your projects.</p>
-<p>The “Developer” role grants just enough permissions for all the collaborative tasks we will practice in this lesson.</p>
+<p>Get into pairs and add each other with the role “Developer” to your
+projects.</p>
+<p>The “Developer” role grants just enough permissions for all the
+collaborative tasks we will practice in this lesson.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
 </div>
 </section><section id="contribute-changes-to-project-repository"><h2 class="section-heading">Contribute Changes to Project Repository<a class="anchor" aria-label="anchor" href="#contribute-changes-to-project-repository"></a>
 </h2>
-<hr class="half-width"><p>Now, everyone should be the member of one of your co-learners’ projects. We will now add an diary entry for imaginary work that we did on their experiments last weekend.</p>
-<p>First, we clone their repositories into the directory <code>rd-colleague</code>.</p>
+<hr class="half-width"><p>Now, everyone should be the member of one of your co-learners’
+projects. We will now add an diary entry for imaginary work that we did
+on their experiments last weekend.</p>
+<p>First, we clone their repositories into the directory
+<code>rd-colleague</code>.</p>
 <pre><code>$ git clone https://gitlab.com/someothernovice/research-diary.git rd-colleague</code></pre>
 <pre><code>Cloning into 'research-diary'...
 Username for 'https://gitlab.com': somenovice
@@ -343,11 +376,14 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0</code></pre>
 <p>Moving into the directory</p>
 <pre><code>$ cd rd-colleague</code></pre>
-<p>we check its contents. If your colleague did everything we did, it should contain a single file, <code>README.md</code>.</p>
+<p>we check its contents. If your colleague did everything we did, it
+should contain a single file, <code>README.md</code>.</p>
 <pre><code>$ ls</code></pre>
 <pre><code><span><span class="va">README.md</span></span></code></pre>
-<p>Now we are sure that everything is in order with the cloned repository and we can add our lab entry.</p>
-<p>First we create a file, named <code>2022-03-13.md</code> after the date on which we did the work, listing the work we did:</p>
+<p>Now we are sure that everything is in order with the cloned
+repository and we can add our lab entry.</p>
+<p>First we create a file, named <code>2022-03-13.md</code> after the
+date on which we did the work, listing the work we did:</p>
 <pre><code>* Injected transformational fluid into moss sample.
 * Moss turned into several butterflys. SUCCESS!</code></pre>
 <p>Then we add the file as part of a new commit to the repository:</p>
@@ -364,7 +400,10 @@ $ git commit -m "Record work on experiment A-13"</code></pre>
 <h3 class="callout-title">Markdown Lists<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
-<p>Lists can be represented in Markdown by starting their items with a <code>*</code> character followed by a space. If an list item wraps over multiple lines, lines following the first are started with sufficient spaces to align the lines text with the first line’s text.</p>
+<p>Lists can be represented in Markdown by starting their items with a
+<code>*</code> character followed by a space. If an list item wraps over
+multiple lines, lines following the first are started with sufficient
+spaces to align the lines text with the first line’s text.</p>
 <p>For example:</p>
 <pre><code>* First item
 * Second item with enough text to make us wrap to a second
@@ -391,7 +430,10 @@ Writing objects: 100% (3/3), 388 bytes | 388.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://gitlab.com/somenovice/research-diary.git
    2dd2c21..4eac24c  main -&gt; main</code></pre>
-<p>We have now recorded in pairs lab work we carried out for a colleague during the last weekend. Curious what our colleagues did for us, we navigate back to the directory of our own repository in the shell, for example:</p>
+<p>We have now recorded in pairs lab work we carried out for a colleague
+during the last weekend. Curious what our colleagues did for us, we
+navigate back to the directory of our own repository in the shell, for
+example:</p>
 <pre><code>$ cd ../research-diary</code></pre>
 <p>There, we pull the changes that our colleagues previously pushed.</p>
 <pre><code>$ git pull</code></pre>
@@ -402,11 +444,14 @@ Fast-forward
  2022-03-13.md | 2 ++
  1 file changed, 2 insertions(+)
  create mode 100644 2022-03-13.md</code></pre>
-<p>From the output’s last line, we can already see that a single file, <code>2022-03-13.md</code> was added. Letting the shell write out the files contents shows us, what our colleague did:</p>
+<p>From the output’s last line, we can already see that a single file,
+<code>2022-03-13.md</code> was added. Letting the shell write out the
+files contents shows us, what our colleague did:</p>
 <pre><code>$ cat 2022-03-13.md</code></pre>
 <pre><code>* Injected transformational fluid into moss sample.
 * Moss turned into several butterflys. SUCCESS!</code></pre>
-<p>We successfully collaborated through GitLab on a project of text files.</p>
+<p>We successfully collaborated through GitLab on a project of text
+files.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -415,10 +460,14 @@ Fast-forward
 <h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
-<ul><li>Adding others as members allows them to directly contribute to your projects</li>
-<li>Members with sufficient rights can independently contribute to repositories</li>
-<li>You update your local repositories relative to the GitLab repository with the <code>git pull</code> command</li>
-<li>You send changes committed in your local repository to the GitLab repository with the <code>git push</code> command.</li>
+<ul><li>Adding others as members allows them to directly contribute to your
+projects</li>
+<li>Members with sufficient rights can independently contribute to
+repositories</li>
+<li>You update your local repositories relative to the GitLab repository
+with the <code>git pull</code> command</li>
+<li>You send changes committed in your local repository to the GitLab
+repository with the <code>git push</code> command.</li>
 </ul></div>
 </div>
 </div>
@@ -479,7 +528,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/03-collaboration.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/03-collaboration.html",
-  "dateCreated": "2022-10-11",
+  "dateCreated": "2022-11-08",
   "dateModified": "2022-04-27",
   "datePublished": "2022-11-08"
 }

@@ -288,7 +288,8 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>How can I organize the projects of my (research) group and my collaborations?</li>
+<ul><li>How can I organize the projects of my (research) group and my
+collaborations?</li>
 </ul></div>
 </div>
 </div>
@@ -299,48 +300,94 @@
 <ul><li>Create a group.</li>
 <li>Move a project.</li>
 <li>Add a member to a group.</li>
-<li>Explain how the members of a group relate to its subgroups and projects.</li>
+<li>Explain how the members of a group relate to its subgroups and
+projects.</li>
 <li>Delete a group.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<p>In the first episode, we already got to know groups; GitLab’s way to organize projects. A group might hold a projects of a research group or those of a research project with contributors from multiple institutions. Together with members and their permissions they can be used to manage access to multiple repositories (for example, restrict access to certain repositories to staff while others may be accessed by student assistants as well).</p>
-<p>In this episode we will create (and delete) a group, move our project, and learn how members of a group relate to its subgroups and projects.</p>
+<p>In the first episode, we already got to know groups; GitLab’s way to
+organize projects. A group might hold a projects of a research group or
+those of a research project with contributors from multiple
+institutions. Together with members and their permissions they can be
+used to manage access to multiple repositories (for example, restrict
+access to certain repositories to staff while others may be accessed by
+student assistants as well).</p>
+<p>In this episode we will create (and delete) a group, move our
+project, and learn how members of a group relate to its subgroups and
+projects.</p>
 <section id="creating-a-group"><h2 class="section-heading">Creating a Group<a class="anchor" aria-label="anchor" href="#creating-a-group"></a>
 </h2>
-<hr class="half-width"><p>In the top menu bar, we open the drop-down menu labeled with a boxed plus and select the menu item “New Group”. On the next page, we select “Create group”, because that is what we want to do.</p>
+<hr class="half-width"><p>In the top menu bar, we open the drop-down menu labeled with a boxed
+plus and select the menu item “New Group”. On the next page, we select
+“Create group”, because that is what we want to do.</p>
 <p>This leads to the following page:</p>
-<figure><img src="fig/create-group.png" alt="Create group form with text input fields labeled “Group name”, “Group URL”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, a drop-down field labeled “Role”, a radio button element labeled “Who will be using this group?” with options “My company or team” and “Just me”, a drop-down field labeled “What will you use this group for?” and an text input field labeled “Email 1” with a button to add more under the heading “Invite members (optional)”." class="figure mx-auto d-block"><figcaption>Create group form</figcaption></figure><p>Choose any name for the group, for example a fictional research group like “Ant-Sized Elephants’ Applications Lab”. When you move the focus out of the input field, for example by pressing the tabulator key, GitLab will suggest a URL for the group. Usually, we might want to adapt it, but for now all we care about that it is available.</p>
-<p>You can leave the group’s visibility private. The visibility of a group works like that of a project.</p>
-<p>We will leave the remaining fields as they are and create the group by clicking the blue button labeled “Create group”. GitLab will navigate to the group home page, listing the group’s subgroups and projects (currently none).</p>
-<p>Now, we will have a look at how to create a project in the new group.</p>
-<p>In the top menu bar, we open the drop-down menu labeled with a boxed plus and select the menu item “New Project”. On the next page, we select “Create blank project”.</p>
-<p>This leads to the create blank project form page. We do not really want to create a project. Instead we have a look at the drop-down field under the heading “Project URL”. It will either show your username or one of the groups you belong to.</p>
-<p>If the field does not show the URL of the group that we just created, clicking on the field should open a drop-down list which includes it and allows us to select it.</p>
-<p>Submitting the form with our group’s URL selected would create a project in that group.</p>
+<figure><img src="fig/create-group.png" alt="Create group form with text input fields labeled “Group name”, “Group URL”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, a drop-down field labeled “Role”, a radio button element labeled “Who will be using this group?” with options “My company or team” and “Just me”, a drop-down field labeled “What will you use this group for?” and an text input field labeled “Email 1” with a button to add more under the heading “Invite members (optional)”." class="figure mx-auto d-block"><figcaption>Create group form</figcaption></figure><p>Choose any name for the group, for example a fictional research group
+like “Ant-Sized Elephants’ Applications Lab”. When you move the focus
+out of the input field, for example by pressing the tabulator key,
+GitLab will suggest a URL for the group. Usually, we might want to adapt
+it, but for now all we care about that it is available.</p>
+<p>You can leave the group’s visibility private. The visibility of a
+group works like that of a project.</p>
+<p>We will leave the remaining fields as they are and create the group
+by clicking the blue button labeled “Create group”. GitLab will navigate
+to the group home page, listing the group’s subgroups and projects
+(currently none).</p>
+<p>Now, we will have a look at how to create a project in the new
+group.</p>
+<p>In the top menu bar, we open the drop-down menu labeled with a boxed
+plus and select the menu item “New Project”. On the next page, we select
+“Create blank project”.</p>
+<p>This leads to the create blank project form page. We do not really
+want to create a project. Instead we have a look at the drop-down field
+under the heading “Project URL”. It will either show your username or
+one of the groups you belong to.</p>
+<p>If the field does not show the URL of the group that we just created,
+clicking on the field should open a drop-down list which includes it and
+allows us to select it.</p>
+<p>Submitting the form with our group’s URL selected would create a
+project in that group.</p>
 </section><section id="move-project-to-group"><h2 class="section-heading">Move Project to Group<a class="anchor" aria-label="anchor" href="#move-project-to-group"></a>
 </h2>
 <hr class="half-width"><p>We will now move our project to our group.</p>
-<p>On the side menu, we select “Settings” then “General”. On that page, we expand the section labeled “Advanced” and scroll down to the subsection labeled “Transfer Project”.</p>
-<p>Now, please read the subsections notes, with an emphasis on the list of things to be aware of.</p>
+<p>On the side menu, we select “Settings” then “General”. On that page,
+we expand the section labeled “Advanced” and scroll down to the
+subsection labeled “Transfer Project”.</p>
+<p>Now, please read the subsections notes, with an emphasis on the list
+of things to be aware of.</p>
 <p>A few comments on the last two items of the list:</p>
-<p>The second to last tells us that we will need to update our local repositories to point to the new location. Because we are moving the project to a group from our own projects, the URL will change. So the URL we specified when adding the remote to our local repository will no longer be valid. We will test this, but will not change the URL, because we will move the project back in a bit.</p>
-<p>The last item on the list informs us about potential visibility changes. For example, moving a public project to a private group, will cause the project to become private.</p>
-<p>Having carefully read and thought about the warnings, we are ready to move our project. We select the group that we previously created from the drop-down field and click the button labeled “Transfer project”.</p>
-<p>A dialog appears and we confirm, that we are sure, by typing in the name of our project and clicking the button labeled “Confirm”.</p>
+<p>The second to last tells us that we will need to update our local
+repositories to point to the new location. Because we are moving the
+project to a group from our own projects, the URL will change. So the
+URL we specified when adding the remote to our local repository will no
+longer be valid. We will test this, but will not change the URL, because
+we will move the project back in a bit.</p>
+<p>The last item on the list informs us about potential visibility
+changes. For example, moving a public project to a private group, will
+cause the project to become private.</p>
+<p>Having carefully read and thought about the warnings, we are ready to
+move our project. We select the group that we previously created from
+the drop-down field and click the button labeled “Transfer project”.</p>
+<p>A dialog appears and we confirm, that we are sure, by typing in the
+name of our project and clicking the button labeled “Confirm”.</p>
 <p>The project will be transferred to the group.</p>
-<p>To test that the URL changed, we switch to the shell and navigate to the directory containing our repository; <strong>Not the repository of our co-learner</strong>!</p>
+<p>To test that the URL changed, we switch to the shell and navigate to
+the directory containing our repository; <strong>Not the repository of
+our co-learner</strong>!</p>
 <p>Running</p>
 <pre><code>git remote get-url origin</code></pre>
 <p>{: .language-bash}</p>
-<p>should tell us that our project points to the old project URL. So, let us try to run</p>
+<p>should tell us that our project points to the old project URL. So,
+let us try to run</p>
 <pre><code>git pull</code></pre>
 <p>{: .language-bash}</p>
 <pre><code>Already up to date.</code></pre>
 <p>{: .output}</p>
-<p>That result is unexpected. The reason for this is that <a href="https://docs.gitlab.com/ee/user/project/repository/#what-happens-when-a-repository-path-changes" class="external-link">GitLab will redirect the old URLs to the new ones, as long as the old URLs do not point to a new project.</a></p>
+<p>That result is unexpected. The reason for this is that <a href="https://docs.gitlab.com/ee/user/project/repository/#what-happens-when-a-repository-path-changes" class="external-link">GitLab
+will redirect the old URLs to the new ones, as long as the old URLs do
+not point to a new project.</a></p>
 </section><section id="adding-members-to-group"><h2 class="section-heading">Adding Members to Group<a class="anchor" aria-label="anchor" href="#adding-members-to-group"></a>
 </h2>
 <hr class="half-width"><div id="challenge1" class="callout challenge">
@@ -351,8 +398,10 @@
 <h3 class="callout-title">Adding Members<a class="anchor" aria-label="anchor" href="#challenge1"></a>
 </h3>
 <div class="callout-content">
-<p>Add your instructor as a member of your group with the role of “Guest”. The process is the same as to add members to a project.</p>
-<p>Hint: After adding a member, you might need to reload the members page to see the new member in the list.</p>
+<p>Add your instructor as a member of your group with the role of
+“Guest”. The process is the same as to add members to a project.</p>
+<p>Hint: After adding a member, you might need to reload the members
+page to see the new member in the list.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -368,18 +417,30 @@
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal"><li>Navigate to the group home page.</li>
-<li>Select “Group information”, then “Members” from the side bar menu.</li>
+<li>Select “Group information”, then “Members” from the side bar
+menu.</li>
 <li>Click the “Invite members” button.</li>
-<li>Fill in the dialog to invite your instructor with the “Guest” role.</li>
+<li>Fill in the dialog to invite your instructor with the “Guest”
+role.</li>
 <li>Click the “Invite” button.</li>
 </ol></div>
 </div>
 </div>
 </div>
-<p>After adding a member to the group, we have look at the member list of our research diary project.</p>
-<p>The list has three entries: ourselves, our co-learner, and our instructor. We have the “Owner” role and, as its creator, are a direct member of the project. Our co-learner has the “Developer” role that we assigned them and are also a direct member of the project, as we added them directly to the project.</p>
-<p>The entry we are really interested in is that of the instructor. We added them as a “Guest” to the group. Now, they show up in the list of this project with the same role. The reason is, as the column “Source” tells us, that our project is in our group, and our instructor is a member of that group.</p>
-<p>That means, <strong>projects and groups inherit the members of the group they belong to</strong>.</p>
+<p>After adding a member to the group, we have look at the member list
+of our research diary project.</p>
+<p>The list has three entries: ourselves, our co-learner, and our
+instructor. We have the “Owner” role and, as its creator, are a direct
+member of the project. Our co-learner has the “Developer” role that we
+assigned them and are also a direct member of the project, as we added
+them directly to the project.</p>
+<p>The entry we are really interested in is that of the instructor. We
+added them as a “Guest” to the group. Now, they show up in the list of
+this project with the same role. The reason is, as the column “Source”
+tells us, that our project is in our group, and our instructor is a
+member of that group.</p>
+<p>That means, <strong>projects and groups inherit the members of the
+group they belong to</strong>.</p>
 <div id="discussion1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -395,7 +456,9 @@
 </div>
 </section><section id="delete-group"><h2 class="section-heading">Delete Group<a class="anchor" aria-label="anchor" href="#delete-group"></a>
 </h2>
-<hr class="half-width"><p>Now that our group is empty again, we will delete it, to be polite users of free resources. (If you created a group, that you actually intend to keep, do not delete it.)</p>
+<hr class="half-width"><p>Now that our group is empty again, we will delete it, to be polite
+users of free resources. (If you created a group, that you actually
+intend to keep, do not delete it.)</p>
 <div id="challenge2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -404,7 +467,9 @@
 <h3 class="callout-title">Delete a Group<a class="anchor" aria-label="anchor" href="#challenge2"></a>
 </h3>
 <div class="callout-content">
-<p>Delete your group. You find the deletion form at the same position in the group’s settings, as the project deletion form in a project’s settings.</p>
+<p>Delete your group. You find the deletion form at the same position in
+the group’s settings, as the project deletion form in a project’s
+settings.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -438,7 +503,8 @@
 <div class="callout-content">
 <ul><li>Groups and subgroups are used to organize projects.</li>
 <li>Groups can have members.</li>
-<li>Projects and groups inherit members from the group they belong to.</li>
+<li>Projects and groups inherit members from the group they belong
+to.</li>
 </ul></div>
 </div>
 </div>
@@ -499,7 +565,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/04-groups.html",
   "identifier": "https://zedif.github.io/gitlab-novice/04-groups.html",
-  "dateCreated": "2022-10-11",
+  "dateCreated": "2022-11-08",
   "dateModified": "2022-04-27",
   "datePublished": "2022-11-08"
 }
