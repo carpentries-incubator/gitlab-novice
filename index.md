@@ -10,6 +10,8 @@ This lesson will give you a foundational understanding of GitLab’s features, s
 
 Since GitLab interprets many of its text fields’ values as Markdown, more specifically [GitLab flavored Markdown][GitLabMarkdown], this lesson contains a rudimentary introduction to Markdown syntax, following the [CommonMark specification][CommonMark] on which the GitLab flavor is based.
 
+Depending on learner’s previous knowledge, the material can be taught completely in the GitLab web interface or parts involving a local Git repository and use of the Git command-line interface.
+
 [CommonMark]: https://spec.commonmark.org/current/
 [Git]: https://git-scm.com/
 [GitLab]: https://about.gitlab.com/
@@ -17,10 +19,13 @@ Since GitLab interprets many of its text fields’ values as Markdown, more spec
 
 # Required Previous Knowledge
 
-GitLab is mainly a platform for Git repositories.
-So a major part of this lesson requires a basic familiarity with Git.
-To understand the material on GitLab’s continuous integration (CI) feature you need to know your way around the shell and it might help to have the most basic understanding of how to use [Docker].
-Knowledge on how to create and edit text files is also assumed.
+The material can be taught completely in the GitLab web interface.
+In that case no previous knowledge is required.
+
+Optionally, the interaction of local Git repositories with GitLab can be taught.
+In that case, the a basic familiarity with Git is required.
+
+To understand the material on GitLab’s continuous integration (CI) feature, basic knowledge of Bash and how [Docker] works is required.
 
 [Docker]: https://www.docker.com/
 

@@ -8,6 +8,8 @@ This lesson will give you a foundational understanding of GitLab’s features, s
 
 Since GitLab interprets many of its text fields’ values as Markdown, more specifically [GitLab flavored Markdown][GitLabMarkdown], this lesson contains a rudimentary introduction to Markdown syntax, following the [CommonMark specification][CommonMark] on which the GitLab flavor is based.
 
+Depending on learner’s previous knowledge, the material can be taught completely in the GitLab web interface or parts involving a local Git repository and use of the Git command-line interface.
+
 [CommonMark]: https://spec.commonmark.org/current/
 [Git]: https://git-scm.com/
 [GitLab]: https://about.gitlab.com/

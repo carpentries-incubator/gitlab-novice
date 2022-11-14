@@ -4,8 +4,9 @@ title: Setup
 
 # Setup
 
-To follow the lesson, you need to have a text editor and Git installed.
-You also need access to to GitLab.
+To follow the lesson, you need access to GitLab.
+
+If the taught version of this course introduces the interaction between local repositories and GitLab, you also need to have a text editor and Git installed.
 
 The following sections provide information on how to install the required software, if necessary, and how you get access to GitLab.
 
