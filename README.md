@@ -1,7 +1,7 @@
 # Introduction to GitLab
 
 [GitLab] is a web application for managing [Git] repositories.
-Since it is build around Git, it is suitable to manage any project that mostly works with plain text files, for example software source code or TeX based documents.
+Since it is build around Git, it is suitable to manage any project that mostly works with plain text files, for example software source code, TeX based documents, or meeting notes in Markdown.
 With its built-in issue and wiki systems, it can, in certain cases, even be the right tool for managing a project without any files.
 
 This lesson will give you a foundational understanding of GitLab’s features, so that you can make informed decisions on how to use it as a tool.
