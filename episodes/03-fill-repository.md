@@ -12,7 +12,21 @@ exercises: 0
 
 ::: objectives
 
-- Push a local Git repository to a newly created project.
+- Alternative Git: Push local Git repository to newly created project.
+- Alternative NoGit: Add file to project repository using GitLab’s web interface.
+
+:::
+
+::: instructor
+
+This episode consists of two alternative parts.
+
+The first alternative shows how to push a local Git repository to the project that was created as part of the previous episode.
+It consists of the first three sections and the last, which is part of both alternatives.
+As part of the process a `README.md` file will be added.
+
+The second alternative adds the `README.md` file using GitLab’s web interface, thus obviating the use of Git itself.
+It consists of the last two sections.
 
 :::
 
@@ -118,8 +132,6 @@ $ git commit -m "Add README.md"
 ::::
 
 :::
-
-[CommitMessages]: https://cbea.ms/git-commit/
 
 Checking the status of the git repository, we should see that it exists and that
 there are no changes in the working directory or in the stating area:
@@ -283,7 +295,66 @@ branch 'main' set up to track 'origin/main'.
 
 Having successfully pushed our commit to the GitLab repository, we change to our
 browser and navigate to the project (or reload it, if we still have it open).
-We will be greeted by the project homepage, similar to the following
+
+## Adding a File to the Project
+
+We are now going to add a file to our project.
+To do this, we first navigate to the project’s homepage, unless we are already on that page.
+Below the heading “The repository for this project is empty” there are several buttons.
+We click the one labeled “New file”, which brings us to a new page, the so called WebIDE.
+In the middle of that page is again a button labeled “New file”, which we click on.
+
+This opens a dialog titled “Create new file”, which prompts us for a filename.
+We type `README.md` into the field and confirm by clicking the button labeled “Create file”.
+This closes the dialog.
+
+The WebIDE page now shows a list of files on the left and a text editor on the right.
+The list of files should only have one entry: `README.md`.
+The text editor itself shows the contents of the file `README.md`.
+We see the filename at the top in a tab, which indicates that we can open multiple files and switch between them using the tabs at the top.
+
+::: challenge
+
+### Research Diary’s Initial Content 2 (Required)
+
+Describe the repository’s future contents in the README.md.
+
+This exercise should take about 2 minutes.
+
+:::: solution
+
+We type something similar to the following into the text editor:
+
+```
+# Research Diary
+
+This repository contains our research diary.
+Each day gets its own file.
+We use the Markdown format for our files.
+```
+
+::::
+
+:::
+
+To save the changes, the creation of the file and the text we entered, we need to create a so called commit.
+A commit packages changes to one or more files of the repository.
+The list of commits, in chronological order, constitute the history of a Git repository.
+
+To get there we click on the button labeled “Create Commit...” below the list of files, in the lower left corner of the page.
+A dialog will replace the button and prompt us for a commit message.
+
+A commit message should summarize the changes that are packaged into the commit.
+[Good commit messages][CommitMessages] are what makes the history of a repository useful.
+
+We enter a good commit message, for example “Add README.md” and click the button labeled “Commit”.
+
+Having done that, we are done editing and navigate back to the project’s homepage.
+To get there, we can click on the project name or icon near the upper left corner of the page.
+
+## Project Page After Adding Files
+
+We are greeted by the project homepage, similar to the following
 screenshot:
 
 ![Project homepage after first push](fig/first-push.png){alt="Project homepage
@@ -331,6 +402,9 @@ GitLab (and other platforms like it) usually render it on a project’s homepage
 
 ::: keypoints
 
-- You can fill a fresh GitLab project’s repository by pushing a local repository.
+- Alternative Git: You can fill a fresh GitLab project’s repository by pushing a local repository.
+- Alternative NoGit: You can create and edit files in a repository using GitLab’s web interface.
 
 :::
+
+[CommitMessages]: https://cbea.ms/git-commit/
