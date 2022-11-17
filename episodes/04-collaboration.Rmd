@@ -18,6 +18,18 @@ exercises: 5
 
 :::
 
+::: instructor
+
+This episode consists of two alternative parts.
+
+The first alternative uses Git for collaboration.
+It consists of the first and second section.
+
+The second alternative uses GitLab’s web interface for collaboration.
+It consists of the first and third section.
+
+:::
+
 ## Adding Project Members
 
 So far, each of you has created a GitLab project that no one but you can
@@ -84,7 +96,7 @@ This exercise should take about 5 minutes.
 
 :::
 
-## Contribute Changes to Project Repository
+## Contribute Changes to Project Repository (using Git)
 
 Now, everyone should be the member of one of your co-learners’ projects. We will
 now add an diary entry for imaginary work that we did on their experiments last
@@ -132,6 +144,9 @@ work, listing the work we did:
 * Moss turned into several butterflys. SUCCESS!
 ```
 
+```{r, child=c('markdown-lists.md')}
+```
+
 Then we add the file as part of a new commit to the repository:
 
 ```
@@ -143,25 +158,6 @@ $ git commit -m "Record work on experiment A-13"
  1 file changed, 2 insertions(+)
  create mode 100644 2022-03-13.md
 ```
-
-::: callout
-
-### Markdown Lists
-
-Lists can be represented in Markdown by starting their items with a `*`
-character followed by a space. If an list item wraps over multiple lines, lines
-following the first are started with sufficient spaces to align the lines text
-with the first line’s text.
-
-For example:
-
-```
-* First item
-* Second item with enough text to make us wrap to a second
-  line.
-```
-
-:::
 
 We check Git’s log for our commit:
 
@@ -225,17 +221,65 @@ us, what our colleague did:
 $ cat 2022-03-13.md
 ```
 ```
-* Injected transformational fluid into moss sample.
-* Moss turned into several butterflys. SUCCESS!
+* Started the centrifuge.
+* Put the used tools in the autoclave.
 ```
 
 We successfully collaborated through GitLab on a project of text files.
+
+## Contribute Changes to Project Repository (using GitLab WebIDE)
+
+Now that we are members of the project of one of our co-learners, we can contribute to each others projects.
+We will add an diary entry for imaginary work that we did on their experiments last weekend.
+
+To navigate to our co-learner's project, we open the burger menu in the upper left corner of the page, select “Projects” and click on “View all projects”.
+The list under “Your projects” should now contain at least two projects: the one we created ourselves in the beginning and the project of our co-learner.
+We click on the name of our co-learner’s project to navigate to it’s homepage.
+
+To add a file, we click on the button labeled “Web IDE” in the line just below the
+project’s description. This redirects us to a page with a file browser in a
+column on the left, with most of the screen taken up by a box informing us how to use
+the Web IDE: “Select a file from the left sidebar to begin editing. Afterwards,
+you’ll be able to commit your changes.”
+
+We do not want to edit an existing file, but want to create a new one. To do
+that we click on the button above the list of files on the left that is marked
+with an icon representing a sheet of paper with a +-sign on top of it.
+
+A pop-up dialog prompts us for a name, which we will provide: `2022-03-13.md`, the date in which we did the work in the laboratory.
+Then we click the button labeled “Create file”.
+
+We see the result of our action in two ways: A file named `2022-03-13.md`
+appeared in the list of files on the left and a tab labeled `2022-03-13.md`
+showing an text editor appeared in the space to the right of the list of files.
+
+We will now add something similar the following lines in the editor:
+
+```markdown
+* Started the centrifuge.
+* Put the used tools in the autoclave.
+```
+
+```{r, child=c('markdown-lists.md')}
+```
+
+Next we click the button labeled “Create a commit” and change the commit message to
+
+```
+Record work on experiment A-13
+```
+
+We change the selection from “Create a new branch” to “Commit to main branch”.
+The web interface close the dialog and inform us that the commit was created.
+
+We use the the project view to navigate to our own project.
+In the list of files, we should see the file added by our co-learner.
 
 ::: keypoints
 
 - Adding others as members allows them to directly contribute to your projects
 - Members with sufficient rights can independently contribute to repositories
-- You update your local repositories relative to the GitLab repository with the `git pull` command
-- You send changes committed in your local repository to the GitLab repository with the `git push` command.
+- Alternative Git: You update your local repositories relative to the GitLab repository with the `git pull` command
+- Alternative Git: You send changes committed in your local repository to the GitLab repository with the `git push` command.
 
 :::

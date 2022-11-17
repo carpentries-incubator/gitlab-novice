@@ -35,20 +35,20 @@ branch: main
 contact: philipp.matthias.schaefer@uni-jena.de
 
 # Navigation ------------------------------------------------
-# 
+#
 # Use the following menu items to specify the order of
 # individual pages in each dropdown section. Leave blank to
 # include all pages in the folder.
 #
 # Example -------------
-# 
+#
 # episodes:
 # - introduction.md
 # - first-steps.md
-# 
+#
 # learners:
 # - setup.md
-# 
+#
 # instructors:
 # - instructor-notes.md
 #
@@ -61,18 +61,17 @@ episodes:
   - 01-navigation.md
   - 02-gitlab-projects.md
   - 03-fill-repository.md
-  - 04-collaboration.md
+  - 04-collaboration.Rmd
   - 05-groups.md
   - 06-issues.md
   - 07-merge-requests.md
   - 08-process-automation.md
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
-
+profiles:
