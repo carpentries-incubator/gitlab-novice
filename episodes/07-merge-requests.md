@@ -83,7 +83,7 @@ this within GitLab using its file creation and editing features.
 
 To do that, we click on the button labeled “Web IDE” in the line just below the
 project’s description. This redirects us to a page with a file browser in a
-column on the, with most of the screen taken up by a box informing us how to use
+column on the left, with most of the screen taken up by a box informing us how to use
 the Web IDE: “Select a file from the left sidebar to begin editing. Afterwards,
 you’ll be able to commit your changes.”
 
@@ -121,7 +121,7 @@ The following persons have contributed to my research diary:
 ```
 
 Then we click the button labeled “Create a commit”. The view to the left of the
-list of files gets split into to columns. On the left side we see the old
+list of files gets split into two columns. On the left side we see the old
 version of the file (it did not exist, so nothing is shown) and on the right
 side we see the new version with additions marked in green. If we had removed
 anything from the old version those lines would have been marked red on the left
