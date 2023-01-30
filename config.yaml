@@ -56,8 +56,16 @@ contact: philipp.matthias.schaefer@uni-jena.de
 # - one-learner.md
 # - another-learner.md
 
-# Order of episodes in your lesson 
-episodes: 
+# Order of episodes in your lesson
+episodes:
+  - 01-navigation.md
+  - 02-gitlab-projects.md
+  - 03-fill-repository.md
+  - 04-collaboration.md
+  - 05-groups.md
+  - 06-issues.md
+  - 07-merge-requests.md
+  - 08-process-automation.md
 
 # Information for Learners
 learners: 
