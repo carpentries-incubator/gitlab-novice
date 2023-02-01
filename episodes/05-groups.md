@@ -109,6 +109,8 @@ project and clicking the button labeled “Confirm”.
 
 The project will be transferred to the group.
 
+### Check that the project URL changed (only when teaching with Git)
+
 To test that the URL changed, we switch to the shell and navigate to the
 directory containing our repository; **Not the repository of our co-learner**!
 
