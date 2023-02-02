@@ -68,29 +68,6 @@ contributors’ machines.
 
 :::
 
-The project description appears in many lists and on some pages under the
-project’s name. We add a concise description: “My research diary, a collection
-of Markdown files”
-
-::: callout
-
-### Markdown
-
-Markdown is a markup language, like HTML on which the World Wide Web is based or
-wikitext used to write Wikipedia’s content. Its markup directives, indicating
-for example that something is a headline or a list item, are such that they
-serve their purpose even in the plain text form.
-
-There exist many variants (or flavors) of Markdown and GitLab has [its
-own](https://docs.gitlab.com/ee/user/markdown.html). Other than for rendering
-Markdown files in repositories on its web interface, GitLab allows for Markdown
-input in many of its interface’s text fields, such as issue descriptions or
-comments.
-
-This will be pointed out as we get to use these fields during the lesson.
-
-:::
-
 We ignore the field labeled “Project deployment target (optional)”.
 
 The choice of radio button under label “Visibility Level” determines the
@@ -98,20 +75,15 @@ project’s visibility. As mentioned in the previous episode “Finding Projects
 Groups”, the visibility “Internal” is disabled on GitLab.com, so only
 “Private”, the default, and “Public” are available. We choose “Private”.
 
-If, as per default, the checkbox “Initialize repository with a README” is
-checked, the project’s repository will be initialized with a commit that adds a
-file called `README.md`. Otherwise, a the project will start with an empty
-repository. We will be adding such a file later ourselves, so we uncheck the
-box.
+If, as per default, the checkbox “Initialize repository with a README” is checked, the project’s repository will be initialized with a commit that adds a file called `README.md`.
+Otherwise, a the project will start with an empty repository.
+We will add such a file later ourselves, so we uncheck the box.
 
 ::: callout
 
 ### README
 
-A project’s README file usually contains basic information about the project:
-what it contains, how it can be used (for example build or installed, if it is
-a software project), how to contribute, how to get help, and licensing
-information.
+A project’s README file usually contains basic information about the project: what it contains, how it can be used (for example built or installed, if it is a software project), how to contribute, how to get help, and licensing information.
 
 It is common to write README files in Markdown format, indicated by the
 filename suffix `.md`.
@@ -160,15 +132,39 @@ fill it with content. We will follow them in just a bit.
 The project overview page will look slightly different, once we have content in
 its repository. We will have another look at the page then.
 
-::: callout
+::: challenge
 
 ### Change Name, Description, Visibility, or Avatar
 
-Click on the “Settings” menu entry and change any of the project’s name,
-description, visibility, and avatar. Do not forget to click the “Save changes”
-button once you are done.
+Click on the “Settings” menu entry.
+Set the description to “My research diary, a collection of Markdown files”.
+
+The project description appears in many lists and on some pages under the
+project’s name.
+
+Then change any of the project’s name, visibility, and avatar.
+Do not forget to click the “Save changes” button once you are done.
 
 This exercise should take about 5 minutes.
+
+:::
+
+::: callout
+
+### Markdown
+
+Markdown is a markup language, like HTML on which the World Wide Web is based or
+wikitext used to write Wikipedia’s content. Its markup directives, indicating
+for example that something is a headline or a list item, are such that they
+serve their purpose even in the plain text form.
+
+There exist many variants (or flavors) of Markdown and GitLab has [its
+own](https://docs.gitlab.com/ee/user/markdown.html). Other than for rendering
+Markdown files in repositories on its web interface, GitLab allows for Markdown
+input in many of its interface’s text fields, such as issue descriptions or
+comments.
+
+This will be pointed out as we get to use these fields during the lesson.
 
 :::
 
@@ -177,14 +173,14 @@ We will add our first file to the project repository in the next episode.
 
 ## Archiving a Project
 
-We just went through the beginning of a GitLab project’s life cycle. At its end,
-if it has one, a project gets archived (or deleted). We will now go through the
-process of archiving a project, without completing the step.
+We just went through the beginning of a GitLab project’s life cycle.
+At its end, if it has one, a project gets archived (or deleted).
+We will now go through the process of archiving a project, without completing the procedure.
 
-Using the menu on the left, we navigate to the projects settings.
+Using the menu on the left, we navigate to the project’s settings.
 
-At the bottom the page, we find a section named “Advanced”. We hit the “Expand”
-button right next to it and scroll down the page.
+At the bottom of the page, we find a section named “Advanced”.
+We hit the “Expand” button right next to it and scroll down the page.
 
 Notice that many of buttons here are not the usual blue or white, but after
 scrolling a little they are red. This indicates that we should be careful about
