@@ -71,23 +71,10 @@ with a branch called `main`:
 $ git config --global init.defaultBranch main
 ```
 
+```{r, child=c('markdown-lists.md')}
+```
+
 ## Creating a Local Repository
-
-::: callout
-
-### Markdown Headlines
-
-In Markdown, headlines are marked by one up to six `#` characters followed by a
-space character in front of the text. The number of `#` characters indicates the
-heading’s level, with 1 being the most significant.
-
-For example, a level 3 headline:
-
-```
-### Interesting Section Title
-```
-
-:::
 
 ::: challenge
 
@@ -302,16 +289,32 @@ We are now going to add a file to our project.
 To do this, we first navigate to the project’s homepage, unless we are already on that page.
 Below the heading “The repository for this project is empty” there are several buttons.
 We click the one labeled “New file”, which brings us to a new page, the so called WebIDE.
-In the middle of that page is again a button labeled “New file”, which we click on.
+In the middle of that page is a menu item, again labeled “New file…”, which we click on.
 
-This opens a dialog titled “Create new file”, which prompts us for a filename.
-We type `README.md` into the field and confirm by clicking the button labeled “Create file”.
+::: callout
+
+### Changing the WebIDE Theme
+
+GitLab’s WebIDE uses a dark theme by default.
+To change it, click on the gear icon in the lower left corner and select “Color Theme” from the opening menu.
+This opens a dialog to select a color theme for the IDE.
+Light themes are listed at the top and dark themes at the bottom.
+“GitLab Light” is GitLab’s own light theme.
+Select a theme by clicking on its name.
+
+:::
+
+This opens a dialog titled “New file…”, which prompts us for a filename.
+We type `README.md` into the field and confirm by pressing the return key and clicking the button labeled “OK”.
 This closes the dialog.
 
 The WebIDE page now shows a list of files on the left and a text editor on the right.
 The list of files should only have one entry: `README.md`.
 The text editor itself shows the contents of the file `README.md`.
 We see the filename at the top in a tab, which indicates that we can open multiple files and switch between them using the tabs at the top.
+
+```{r, child=c('markdown-headlines.md')}
+```
 
 ::: challenge
 
@@ -337,20 +340,17 @@ We use the Markdown format for our files.
 
 :::
 
-To save the changes, the creation of the file and the text we entered, we need to create a so called commit.
-A commit packages changes to one or more files of the repository.
-The list of commits, in chronological order, constitute the history of a Git repository.
-
-To get there we click on the button labeled “Create Commit...” below the list of files, in the lower left corner of the page.
-A dialog will replace the button and prompt us for a commit message.
+```{r, child=c('webide-commit.md')}
+```
 
 A commit message should summarize the changes that are packaged into the commit.
 [Good commit messages][CommitMessages] are what makes the history of a repository useful.
 
-We enter a good commit message, for example “Add README.md” and click the button labeled “Commit”.
+We enter a good commit message, for example “Add README.md” and click the button labeled “Commit & Push”.
 
 Having done that, we are done editing and navigate back to the project’s homepage.
-To get there, we can click on the project name or icon near the upper left corner of the page.
+To get there, we need to click on the button labeled “GitLab” in the lower left of the screen and select “Go to <project name> project on GitLab” from the list that pops up at the top.
+This will open the project in a new window or tab, depending on the settings of your browser.
 
 ## Project Page After Adding Files
 
@@ -381,24 +381,22 @@ correctly, no longer get told that the repository is empty and the instructions
 on how to push content to the repository have vanished.
 
 Instead, we see some statistics below the project’s title: 1 Commit, 1 Branch, 0
-Tags, 72 KB Files, 72 KB Storage. They double as buttons other project pages.
+Tags, 72 KB Storage.
+They double as buttons other project pages.
 
-Below the description is a new button bar, followed by a box presenting
-information on last commit of the currently select branch.
+Below the description is a box presenting information on the last commit of the currently selected branch, followed by a new button bar.
 
-The buttons below, that we saw earlier, allow us to add specific files or
-navigate to the configuration of certain GitLab features. Note that one button
-changed from reading “Add README” to just “README”, since we added `README.md`.
-The button is now a link to the latest version of that file in the current
-branch.
+The following buttons, that we saw earlier, allow us to add specific files or
+navigate to the configuration of certain GitLab features.
+Note that one button changed from reading “Add README” to just “README”, since we added `README.md`.
+The button is now a link to the latest version of that file in the current branch.
 
 Then we see a list of files. So far, there is only `README.md`. The list also
 tells us through which commit it was last changed and when that commit was
 created.
 
-Finally, we see the markdown file `README.md` rendered. Because having a
-README-file in the root directory of a repository is a widespread convention,
-GitLab (and other platforms like it) usually render it on a project’s homepage.
+Finally, we see the rendered version of the markdown file `README.md`.
+Because having a README-file in the root directory of a repository is a widespread convention, GitLab (and other platforms like it) usually render it on a project’s homepage.
 
 ::: keypoints
 

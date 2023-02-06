@@ -60,7 +60,7 @@ contact: philipp.matthias.schaefer@uni-jena.de
 episodes:
   - 01-navigation.md
   - 02-gitlab-projects.md
-  - 03-fill-repository.md
+  - 03-fill-repository.Rmd
   - 04-collaboration.Rmd
   - 05-groups.md
   - 06-issues.md
