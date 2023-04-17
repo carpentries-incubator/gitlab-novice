@@ -40,14 +40,12 @@ To check for our name and email address, We run
 ```
 $ git config --global --get user.name
 ```
-{: .language-bash}
 
 and
 
 ```
 $ git config --global --get user.email
 ```
-{: .language-bash}
 
 If both return sensible values, we are good to go. Otherwise we provide the
 missing values, for example:
@@ -56,7 +54,6 @@ missing values, for example:
 $ git config --global user.name "Some Novice"
 $ git config --global user.email "some.novice@example.com"
 ```
-{: .language-bash}
 
 It is now common to name the default branch `main`, rather than `master` as is
 still the default in Git. For more information see, for example, the
@@ -143,23 +140,19 @@ there are no changes in the working directory or in the stating area:
 ```
 $ git status
 ```
-{: .language-bash}
 ```
 On branch main
 nothing to commit, working tree clean
 ```
-{: .output}
 
 There is one file, `README.md`:
 
 ```
 $ ls
 ```
-{: .language-bash}
 ```
 README.md
 ```
-{: .output}
 
 ## Connecting Local and Remote Repository
 
@@ -226,7 +219,6 @@ our local repository:
 ```
 $ git remote add origin https://gitlab.com/somenovice/research-diary.git
 ```
-{: .language-bash}
 
 ::: callout
 
@@ -285,7 +277,6 @@ for our user name and password:
 ```
 $ git push -u origin --all
 ```
-{: .language-bash}
 ```
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -295,7 +286,6 @@ To https://gitlab.com/somenovice/research-diary.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 ```
-{: .output}
 
 Having successfully pushed our commit to the GitLab repository, we change to our
 browser and navigate to the project (or reload it, if we still have it open).
@@ -359,7 +349,7 @@ This exercise should take about 2 minutes.
 
 We type something similar to the following into the text editor:
 
-```
+```markdown
 # Research Diary
 
 This repository contains our research diary.

@@ -109,7 +109,7 @@ Running
 ```
 git remote get-url origin
 ```
-{: .language-bash}
+
 
 should tell us that our project points to the old project URL. So, let us try to
 run
@@ -117,11 +117,11 @@ run
 ```
 git pull
 ```
-{: .language-bash}
+
 ```
 Already up to date.
 ```
-{: .output}
+
 
 That result is unexpected. The reason for this is that [GitLab will redirect the
 old URLs to the new ones, as long as the old URLs do not point to a new
