@@ -134,7 +134,7 @@ can add our lab entry.
 First we create a file, named `2022-03-13.md` after the date on which we did the
 work, listing the work we did:
 
-```
+```markdown
 * Injected transformational fluid into moss sample.
 * Moss turned into several butterflys. SUCCESS!
 ```
@@ -215,7 +215,7 @@ us, what our colleague did:
 ```
 $ cat 2022-03-13.md
 ```
-```
+```markdown
 * Started the centrifuge.
 * Put the used tools in the autoclave.
 ```

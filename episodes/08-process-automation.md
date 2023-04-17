@@ -79,7 +79,7 @@ The first few lines, starting with the symbol `#`, are comments notifying us of
 where to find further information. The last of these lines is the exception,
 which is a comment on the first functional line:
 
-```YAML
+```yaml
 image: busybox:latest
 ```
 

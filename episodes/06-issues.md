@@ -53,7 +53,7 @@ respectively, a date input field labeled “Due date”, and two buttons labeled
 For our issue we provide a short, descriptive title, for example “Recognize
 outside contributors” and a description:
 
-```
+```markdown
 Outside contributors should be mentioned in the project’s documentation. Their
 names could be listed in one of the following locations:
 
@@ -72,7 +72,7 @@ such fonts.
 For a monospaced snippet within a normal paragraph, enclose the snippet in a
 single backquote (also called backtick or grave accent), for example
 
-```
+```markdown
 The filename `README.md` will be set in a monospaced font.
 ```
 
@@ -84,7 +84,7 @@ For a whole block of monospaced text, for example some lines of code, start and
 end the block with a line consisting of three or more backquotes, where the
 number should match for start and end, for example
 
-````
+````markdown
 ```
 # This python code will also be set in a monospaced font, which preserves
 # relative indentation between lines.
