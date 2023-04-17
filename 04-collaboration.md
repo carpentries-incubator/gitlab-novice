@@ -18,6 +18,18 @@ exercises: 5
 
 :::
 
+::: instructor
+
+This episode consists of two alternative parts.
+
+The first alternative uses Git for collaboration.
+It consists of the first and second section.
+
+The second alternative uses GitLab’s web interface for collaboration.
+It consists of the first and third section.
+
+:::
+
 ## Adding Project Members
 
 So far, each of you has created a GitLab project that no one but you can
@@ -56,20 +68,16 @@ right away. Click the button labeled “Invite members”, type in the username 
 instructors provided you with into the search field, make sure that “Guest” is
 selected as a role, and click the button labeled “Invite”.
 
-After reloading the page, your instructor should now be listed next to you in
-the table. Unlike in your row, you can change the role and the expiration date
-of this new entry. There also is a new, red button in this row labeled “Remove
-member”.
+Your instructor should now be listed next to you in the table.
+Unlike in your row, you can change the role and the expiration date of this new entry.
 
-The role determines what the member is allowed to do in the project. A
-maintainer has full rights, a guest almost none. GitLab’s handbook gives a
-detailed [overview](https://docs.gitlab.com/ee/user/permissions.html) of the
-different roles’ permissions.
+The role determines what the member is allowed to do in the project.
+An owner has full rights, a guest almost none.
+GitLab’s handbook gives a detailed [overview](https://docs.gitlab.com/ee/user/permissions.html) of the different roles’ permissions.
 
 Now, we are going to remove the instructor from your project’s members again.
-Click the button labeled “Remove member” in the instructor’s row then click the
-button of the same name in the popup dialog. The page reloads itself and the
-entry vanishes from the table.
+Click the three dots on the right in the instructor’s row, then click on “Remove member”, and finally click the button of the same name in the popup dialog.
+The page reloads itself and the entry vanishes from the table.
 
 ::: challenge
 
@@ -84,11 +92,10 @@ This exercise should take about 5 minutes.
 
 :::
 
-## Contribute Changes to Project Repository
+## Contribute Changes to Project Repository (using Git)
 
-Now, everyone should be the member of one of your co-learners’ projects. We will
-now add an diary entry for imaginary work that we did on their experiments last
-weekend.
+Now, everyone should be the member of one of your co-learners’ projects.
+We will now add a diary entry for imaginary work that we did on their experiments last weekend.
 
 First, we clone their repositories into the directory `rd-colleague`.
 
@@ -132,17 +139,6 @@ work, listing the work we did:
 * Moss turned into several butterflys. SUCCESS!
 ```
 
-Then we add the file as part of a new commit to the repository:
-
-```
-$ git add 2022-03.13.md
-$ git commit -m "Record work on experiment A-13"
-```
-```
-[main 4eac24c] Record work on experiment A-13
- 1 file changed, 2 insertions(+)
- create mode 100644 2022-03-13.md
-```
 
 ::: callout
 
@@ -162,6 +158,18 @@ For example:
 ```
 
 :::
+
+Then we add the file as part of a new commit to the repository:
+
+```
+$ git add 2022-03.13.md
+$ git commit -m "Record work on experiment A-13"
+```
+```
+[main 4eac24c] Record work on experiment A-13
+ 1 file changed, 2 insertions(+)
+ create mode 100644 2022-03-13.md
+```
 
 We check Git’s log for our commit:
 
@@ -225,17 +233,96 @@ us, what our colleague did:
 $ cat 2022-03-13.md
 ```
 ```
-* Injected transformational fluid into moss sample.
-* Moss turned into several butterflys. SUCCESS!
+* Started the centrifuge.
+* Put the used tools in the autoclave.
 ```
 
 We successfully collaborated through GitLab on a project of text files.
+
+## Contribute Changes to Project Repository (using GitLab WebIDE)
+
+Now that we are members of the project of one of our co-learners, we can contribute to each others projects.
+We will add a diary entry for imaginary work that we did on their experiments last weekend.
+
+To navigate to our co-learner's project, we open the burger menu in the upper left corner of the page, select “Projects” and click on “View all projects”.
+The list under “Your projects” should now contain at least two projects: the one we created ourselves in the beginning and the project of our co-learner.
+We click on the name of our co-learner’s project to navigate to it’s homepage.
+
+To add a file, we click on the button labeled “Web IDE” in the line just below the
+project’s description. This redirects us to a page with a file browser in a
+column on the left, with most of the screen taken up by a box informing us how to use
+the Web IDE: “Select a file from the left sidebar to begin editing. Afterwards,
+you’ll be able to commit your changes.”
+
+We do not want to edit an existing file, but want to create a new one.
+To do that we click on the button above the list of files on the left that is marked with an icon representing a sheet of paper with a +-sign on top of it.
+The button is only visible, when the mouse hovers of the list of files.
+
+A pop-up text input field prompts us for a name, which we will provide: `2023-02-05.md`, the date in which we did the work in the laboratory.
+We confirm the file name by pressing the return key.
+
+We see the result of our action in two ways: A file named `2022-03-13.md`
+appeared in the list of files on the left and a tab labeled `2022-03-13.md`
+showing an text editor appeared in the space to the right of the list of files.
+
+We will now add a list of things we supposedly did in the laboratory last Sunday, for example:
+
+```markdown
+* Started the centrifuge.
+* Put the used tools in the autoclave.
+```
+
+
+::: callout
+
+### Markdown Lists
+
+Lists can be represented in Markdown by starting their items with a `*`
+character followed by a space. If an list item wraps over multiple lines, lines
+following the first are started with sufficient spaces to align the lines text
+with the first line’s text.
+
+For example:
+
+```
+* First item
+* Second item with enough text to make us wrap to a second
+  line.
+```
+
+:::
+
+
+To save the changes, the creation of the file and the text we entered, we need to create a so called commit.
+A commit packages changes in one or more files of the repository.
+The list of commits, in chronological order, constitute the history of a Git repository.
+
+To get there, we click on the button on the left showing an icon that indicates a branching from one circle to two others.
+The button should be overlaid with the number 1 in a circle.
+
+A dialog will replace with list of files.
+At the top is a text field for a commit message.
+Then comes a button labeled “Commit & Push”, followed by a list of all files that were changed, added, or deleted.
+
+A commit message should summarize the changes that are packaged into the commit.
+[Good commit messages][CommitMessages] are what makes the history of a repository useful.
+
+We enter a good commit message, for example “Record work on experiment A-13” and click the button labeled “Commit & Push”.
+
+In the dialog that pops up in the center top of the screen, we select “No Use the current branch "main"”
+
+Having done that, we are done editing and navigate back to our project’s homepage.
+To get there, we lick on the button labeled “GitLab” in the lower left of the screen and select “Go to GitLab” from the list that pops up at the top.
+This will open the project view in a new window or tab, depending on the settings of your browser.
+We select our own project from the list of projects under “Your projects”.
+
+In the list of files, we should see the file added by our co-learner.
 
 ::: keypoints
 
 - Adding others as members allows them to directly contribute to your projects
 - Members with sufficient rights can independently contribute to repositories
-- You update your local repositories relative to the GitLab repository with the `git pull` command
-- You send changes committed in your local repository to the GitLab repository with the `git push` command.
+- Alternative Git: You update your local repositories relative to the GitLab repository with the `git pull` command
+- Alternative Git: You send changes committed in your local repository to the GitLab repository with the `git push` command.
 
 :::

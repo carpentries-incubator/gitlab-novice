@@ -17,13 +17,13 @@ Anyone who completed school.
 to teach?**
 
 Our target audience regularly work with desktop computers or laptops with
-graphical user interfaces. They do not regularly use the console (yet), but have
-at least had a resent introduction to it.
+graphical user interfaces.
 
 They do not necessarily have a deep rooted understanding of the difference
 between a plain text file and a binary file, but they heard about it.
 
-They know Git or had a resent introduction to it.
+If we teach the version of this course using Git, they do not regularly use the
+console (yet), but have at least had a resent introduction to it and Git.
 
 **What types of tools do they already use?**
 
@@ -32,9 +32,8 @@ Markdown pads over the internet.
 
 **What are the pain points they are currently experiencing?**
 
-They want to collaborate with colleagues on projects based on text files. Either
-the technology is about to be introduced as a tool in their work groups or it is
-already being used and they recently joint the group.
+They want to collaborate with colleagues on projects based on text files and use issue tracking to help with project management.
+Either the technology is about to be introduced as a tool in their work groups or it is already being used and they recently joined the group.
 
 ### Learner Profiles
 

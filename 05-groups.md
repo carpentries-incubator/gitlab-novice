@@ -20,21 +20,17 @@ exercises: 15
 
 :::
 
-In the first episode, we already got to know groups; GitLab’s way to organize
-projects. A group might hold a projects of a research group or those of a
-research project with contributors from multiple institutions. Together with
-members and their permissions they can be used to manage access to multiple
-repositories (for example, restrict access to certain repositories to staff
-while others may be accessed by student assistants as well).
+In the first episode, we already learned bout groups; GitLab’s way to organize projects.
+A group might hold projects of a research group or those of a research project with contributors from multiple institutions.
+Together with members and their permissions groups can be used to manage access to multiple repositories (for example, restrict access to certain repositories to staff while others may be accessed by student assistants as well).
 
 In this episode we will create (and delete) a group, move our project, and learn
 how members of a group relate to its subgroups and projects.
 
 ## Creating a Group
 
-In the top menu bar, we open the drop-down menu labeled with a boxed plus and
-select the menu item “New Group”. On the next page, we select “Create group”,
-because that is what we want to do.
+In the top menu bar, we open the drop-down menu labeled with a boxed plus and select the menu item “New Group”.
+On the next page, we select “Create group”.
 
 This leads to the following page:
 
@@ -55,46 +51,40 @@ about that it is available.
 You can leave the group’s visibility private. The visibility of a group works
 like that of a project.
 
-We will leave the remaining fields as they are and create the group by clicking
-the blue button labeled “Create group”. GitLab will navigate to the group home
-page, listing the group’s subgroups and projects (currently none).
+We will leave the remaining fields as they are and create the group by clicking the blue button labeled “Create group”.
+GitLab will navigate to the group home page, which usually lists the group’s subgroups and projects.
+Since there are currently none, it shows to big buttons for creating a new subgroup and a new project.
 
-Now, we will have a look at how to create a project in the new group.
+We will have a look at how to create a project in the new group.
 
-In the top menu bar, we open the drop-down menu labeled with a boxed plus and
-select the menu item “New Project”. On the next page, we select “Create blank
-project”.
+We click on the button labeled “Create new project”.
+On the next page, we select “Create blank project”.
 
-This leads to the create blank project form page. We do not really want to
-create a project. Instead we have a look at the drop-down field under the
-heading “Project URL”. It will either show your username or one of the groups
-you belong to.
+This leads to the create blank project form page.
+We do not really want to create a project.
+Instead we have a look at the drop-down field under the heading “Project URL”.
+Because of the way that we took to get to this page, it is prefilled with our group’s URL slug.
 
-If the field does not show the URL of the group that we just created, clicking
-on the field should open a drop-down list which includes it and allows us to
-select it.
-
-Submitting the form with our group’s URL selected would create a project in that
-group.
+Submitting the form with our group’s URL selected would create a project in that group.
+But we will not do that.
 
 ## Move Project to Group
 
-We will now move our project to our group.
+Instead, we will now move our project to our group.
 
-On the side menu, we select “Settings” then “General”. On that page, we expand
-the section labeled “Advanced” and scroll down to the subsection labeled
-“Transfer Project”.
+We start, by navigating to our project’s homepage.
+On the side menu, we select “Settings” then “General”.
+On that page, we expand the section labeled “Advanced” and scroll down to the subsection labeled “Transfer Project”.
 
 Now, please read the subsections notes, with an emphasis on the list of things
 to be aware of.
 
 A few comments on the last two items of the list:
 
-The second to last tells us that we will need to update our local repositories
-to point to the new location. Because we are moving the project to a group from
-our own projects, the URL will change. So the URL we specified when adding the
-remote to our local repository will no longer be valid. We will test this, but
-will not change the URL, because we will move the project back in a bit.
+The second to last tells us that we will need to update our local repositories to point to the new location.
+Because we are moving the project to a group from our own projects, the URL will change.
+So the URL we specified when adding the remote to our local repository will no longer be valid.
+We will test this, but will not change the URL, because we will move the project back in a bit.
 
 The last item on the list informs us about potential visibility changes. For
 example, moving a public project to a private group, will cause the project to
@@ -108,6 +98,8 @@ A dialog appears and we confirm, that we are sure, by typing in the name of our
 project and clicking the button labeled “Confirm”.
 
 The project will be transferred to the group.
+
+### Check that the project URL changed (only when teaching with Git)
 
 To test that the URL changed, we switch to the shell and navigate to the
 directory containing our repository; **Not the repository of our co-learner**!
@@ -143,11 +135,8 @@ project.][GitLab-Redirect]
 
 ### Adding Members
 
-Add your instructor as a member of your group with the role of “Guest”. The
-process is the same as to add members to a project.
-
-Hint: After adding a member, you might need to reload the members page to see
-the new member in the list.
+Add your instructor as a member of your group with the role of “Guest”.
+The process is the same as adding members to a project.
 
 This exercise should take about 5 minutes.
 
