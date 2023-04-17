@@ -19,8 +19,8 @@ exercises: 0
 
 :::
 
-In the chapter on collaboration we learned how to contribute changes to a
-project that we are a member of. We also learned, in the previous chapter, that
+In the episode on collaboration we learned how to contribute changes to a
+project that we are a member of. We also learned, in the previous episode, that
 we can contribute to other projects by filing issues to report problems or ask
 questions. This episode we will learn about a way to suggest concrete changes to
 a GitLab project that we do not have write access on.
