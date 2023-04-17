@@ -513,7 +513,7 @@ the software “Inkscape”.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The project page is located at <a href="https://gitlab.com/inkscape/inkscape" class="external-link uri">https://gitlab.com/inkscape/inkscape</a>. If you found
 yourself at <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> you found the group page of
@@ -563,7 +563,7 @@ group’s name and one subgroup or contained project of that group.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>The top-level groups name is Inkscape as it is written at the top of
@@ -926,25 +926,6 @@ initial branch created by the <code>git init</code> command. We will use
 this, to make sure that all future repositories created locally start
 with a branch called <code>main</code>:</p>
 <pre><code>$ git config --global init.defaultBranch main</code></pre>
-<div id="callout1" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="markdown-lists" class="callout-inner">
-<h3 class="callout-title">Markdown Lists<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
-<div class="callout-content">
-<p>Lists can be represented in Markdown by starting their items with a
-<code>*</code> character followed by a space. If an list item wraps over
-multiple lines, lines following the first are started with sufficient
-spaces to align the lines text with the first line’s text.</p>
-<p>For example:</p>
-<pre><code>* First item
-* Second item with enough text to make us wrap to a second
-  line.</code></pre>
-</div>
-</div>
-</div>
 </section><section id="creating-a-local-repository"><h2 class="section-heading">Creating a Local Repository<a class="anchor" aria-label="anchor" href="#creating-a-local-repository"></a>
 </h2>
 <hr class="half-width">
@@ -1049,14 +1030,14 @@ completing the analogy.</p>
 <p>Going back to the shell, we configure our project’s repository as a
 remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
-<div id="callout2" class="callout callout">
+<div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="https-vs-git" class="callout-inner">
 <h3 class="callout-title">
 <a href="https://" class="external-link uri">https://</a> vs
-git@<a class="anchor" aria-label="anchor" href="#callout2"></a>
+git@<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
 <p>We assume throughout this lesson that the user has no SSH key is
@@ -1082,12 +1063,12 @@ project’s repository on GitLab. It will be different for everyone.</p>
 <p>Note also, that we skipped the second line of the instructions. It
 renames an existing remote <code>origin</code> to
 <code>old-origin</code>, but we have no existing remote.</p>
-<div id="callout3" class="callout callout">
+<div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="names-for-remotes" class="callout-inner">
-<h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
 <p>Apart from following restrictions that Git puts on remote names,
@@ -1128,12 +1109,12 @@ Below the heading “The repository for this project is empty” there are
 several buttons. We click the one labeled “New file”, which brings us to
 a new page, the so called WebIDE. In the middle of that page is a menu
 item, again labeled “New file…”, which we click on.</p>
-<div id="callout4" class="callout callout">
+<div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="changing-the-webide-theme" class="callout-inner">
-<h3 class="callout-title">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
 <p>GitLab’s WebIDE uses a dark theme by default. To change it, click on
@@ -1155,12 +1136,12 @@ editor on the right. The list of files should only have one entry:
 file <code>README.md</code>. We see the filename at the top in a tab,
 which indicates that we can open multiple files and switch between them
 using the tabs at the top.</p>
-<div id="callout5" class="callout callout">
+<div id="callout4" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="markdown-headlines" class="callout-inner">
-<h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#callout5"></a>
+<h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#callout4"></a>
 </h3>
 <div class="callout-content">
 <p>In Markdown, headlines are marked by one up to six <code>#</code>
@@ -1196,14 +1177,14 @@ number of <code>#</code> characters indicates the heading’s level, with
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>We type something similar to the following into the text editor:</p>
-<div class="codewrapper sourceCode" id="cb21">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Research Diary</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>This repository contains our research diary.</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>Each day gets its own file.</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>We use the Markdown format for our files.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Research Diary</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>This repository contains our research diary.</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>Each day gets its own file.</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>We use the Markdown format for our files.</span></code></pre>
 </div>
 </div>
 </div>
@@ -1325,7 +1306,7 @@ any links that you are not going to use.
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>This episode consists of two alternative parts.</p>
 <p>The first alternative uses Git for collaboration. It consists of the
@@ -1747,7 +1728,7 @@ not point to a new project.</a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1818,7 +1799,7 @@ settings.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -2709,7 +2690,7 @@ error.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
