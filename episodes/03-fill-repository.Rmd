@@ -68,9 +68,6 @@ with a branch called `main`:
 $ git config --global init.defaultBranch main
 ```
 
-```{r, child=c('markdown-lists.md')}
-```
-
 ## Creating a Local Repository
 
 ::: challenge
