@@ -335,11 +335,15 @@ following page we click on the button labeled “New issue”.</p>
 <p>This leads us to the following form:</p>
 <figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title” with subscript “Add description templates to help your contributors communicate effectively!”, the second and third word being a link, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description”, a check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example
 “Recognize outside contributors” and a description:</p>
-<pre><code>Outside contributors should be mentioned in the project’s documentation. Their
-names could be listed in one of the following locations:
-
-* a section of `README.md`
-* a separate `CONTRIBUTORS.md` file</code></pre>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Outside contributors should be mentioned in the project’s documentation. Their</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>names could be listed in one of the following locations:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a section of <span class="in">`README.md`</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a separate <span class="in">`CONTRIBUTORS.md`</span> file</span></code></pre>
+</div>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -354,7 +358,11 @@ be readable in such fonts.</p>
 <p>For a monospaced snippet within a normal paragraph, enclose the
 snippet in a single backquote (also called backtick or grave accent),
 for example</p>
-<pre><code>The filename `README.md` will be set in a monospaced font.</code></pre>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>The filename <span class="in">`README.md`</span> will be set in a monospaced font.</span></code></pre>
+</div>
 <p>will be typeset as:</p>
 <p>The filename <code>README.md</code> will be set in a monospaced
 font.</p>
@@ -362,12 +370,16 @@ font.</p>
 start and end the block with a line consisting of three or more
 backquotes, where the number should match for start and end, for
 example</p>
-<pre><code>```
-# This python code will also be set in a monospaced font, which preserves
-# relative indentation between lines.
-def some_function():
-    pass
-```</code></pre>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in"># This python code will also be set in a monospaced font, which preserves</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in"># relative indentation between lines.</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="in">def some_function():</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="in">    pass</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre>
+</div>
 <p>will be typeset as:</p>
 <pre><code># This python code will also be set in a monospaced font, which preserves
 # relative indentation between lines.

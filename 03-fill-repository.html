@@ -322,15 +322,12 @@ interface.</li>
 properly configured.</p>
 <p>To check for our name and email address, We run</p>
 <pre><code>$ git config --global --get user.name</code></pre>
-<p>{: .language-bash}</p>
 <p>and</p>
 <pre><code>$ git config --global --get user.email</code></pre>
-<p>{: .language-bash}</p>
 <p>If both return sensible values, we are good to go. Otherwise we
 provide the missing values, for example:</p>
 <pre><code>$ git config --global user.name "Some Novice"
 $ git config --global user.email "some.novice@example.com"</code></pre>
-<p>{: .language-bash}</p>
 <p>It is now common to name the default branch <code>main</code>, rather
 than <code>master</code> as is still the default in Git. For more
 information see, for example, the <a href="https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/" class="external-link">announcement
@@ -410,15 +407,11 @@ $ git commit -m "Add README.md"</code></pre>
 exists and that there are no changes in the working directory or in the
 stating area:</p>
 <pre><code>$ git status</code></pre>
-<p>{: .language-bash}</p>
 <pre><code>On branch main
 nothing to commit, working tree clean</code></pre>
-<p>{: .output}</p>
 <p>There is one file, <code>README.md</code>:</p>
 <pre><code>$ ls</code></pre>
-<p>{: .language-bash}</p>
 <pre><code><span><span class="va">README.md</span></span></code></pre>
-<p>{: .output}</p>
 </section><section id="connecting-local-and-remote-repository"><h2 class="section-heading">Connecting Local and Remote Repository<a class="anchor" aria-label="anchor" href="#connecting-local-and-remote-repository"></a>
 </h2>
 <hr class="half-width"><p>Having thus created our local repository, we want to save it to our
@@ -465,7 +458,6 @@ completing the analogy.</p>
 <p>Going back to the shell, we configure our project’s repository as a
 remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
-<p>{: .language-bash}</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -526,7 +518,6 @@ repository after our username or server it is located on, for example
 <p>Finally, we push our changes to the remote repository. The command
 will prompt for our user name and password:</p>
 <pre><code>$ git push -u origin --all</code></pre>
-<p>{: .language-bash}</p>
 <pre><code>Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 250 bytes | 250.00 KiB/s, done.
@@ -534,7 +525,6 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://gitlab.com/somenovice/research-diary.git
  * [new branch]      main -&gt; main
 branch 'main' set up to track 'origin/main'.</code></pre>
-<p>{: .output}</p>
 <p>Having successfully pushed our commit to the GitLab repository, we
 change to our browser and navigate to the project (or reload it, if we
 still have it open).</p>
@@ -614,11 +604,15 @@ number of <code>#</code> characters indicates the heading’s level, with
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>We type something similar to the following into the text editor:</p>
-<pre><code># Research Diary
-
-This repository contains our research diary.
-Each day gets its own file.
-We use the Markdown format for our files.</code></pre>
+<div class="codewrapper sourceCode" id="cb21">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Research Diary</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>This repository contains our research diary.</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>Each day gets its own file.</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>We use the Markdown format for our files.</span></code></pre>
+</div>
 </div>
 </div>
 </div>

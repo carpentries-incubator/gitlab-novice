@@ -911,15 +911,12 @@ consists of the last two sections.</p>
 properly configured.</p>
 <p>To check for our name and email address, We run</p>
 <pre><code>$ git config --global --get user.name</code></pre>
-<p>{: .language-bash}</p>
 <p>and</p>
 <pre><code>$ git config --global --get user.email</code></pre>
-<p>{: .language-bash}</p>
 <p>If both return sensible values, we are good to go. Otherwise we
 provide the missing values, for example:</p>
 <pre><code>$ git config --global user.name "Some Novice"
 $ git config --global user.email "some.novice@example.com"</code></pre>
-<p>{: .language-bash}</p>
 <p>It is now common to name the default branch <code>main</code>, rather
 than <code>master</code> as is still the default in Git. For more
 information see, for example, the <a href="https://about.gitlab.com/blog/2021/03/10/new-git-default-branch-name/" class="external-link">announcement
@@ -1000,15 +997,11 @@ $ git commit -m "Add README.md"</code></pre>
 exists and that there are no changes in the working directory or in the
 stating area:</p>
 <pre><code>$ git status</code></pre>
-<p>{: .language-bash}</p>
 <pre><code>On branch main
 nothing to commit, working tree clean</code></pre>
-<p>{: .output}</p>
 <p>There is one file, <code>README.md</code>:</p>
 <pre><code>$ ls</code></pre>
-<p>{: .language-bash}</p>
 <pre><code><span><span class="va">README.md</span></span></code></pre>
-<p>{: .output}</p>
 </section><section id="connecting-local-and-remote-repository"><h2 class="section-heading">Connecting Local and Remote Repository<a class="anchor" aria-label="anchor" href="#connecting-local-and-remote-repository"></a>
 </h2>
 <hr class="half-width">
@@ -1056,7 +1049,6 @@ completing the analogy.</p>
 <p>Going back to the shell, we configure our project’s repository as a
 remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
-<p>{: .language-bash}</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1117,7 +1109,6 @@ repository after our username or server it is located on, for example
 <p>Finally, we push our changes to the remote repository. The command
 will prompt for our user name and password:</p>
 <pre><code>$ git push -u origin --all</code></pre>
-<p>{: .language-bash}</p>
 <pre><code>Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 250 bytes | 250.00 KiB/s, done.
@@ -1125,7 +1116,6 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://gitlab.com/somenovice/research-diary.git
  * [new branch]      main -&gt; main
 branch 'main' set up to track 'origin/main'.</code></pre>
-<p>{: .output}</p>
 <p>Having successfully pushed our commit to the GitLab repository, we
 change to our browser and navigate to the project (or reload it, if we
 still have it open).</p>
@@ -1206,11 +1196,15 @@ number of <code>#</code> characters indicates the heading’s level, with
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>We type something similar to the following into the text editor:</p>
-<pre><code># Research Diary
-
-This repository contains our research diary.
-Each day gets its own file.
-We use the Markdown format for our files.</code></pre>
+<div class="codewrapper sourceCode" id="cb21">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Research Diary</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>This repository contains our research diary.</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>Each day gets its own file.</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>We use the Markdown format for our files.</span></code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -1423,8 +1417,12 @@ should contain a single file, <code>README.md</code>.</p>
 repository and we can add our lab entry.</p>
 <p>First we create a file, named <code>2022-03-13.md</code> after the
 date on which we did the work, listing the work we did:</p>
-<pre><code>* Injected transformational fluid into moss sample.
-* Moss turned into several butterflys. SUCCESS!</code></pre>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Injected transformational fluid into moss sample.</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Moss turned into several butterflys. SUCCESS!</span></code></pre>
+</div>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1487,8 +1485,12 @@ Fast-forward
 <code>2022-03-13.md</code> was added. Letting the shell write out the
 files contents shows us, what our colleague did:</p>
 <pre><code>$ cat 2022-03-13.md</code></pre>
-<pre><code>* Started the centrifuge.
-* Put the used tools in the autoclave.</code></pre>
+<div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Started the centrifuge.</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Put the used tools in the autoclave.</span></code></pre>
+</div>
 <p>We successfully collaborated through GitLab on a project of text
 files.</p>
 </section><section id="contribute-changes-to-project-repository-using-gitlab-webide"><h2 class="section-heading">Contribute Changes to Project Repository (using GitLab WebIDE)<a class="anchor" aria-label="anchor" href="#contribute-changes-to-project-repository-using-gitlab-webide"></a>
@@ -1713,13 +1715,10 @@ the directory containing our repository; <strong>Not the repository of
 our co-learner</strong>!</p>
 <p>Running</p>
 <pre><code>git remote get-url origin</code></pre>
-<p>{: .language-bash}</p>
 <p>should tell us that our project points to the old project URL. So,
 let us try to run</p>
 <pre><code>git pull</code></pre>
-<p>{: .language-bash}</p>
 <pre><code>Already up to date.</code></pre>
-<p>{: .output}</p>
 <p>That result is unexpected. The reason for this is that <a href="https://docs.gitlab.com/ee/user/project/repository/#what-happens-when-a-repository-path-changes" class="external-link">GitLab
 will redirect the old URLs to the new ones, as long as the old URLs do
 not point to a new project.</a></p>
@@ -1748,7 +1747,7 @@ not point to a new project.</a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1819,7 +1818,7 @@ settings.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1911,11 +1910,15 @@ following page we click on the button labeled “New issue”.</p>
 <p>This leads us to the following form:</p>
 <figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title” with subscript “Add description templates to help your contributors communicate effectively!”, the second and third word being a link, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description”, a check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example
 “Recognize outside contributors” and a description:</p>
-<pre><code>Outside contributors should be mentioned in the project’s documentation. Their
-names could be listed in one of the following locations:
-
-* a section of `README.md`
-* a separate `CONTRIBUTORS.md` file</code></pre>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Outside contributors should be mentioned in the project’s documentation. Their</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>names could be listed in one of the following locations:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a section of <span class="in">`README.md`</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a separate <span class="in">`CONTRIBUTORS.md`</span> file</span></code></pre>
+</div>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1930,7 +1933,11 @@ be readable in such fonts.</p>
 <p>For a monospaced snippet within a normal paragraph, enclose the
 snippet in a single backquote (also called backtick or grave accent),
 for example</p>
-<pre><code>The filename `README.md` will be set in a monospaced font.</code></pre>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>The filename <span class="in">`README.md`</span> will be set in a monospaced font.</span></code></pre>
+</div>
 <p>will be typeset as:</p>
 <p>The filename <code>README.md</code> will be set in a monospaced
 font.</p>
@@ -1938,12 +1945,16 @@ font.</p>
 start and end the block with a line consisting of three or more
 backquotes, where the number should match for start and end, for
 example</p>
-<pre><code>```
-# This python code will also be set in a monospaced font, which preserves
-# relative indentation between lines.
-def some_function():
-    pass
-```</code></pre>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in"># This python code will also be set in a monospaced font, which preserves</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in"># relative indentation between lines.</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="in">def some_function():</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="in">    pass</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre>
+</div>
 <p>will be typeset as:</p>
 <pre><code># This python code will also be set in a monospaced font, which preserves
 # relative indentation between lines.
@@ -2698,7 +2709,7 @@ error.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
