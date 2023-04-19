@@ -264,3 +264,7 @@ TODO: DESCRIBE HOW TO SAVE
 After committing our change, the pipeline will automatically run.
 When it has successfully completed, we select Pages under the Settings heading of the menu on the left.
 In the section called “Access pages”, we find a link to our web page.
+This will lead to a page informing us that the requested resource was not found.
+The reason is, that we do not provide a file called `index.html`.
+Instead, we need to append `diary.html` at the end of the URL shown in the settings page.
+Now we see the rendered version of that diary, published in the web.
