@@ -219,6 +219,7 @@
       <div class="accordion-body">
         <ul><li><a href="#example-configuration">Example Configuration</a></li>
 <li><a href="#our-own-configuration">Our Own Configuration</a></li>
+<li><a href="#publishing-to-the-web">Publishing to the Web</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
         
@@ -276,7 +277,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Process Automation</h1>
-        <p> Last updated on 2023-04-18 | 
+        <p> Last updated on 2023-04-19 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/08-process-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -298,6 +299,7 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>How can I use GitLab to automate processes?</li>
+<li>How can I host a static website directly from GitLab?</li>
 </ul></div>
 </div>
 </div>
@@ -309,6 +311,7 @@
 repository.</li>
 <li>Safely use secrets in a process automatically triggered by
 GitLab.</li>
+<li>Configure a GitLab repository to host a static website.</li>
 </ul></div>
 </div>
 </div>
@@ -316,22 +319,21 @@ GitLab.</li>
 </div>
 <p>We have setup our project, collaborated with our colleagues; we fill
 our research diary every day. Now it is time to make use of it.</p>
-<p>We think about using part of our daily commute by train to review
-what happened in the past. We always have our e-reader with us, so
-ideally we would like to have an version of our diary in EPUB
-format.</p>
+<p>We want to share it with the world, because what we do is so
+important and everyone should now about it. So we want to create a
+website based on the diary and update it whenever our Markdown files
+change.</p>
 <p>Just as much based in reality as the rest of this lesson’s story, we
 know how to do that, but we do not want to do it by hand. Instead, we
-are going to let GitLab automatically build us an EPUB file, whenever
-our repository changes. To achieve it, we will us the feature that
-GitLab files under “CI/CD”, which stands for Continuous
-Integration/Continuous Deployment.</p>
+are going to let GitLab automatically turn our Markdown files into HTML,
+whenever our repository changes. To achieve it, we will use two GitLab
+features: CI/CD-Pipelines and Pages.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="continuous-integrationcontinuous-deployment" class="callout-inner">
-<h3 class="callout-title">Continuous Integration/Continuous
+<div id="cicd-or-continuous-integrationcontinuous-deployment" class="callout-inner">
+<h3 class="callout-title">CI/CD or Continuous Integration/Continuous
 Deployment<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
@@ -340,16 +342,17 @@ come from the fields of software engineering and software operation.</p>
 <p>A software project uses CI, if it has setup a process that
 automatically runs some (or all) tests for a software project, whenever
 changes are committed or even just proposed (for example through a merge
-request) to the main branch of a repository. In particular when already
-done for proposed changes this can help prevent bugs to reach the code
-base, while freeing the developer of thinking of and running all the
-tests themselves.</p>
+request) to the main branch of a repository. In particular, when tests
+run already for proposed changes this can help prevent bugs to reach the
+code base, while freeing the developer of remembering to run all the
+tests, before creating a merge request.</p>
 <p>CD is a process that updates the software on the production machines
 (deploys) as soon as a new change reaches the code base, generally after
 having passed the CI process.</p>
-<p>Both processes can be implemented by running scripts, called jobs,
-triggered either by changes to the code base or by the successful
-completion of other jobs, which lead to the CI/CD feature of GitLab.</p>
+<p>Both processes can be implemented by running scripts, called jobs on
+GitLab, triggered either by changes to the code base or by the
+successful completion of other jobs, which lead to the CI/CD feature of
+GitLab.</p>
 </div>
 </div>
 </div>
@@ -362,17 +365,17 @@ left.</p>
 <code>.gitlab-ci.yml</code> template file to explore how CI/CD works.”
 The GitLab CI is configured by providing a file called
 <code>.gitlab-ci.yml</code> in the root directory of a project’s
-repository. Even though we want to learn how CI works in GitLab, we do
-not follow the invitation, because the example is quite elaborate and
-targets software developers specifically. Instead, we will use the
+repository. Even though we want to learn how to configure CI in GitLab,
+we do not follow the invitation, because the example is quite elaborate
+and targets software developers specifically. Instead, we will use the
 provided template for Bash.</p>
-<p>We click on the button labeled “Use template” of the entry for Bash
-in the list at the bottom of the page.</p>
+<p>In the list at the bottom of the page, we click on the button labeled
+“Use template” in the entry for Bash.</p>
 <p>This leads us to an editor for the <code>.gitlab-ci.yml</code> file
-that is prefilled from the selected template. The file is expected to be
-written in the <a href="https://yaml.org/" class="external-link">YAML</a> file format, hence
-the file extension <code>.yml</code>. We will go through the example
-line by line. Afterwards we will adapt it to our needs.</p>
+that is prepopulated with the selected template. The file is expected to
+be written in the <a href="https://yaml.org/" class="external-link">YAML</a> file format,
+hence the file extension <code>.yml</code>. We will go through the
+example line by line. Afterwards we will adapt it to our needs.</p>
 <p>The first few lines, starting with the symbol <code>#</code>, are
 comments notifying us of where to find further information. The last of
 these lines is the exception, which is a comment on the first functional
@@ -385,7 +388,7 @@ line:</p>
 <p>This line states that the scripts that are provided later on should
 be executed in Docker containers build from the stated Docker image.
 Busybox is a very small Linux distribution, reduced to the bare minimum,
-and it provides a shell.</p>
+that provides bash, a shell.</p>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -398,26 +401,29 @@ and it provides a shell.</p>
 </div>
 </div>
 </div>
-<p>Now follow to blocks starting with <code>before_script:</code> and
-<code>after_script:</code>. We will ignore those.</p>
+<p>It is followed by two blocks starting with
+<code>before_script:</code> and <code>after_script:</code>. We will
+ignore those.</p>
 <p>The remaining four blocks, <code>build1:</code>, <code>test1:</code>,
 <code>test2:</code>, and <code>deploy1:</code>, each define a so called
-job. A job defines a script and represents one non-divisible unit of a
-CI/CD process. Together the jobs defined in a project’s
-<code>.gitlab-ci.yml</code> file form a so called pipeline.</p>
-<p>By default a pipeline has three stages, called <code>build</code>,
-<code>test</code>, and <code>deploy</code>, and their order is
-important. The terminology comes from software development again. A
-pipeline is executed by running all jobs of the first stage and if they
-succeed to continue onto the next stage, continuing until a job fails or
-all jobs of the last stage succeeded.</p>
+<strong>job</strong>. A job represents one non-divisible unit of a CI/CD
+process. Together the jobs defined in a project’s
+<code>.gitlab-ci.yml</code> file form a so called
+<strong>pipeline</strong>.</p>
+<p>By default a pipeline has three <strong>stages</strong>, called
+<code>build</code>, <code>test</code>, and <code>deploy</code>, and
+their order is important. The terminology comes from software
+development again. A pipeline is executed by running all jobs of the
+first stage and, if they succeed, to then continue with jobs of the next
+stage, repeating this until a job fails or all stages complete.</p>
 <p>The four jobs in the example are named similar to the stages they are
 assigned to. The assignment is done through the keyword
-<code>stage:</code> that can always be found in the second line of a
-job’s definition.</p>
+<code>stage:</code> that can in this example be found in the second line
+of each job’s definition.</p>
 <p>The lines following the keyword <code>script:</code> in each section,
 define the script that will be executed as part of the respective job.
-In this example, they are all <code>echo</code> statements.</p>
+In this example, they are all <code>echo</code> statements, that output
+what follows.</p>
 </section><section id="our-own-configuration"><h2 class="section-heading">Our Own Configuration<a class="anchor" aria-label="anchor" href="#our-own-configuration"></a>
 </h2>
 <hr class="half-width"><p>We will now adapt the script to our requirements.</p>
@@ -429,10 +435,10 @@ want to have descriptive names for our use case:</p>
 </h3>
 <pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stages</span><span class="kw">:</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> check</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> create</span></span></code></pre>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> publish</span></span></code></pre>
 </div>
 <p>In the first stage, we will do some testing, in the second we will
-create an EPUB format version of our research diary.</p>
+create the HTML version of our diary and publish it.</p>
 <p>We call the first job <code>check-for-mds</code> and in it make sure,
 that at least one Markdown file exists, because otherwise someone must
 have accidentally removed them all.</p>
@@ -451,30 +457,29 @@ of files. We also state that the job belongs to the stage
 <code>check</code>. Finally, we provide the script. It tests for the
 existence of any files with names ending in <code>.md</code>.</p>
 <p>Whenever the job <code>check-for-mds</code> successfully completes,
-we want to create the EPUB format version of our research diary. We
-define a second job and call it <code>create-epub</code>.</p>
+we want to create the HTML version of our research diary. We define a
+second job and call it <code>publish-on-web</code>.</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create-epub</span><span class="kw">:</span></span>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">publish-on-web</span><span class="kw">:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pandoc/core:latest</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">entrypoint</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"/bin/sh"</span><span class="kw">,</span><span class="at"> </span><span class="st">"-c"</span><span class="kw">]</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> create</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> publish</span></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o diary.epub</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o diary.html</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">artifacts</span><span class="kw">:</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> diary.epub</span></span></code></pre>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> diary.html</span></span></code></pre>
 </div>
 <p>After giving the name of the job, we again provide an Docker image in
-which the job should run. Since we want to use pandoc to convert our
-Markdown files into an EPUB file, we use the official pandoc Docker
-image. The next line, with the keyword <code>entrypoint</code> is
-necessary, because the pandoc Docker image is configured to directly run
-pandoc, when started in a container (pandoc is configured as its
-entrypoint). However, GitLab CI expects to run scripts in the Docker
-container, thus expects the Docker images to start a shell.</p>
+which the job should run. We use pandoc to convert our Markdown files
+into an HTML file, so we use the official pandoc Docker image. The next
+line, with the keyword <code>entrypoint</code> is necessary, because the
+pandoc Docker image is configured to directly run pandoc, when started
+in a container (pandoc is configured as its entrypoint). However, GitLab
+CI expects to run scripts in the Docker container in a shell.</p>
 <div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -483,23 +488,24 @@ container, thus expects the Docker images to start a shell.</p>
 <h3 class="callout-title">Pandoc<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
-<p>Pandoc converts text documents from format to another, for example
-from Markdown to EPUB. It supports many formats for the source documents
-and even more for the target document.</p>
+<p>Pandoc converts text documents from one format to another, for
+example from Markdown to HTML. It supports many formats for the source
+documents and even more for the target document.</p>
 <p>The <a href="https://pandoc.org/" class="external-link">project webpage</a> provides a
 complete list (in text and graphical form).</p>
+<p>The conversion is customizeable, for example through templates.</p>
 </div>
 </div>
 </div>
 <p>Next, we specify the stage, followed by the script. It runs pandoc on
 all files ending in <code>.md</code> in the current directory and
-instructs it to output a file <code>diary.epub</code>. Pandoc deduces
-from the file extension that it should be in EPUB format.</p>
+instructs it to output a file <code>diary.html</code>. Pandoc deduces
+from the file extension that it should be in HTML format.</p>
 <p>The final three lines, starting with the keyword
 <code>artifacts</code>, specify that GitLab CI should save the file
-<code>diary.epub</code> from the Docker container the job runs in and
+<code>diary.HTML</code> from the Docker container the job runs in and
 provide it for download on its web interface.</p>
-<p>This completes our GitLab CI configuration.There are a lot more
+<p>This completes our GitLab CI configuration. There are a lot more
 configuration options, for example to have a process run only for
 commits to certain branches, that are documented in <a href="https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.html" class="external-link">GitLab’s
 Handbook</a></p>
@@ -548,7 +554,7 @@ for their respective entities.</p>
 case that’s the author of the commit.</p>
 <p>The ”Stages” column visualizes the stages and their state. In
 addition to the colors discussed above, there are stages colored in
-grey. They are waiting for their predecessor stages (or need to be
+gray. They are waiting for their predecessor stages (or need to be
 manually triggered, if configured that way).</p>
 <p>We wait until our pipeline ran through. It should complete without
 error.</p>
@@ -560,7 +566,7 @@ error.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
@@ -572,14 +578,50 @@ needs to be handled on a case by case basis.</p>
 <p>We click on the button labeled by the three dots on the right of the
 entry. In the menu that opens, we see that it provides a link to
 download artifacts of the pipeline. We click on the link labeled
-“create-epub:archive”, which causes our browser to download a file
+“publish-on-web:archive”, which causes our browser to download a file
 called <code>artifacts.zip</code>.</p>
-<p>In that archive, we find the file <code>diary.epub</code> that was
-build by our second job, <code>create-epub</code>.</p>
-<p>If you have an ebook viewer, you can verify that it contains the
-contents of all Markdown our files. (We ignore the fact, that the order
-might not make sense at all. For that we would need to improve the
-script that builds the EPUB file.)</p>
+<p>In that archive, we find the file <code>diary.html</code> that was
+build by our second job, <code>publish-on-web</code>.</p>
+<p>By opening the file in your browser, you can verify that it contains
+the contents of all Markdown our files. (We ignore the fact, that the
+order might not make sense at all. For that we would need to improve the
+script that builds the HTML file.)</p>
+</section><section id="publishing-to-the-web"><h2 class="section-heading">Publishing to the Web<a class="anchor" aria-label="anchor" href="#publishing-to-the-web"></a>
+</h2>
+<hr class="half-width"><p>So far we managed to create an HTML page from our Markdown files. But
+we wanted to publish it on the web.</p>
+<p>To achieve this goal, we can use a feature of GitLab called Pages. It
+allows us to publish the results of a specific job of a CI pipeline to
+the web under the <code>gitlab.io</code> domain.</p>
+<p>TODO: DESCRIBE HOW TO GET THERE</p>
+<p>We change the configuration of our second job to look as follows:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pages</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pandoc/core:latest</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">entrypoint</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"/bin/sh"</span><span class="kw">,</span><span class="at"> </span><span class="st">"-c"</span><span class="kw">]</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> publish</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> mkdir public</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o public/diary.html</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">artifacts</span><span class="kw">:</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> public</span></span></code></pre>
+</div>
+<p>We change the job name to <code>pages</code>. This name is a
+convention to tell GitLab, that we want this job to create the contents
+for our web page. Then we create the HTML file in a directory called
+<code>public</code> and change the path that defines the job artifacts
+to <code>public</code> as well. The directory <code>public</code> is,
+again by convention, the place from which GitLab will take the contents
+to be published.</p>
+<p>TODO: DESCRIBE HOW TO SAVE</p>
+<p>After committing our change, the pipeline will automatically run.
+When it has successfully completed, we select Pages under the Settings
+heading of the menu on the left. In the section called “Access pages”,
+we find a link to our web page.</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
@@ -636,9 +678,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/08-process-automation.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/08-process-automation.html",
-  "dateCreated": "2023-04-17",
-  "dateModified": "2023-04-18",
-  "datePublished": "2023-04-18"
+  "dateCreated": "2023-04-19",
+  "dateModified": "2023-04-19",
+  "datePublished": "2023-04-19"
 }
 
   </script><script>
