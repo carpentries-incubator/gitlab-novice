@@ -7,6 +7,7 @@ exercises: 0
 ::: questions
 
 - How can I use GitLab to automate processes?
+- How can I host a static website directly from GitLab?
 
 :::
 
@@ -14,6 +15,7 @@ exercises: 0
 
 - Setup a process to run automatically when a commit is pushed to a repository.
 - Safely use secrets in a process automatically triggered by GitLab.
+- Configure a GitLab repository to host a static website.
 
 :::
 
@@ -128,11 +130,11 @@ Whenever the job `check-for-mds` successfully completes, we want to create the H
 We define a second job and call it `publish-on-web`.
 
 ```yaml
-publish:
+publish-on-web:
     image:
         name: pandoc/core:latest
         entrypoint: ["/bin/sh", "-c"]
-    stage: publish-on-web
+    stage: publish
     script:
         - pandoc *.md -o diary.html
     artifacts:
@@ -225,3 +227,40 @@ In that archive, we find the file `diary.html` that was build by our second job,
 By opening the file in your browser, you can verify that it contains the contents of all Markdown our files.
 (We ignore the fact, that the order might not make sense at all.
 For that we would need to improve the script that builds the HTML file.)
+
+## Publishing to the Web
+
+So far we managed to create an HTML page from our Markdown files.
+But we wanted to publish it on the web.
+
+To achieve this goal, we can use a feature of GitLab called Pages.
+It allows us to publish the results of a specific job of a CI pipeline to the web under the `gitlab.io` domain.
+
+TODO: DESCRIBE HOW TO GET THERE
+
+We change the configuration of our second job to look as follows:
+
+```yaml
+pages:
+    image:
+        name: pandoc/core:latest
+        entrypoint: ["/bin/sh", "-c"]
+    stage: publish
+    script:
+        - mkdir public
+        - pandoc *.md -o public/diary.html
+    artifacts:
+        paths:
+            - public
+```
+
+We change the job name to `pages`.
+This name is a convention to tell GitLab, that we want this job to create the contents for our web page.
+Then we create the HTML file in a directory called `public` and change the path that defines the job artifacts to `public` as well.
+The directory `public` is, again by convention, the place from which GitLab will take the contents to be published.
+
+TODO: DESCRIBE HOW TO SAVE
+
+After committing our change, the pipeline will automatically run.
+When it has successfully completed, we select Pages under the Settings heading of the menu on the left.
+In the section called “Access pages”, we find a link to our web page.
