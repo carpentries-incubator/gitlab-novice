@@ -279,7 +279,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Adding Files to a Project Repository</h1>
-        <p> Last updated on 2023-05-16 | 
+        <p> Last updated on 2023-05-23 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/03-fill-repository.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -363,13 +363,13 @@ with a branch called <code>main</code>:</p>
 <pre><code>$ git config --global init.defaultBranch main</code></pre>
 </section><section id="creating-a-local-repository"><h2 class="section-heading">Creating a Local Repository<a class="anchor" aria-label="anchor" href="#creating-a-local-repository"></a>
 </h2>
-<hr class="half-width"><div id="challenge1" class="callout challenge">
+<hr class="half-width"><div id="research-diarys-initial-content-required" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="research-diarys-initial-content-required" class="callout-inner">
 <h3 class="callout-title">Research Diary’s Initial Content
-(Required)<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+(Required)<a class="anchor" aria-label="anchor" href="#research-diarys-initial-content-required"></a>
 </h3>
 <div class="callout-content">
 <p>Create a Git repository anywhere on your computer. Add a README file
@@ -463,14 +463,14 @@ completing the analogy.</p>
 <p>Going back to the shell, we configure our project’s repository as a
 remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
-<div id="callout1" class="callout callout">
+<div id="https-vs-git" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="https-vs-git" class="callout-inner">
 <h3 class="callout-title">
 <a href="https://" class="external-link uri">https://</a> vs
-git@<a class="anchor" aria-label="anchor" href="#callout1"></a>
+git@<a class="anchor" aria-label="anchor" href="#https-vs-git"></a>
 </h3>
 <div class="callout-content">
 <p>We assume throughout this lesson that the user has no SSH key is
@@ -496,12 +496,12 @@ project’s repository on GitLab. It will be different for everyone.</p>
 <p>Note also, that we skipped the second line of the instructions. It
 renames an existing remote <code>origin</code> to
 <code>old-origin</code>, but we have no existing remote.</p>
-<div id="callout2" class="callout callout">
+<div id="names-for-remotes" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="names-for-remotes" class="callout-inner">
-<h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#names-for-remotes"></a>
 </h3>
 <div class="callout-content">
 <p>Apart from following restrictions that Git puts on remote names,
@@ -541,12 +541,12 @@ Below the heading “The repository for this project is empty” there are
 several buttons. We click the one labeled “New file”, which brings us to
 a new page, the so called WebIDE. In the middle of that page is a menu
 item, again labeled “New file…”, which we click on.</p>
-<div id="callout3" class="callout callout">
+<div id="changing-the-webide-theme" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="changing-the-webide-theme" class="callout-inner">
-<h3 class="callout-title">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#changing-the-webide-theme"></a>
 </h3>
 <div class="callout-content">
 <p>GitLab’s WebIDE uses a dark theme by default. To change it, click on
@@ -568,12 +568,12 @@ editor on the right. The list of files should only have one entry:
 file <code>README.md</code>. We see the filename at the top in a tab,
 which indicates that we can open multiple files and switch between them
 using the tabs at the top.</p>
-<div id="callout4" class="callout callout">
+<div id="markdown-headlines" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="markdown-headlines" class="callout-inner">
-<h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#markdown-headlines"></a>
 </h3>
 <div class="callout-content">
 <p>In Markdown, headlines are marked by one up to six <code>#</code>
@@ -585,13 +585,13 @@ number of <code>#</code> characters indicates the heading’s level, with
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="research-diarys-initial-content-2-required" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="research-diarys-initial-content-2-required" class="callout-inner">
 <h3 class="callout-title">Research Diary’s Initial Content 2
-(Required)<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+(Required)<a class="anchor" aria-label="anchor" href="#research-diarys-initial-content-2-required"></a>
 </h3>
 <div class="callout-content">
 <p>Describe the repository’s future contents in the README.md.</p>
@@ -721,7 +721,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -744,8 +744,8 @@ any links that you are not going to use.
   "url": "https://zedif.github.io/gitlab-novice/instructor/03-fill-repository.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/03-fill-repository.html",
   "dateCreated": "2023-04-19",
-  "dateModified": "2023-05-16",
-  "datePublished": "2023-05-16"
+  "dateModified": "2023-05-23",
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
