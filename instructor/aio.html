@@ -328,7 +328,7 @@
         
 <section id="aio-01-navigation"><p>Content from <a href="01-navigation.html">Navigation</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/01-navigation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
@@ -372,20 +372,19 @@ the features it provides can also be used for related purposes; for
 example, issue or task management, document management or project
 management in general.</p>
 <p>GitLab is open source software and can be run by anyone on their own
-hardware. The company behind the software runs one so called instance
-under <a href="https://gitlab.com" class="external-link uri">https://gitlab.com</a>
-where anyone (resident in a country or territory not sanction by the
-USA) can create an account and use it within certain limits for free.
-But there are also instances run by diverse people and institutions from
-hobbyists over small NGOs to large organizations (e.g. <a href="https://gitlab.dlr.de/" class="external-link uri">https://gitlab.dlr.de/</a>).
+hardware. The company behind the software runs one instance under <a href="https://gitlab.com" class="external-link uri">https://gitlab.com</a> where
+anyone (resident in a country or territory not sanctioned by the USA)
+can create an account and use it within certain limits for free. But
+there are also instances run by diverse people and institutions from
+hobbyists, over small NGOs, to large organizations (e.g. <a href="https://gitlab.dlr.de/" class="external-link uri">https://gitlab.dlr.de/</a>).
 Those are not necessarily publicly accessible.</p>
-<p>GitHub is a direct competitor to, and probably inspiration for,
+<p>GitHub is a direct competitor to, and probably an inspiration for,
 GitLab. Unlike GitLab, GitHub is not open source software, but large
 customers can run their own instances. With respect to the content
-covered by this lesson they are very similar and only differ in details.
-So, if you are already familiar with using GitHub, all this lesson can
-probably teach you is how concepts already familiar to you from GitHub
-are called in GitLab.</p>
+covered by this lesson GitLab and GitHub are very similar and only
+differ in details. So, if you are already familiar with using GitHub,
+all this lesson can probably teach you is how concepts already familiar
+to you from GitHub are called in GitLab.</p>
 </section><section id="finding-projects"><h2 class="section-heading">Finding Projects<a class="anchor" aria-label="anchor" href="#finding-projects"></a>
 </h2>
 <hr class="half-width">
@@ -398,10 +397,8 @@ are called in GitLab.</p>
 </h3>
 <div class="callout-content">
 <p>Navigate to to GitLab.com’s <a href="https://gitlab.com/user/sign_in" class="external-link">sign in page</a> and log in to
-your account. Once logged in, have a look at what projects you can see
-in the first three tabs (“Your projects”, “Starred projects”, and
-“Explore projects”). Play around with the filters and sort settings.</p>
-<p>This exercise should take about 5 minutes.</p>
+your account.</p>
+<p>This exercise should take about 1 minute.</p>
 </div>
 </div>
 </div>
@@ -414,9 +411,10 @@ welcome page, offering us four ways to move forward:</p>
 <li>“Learn more about GitLab”</li>
 </ul>
 <p>We will cover how to create a project and a group in the next
-episode. For now, we want to learn how to navigate GitLab. For that we
-select “Explore public projects”. This leads us to the projects overview
-page. The project is the main organizational unit of GitLab.</p>
+episode. For now, we want to learn how to navigate GitLab.</p>
+<p>For that we select “Explore public projects”. This leads us to an
+overview page of projects that are visible to us. The project is the
+main organizational unit of GitLab.</p>
 <div id="homepage" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -425,76 +423,45 @@ page. The project is the main organizational unit of GitLab.</p>
 <h3 class="callout-title">Homepage<a class="anchor" aria-label="anchor" href="#homepage"></a>
 </h3>
 <div class="callout-content">
-<p>The welcome page is only shown as long as we are not a member of any
+<p>The welcome page is only shown as long as you are not a member of any
 project yet. On instances other than GitLab.com it might also not be
 shown. In those cases the configured homepage is shown.</p>
-<p>The project overview page is the default homepage. However, the
+<p>The project dashboard page is the default homepage. However, the
 homepage is a configuration option for GitLab instances as well as
 individual users; the latter overriding the former. You may have changed
 that setting or an administrator might have changed the global
 configuration of the instance.</p>
-<p>You can always navigate to the project overview page by selecting one
-of the subentries of the “Projects” option in the menu accessible from
-the menu button on the left side of the top menu bar or the “Projects”
-entry from the sidebar menu on the left.</p>
+<p>You can always navigate to the project dashboard page by clicking on
+the GitLab logo in the upper left corner.</p>
 </div>
 </div>
 </div>
-<p>Depending on whether you have used GitLab before or have been
-assigned to a group by someone else you may see some or no projects
-under the first two tabs, “Your projects” and “Starred projects”. But on
-GitLab’s own instance you will certainly see projects under the “Explore
-projects” tab. For example, while writing the lesson material the tab
-looked like this:</p>
-<figure><img src="../fig/project-list.png" alt="Project overview page with tab “Explore projects” and subtab “Most stars” open. The tab shows a list of projects with icon, name, descriptions, and four statistical values for each entry." class="figure mx-auto d-block"><figcaption>Project overview page</figcaption></figure><p>The first tab, “Your projects”, lists all projects that you are a
-member of. When you create a project you automatically become a member.
-In addition, others can add you as a member to a project. We will learn
-about another way to become a member of a project in the <a href="05-groups.html">episode on groups</a>.</p>
-<p>The second tab, “Starred projects”, lists projects that you have
-“starred”. In this context, “starring” is similar to bookmarks in a
-browser. Every project homepage shows a widget in the upper right corner
-labeled “Star”. By pressing it you “star” the project and thus make it
-appear in that list.</p>
-<p>The third tab, “Explore projects”, lists all projects that you can
-access. This includes all projects from the “Your projects” tab as well
-as all projects that are publicly visible.</p>
-<div id="visiblity" class="callout callout">
+<div id="explore-projects" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="visiblity" class="callout-inner">
-<h3 class="callout-title">Visiblity<a class="anchor" aria-label="anchor" href="#visiblity"></a>
+<div id="explore-projects" class="callout-inner">
+<h3 class="callout-title">Explore Projects<a class="anchor" aria-label="anchor" href="#explore-projects"></a>
 </h3>
 <div class="callout-content">
-<p>GitLab offers three settings for the visibility of a project: public,
-internal, and private. Publicly visible projects can be looked at by
-anyone that can access the GitLab instance, projects with internal
-visibility can be looked at by anyone logged in to the instance, while
-projects with private visibility can only be looked at by its
-members.</p>
-<p>On GitLab.com the visibility “internal” is disabled. Everyone can
-create an account, log in to the instance, and thus could look at any
-project of internal visibility anyway.</p>
-<p>Self-hosted instances might also disable some visibility types. For
-example, the public visibility might be disabled, to prevent users from
-publishing something to the whole internet.</p>
+<p>On the “Explore projects” page, have a look at what projects you can
+see in the first three tabs (“All”, “Most starred”, and “Trending”).
+Play around with the filters and sort settings.</p>
+<p>This exercise should take about 5 minute.</p>
 </div>
 </div>
 </div>
-<p>When working with GitLab, most of the time you will want to access
-projects you are already a member of (in the GitLab sense). In that case
-the list on the “Your projects” will be all that you need to find the
-project you are looking for. When the list becomes long, the search
-field next to the tabs allows you to filter the projects by name, just
-as the placeholder text suggests.</p>
-<p>You can also use that search field on the “Explore projects” tab to
-search through all projects that you can look at.</p>
-<p>The search field in the top menu bar can also be used to find
-projects. It shows other search results, too, but clearly labels what is
-what.</p>
-<p>Finally, you can use the search field under “Projects” in the menu
-accessible from the menu button on the left side of the top menu bar to
-search for projects.</p>
+<p>The “Explore projects” page looks like this:</p>
+<figure><img src="../fig/project-explore.png" alt="Explore projects page with tab “Most starred” open. The tab shows a list of projects with icon, name, descriptions, and four statistical values for each entry." class="figure mx-auto d-block"><figcaption>Project overview page</figcaption></figure><p>The first tab, “All”, lists all projects that are visible to you in
+most recently updated order.</p>
+<p>The second tab, “Most starred projects”, also lists all projects, but
+this time ordered most starred first. Users of a GitLab instance can
+“star” a project, which is the equivalent of bookmarking them, as we
+will see shortly.</p>
+<p>The third tab, “Trending”, lists all projects again, but this time
+ordered by activity during the previous months.</p>
+<p>You can use the filter field next to the tab names to search through
+all projects that are visible to you.</p>
 <div id="finding-a-project" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -503,8 +470,8 @@ search for projects.</p>
 <h3 class="callout-title">Finding a project<a class="anchor" aria-label="anchor" href="#finding-a-project"></a>
 </h3>
 <div class="callout-content">
-<p>Use the search methods GitLab provides to find the project page for
-the software “Inkscape”.</p>
+<p>Use the search method we just told you about to find the project page
+for the software “Inkscape”.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
 </div>
@@ -516,7 +483,7 @@ the software “Inkscape”.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The project page is located at <a href="https://gitlab.com/inkscape/inkscape" class="external-link uri">https://gitlab.com/inkscape/inkscape</a>. If you found
 yourself at <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> you found the group page of
@@ -553,7 +520,7 @@ group</strong>.</li>
 </h3>
 <div class="callout-content">
 <p>On the group page <a href="https://gitlab.com/inkscape" class="external-link uri">https://gitlab.com/inkscape</a> identify the top-level
-group’s name and one subgroup or contained project of that group.</p>
+group’s name and one subgroup and contained project of that group.</p>
 <p>Hint: Note that groups cannot be starred.</p>
 <p>This exercise should take about 5 minutes.</p>
 </div>
@@ -566,28 +533,25 @@ group’s name and one subgroup or contained project of that group.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
-<li>The top-level groups name is Inkscape as it is written at the top of
-the main content.</li>
+<li>The top-level group’s name is Inkscape as it is written at the top
+of the main content.</li>
 <li>Any entry in the list “Subgroups and projects” is a subgroup or a
-contained project.</li>
+contained project. First subgroups are listed prefixed by a three dot
+symbol, followed by the projects prefixed by a folder symbol.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<p>Similar as for projects, GitLab provides an overview page for groups.
-You can navigate there by selecting one of the subentries of the
-“Groups” option in the menu accessible from the menu button on the left
-side of the top menu bar or the “Groups” entry from the sidebar menu on
-the left.</p>
-<p>The two tabs on that page, “Your groups” and “Explore public groups”
-work analogously to their corresponding tabs on the project overview
-page discussed above.</p>
-<p>For finding groups there are analogous search options as mentioned
-for projects before.</p>
+<p>Similar as for projects, GitLab provides an “Explore groups” page.
+You can navigate there by clicking on the GitLab log in the upper right
+corner, selecting “Groups” in the menu on the left and then clicking on
+“Explore groups” near the upper right corner.</p>
+<p>You will only find one list of groups that is searchable and sortable
+using the widgets at the top right of the list.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -598,22 +562,16 @@ for projects before.</p>
 <div class="callout-content">
 <ul>
 <li>Projects are GitLab’s primary entity of organization.</li>
-<li>Projects you have access to are listed in the “Your projects” tab on
-the project overview page.</li>
-<li>The project overview page is GitLab’s homepage unless configured
-differently.</li>
-<li>You can search for projects in the top menu, the top search bar and
-on the “Explore projects” tab of project overview page.</li>
-<li>A project’s visibility can be set to either private, internal, or
-public.</li>
+<li>You can explore projects visible to you on the “Explore projects”
+page.</li>
+<li>You can search for projects on the “Explore projects” page.</li>
 <li>On some instances a visibility class is disabled.</li>
 <li>Groups can contain projects and other groups.</li>
 <li>A top-level group is a group not contained in another.</li>
 <li>A subgroup is a group contained in another.</li>
-<li>Groups you have access to are listed in the “Your groups” tab on the
-group overview page.</li>
-<li>You can search for groups in the top menu, the top search bar and on
-the “Explore groups” tab of group overview page.</li>
+<li>You can explore groups visible to you on the ”Explore groups”
+page.</li>
+<li>You can search for groups on the “Explore groups” page.</li>
 </ul>
 </div>
 </div>
@@ -624,7 +582,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-02-gitlab-projects"><p>Content from <a href="02-gitlab-projects.html">GitLab Projects</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/02-gitlab-projects.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 35 minutes </p>
@@ -849,7 +807,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-03-fill-repository"><p>Content from <a href="03-fill-repository.html">Adding Files to a Project Repository</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/03-fill-repository.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -1267,7 +1225,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-04-collaboration"><p>Content from <a href="04-collaboration.html">Collaboration</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/04-collaboration.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
@@ -1588,7 +1546,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-05-groups"><p>Content from <a href="05-groups.html">Groups</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/05-groups.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
@@ -1731,7 +1689,7 @@ not point to a new project.</a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1802,7 +1760,7 @@ settings.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1839,7 +1797,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-06-issues"><p>Content from <a href="06-issues.html">Issues</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/06-issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
@@ -2085,7 +2043,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-07-merge-requests"><p>Content from <a href="07-merge-requests.html">Merge Requests</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/07-merge-requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
@@ -2410,7 +2368,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-08-process-automation"><p>Content from <a href="08-process-automation.html">Process Automation</a></p>
 <hr>
-<p> Last updated on 2023-10-31 | 
+<p> Last updated on 2023-11-03 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/08-process-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -2698,7 +2656,7 @@ error.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
@@ -2812,9 +2770,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
-  "dateCreated": "2023-10-24",
-  "dateModified": "2023-10-31",
-  "datePublished": "2023-10-31"
+  "dateCreated": "2023-11-03",
+  "dateModified": "2023-11-03",
+  "datePublished": "2023-11-03"
 }
 
   </script><script>
