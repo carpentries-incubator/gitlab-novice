@@ -328,7 +328,7 @@
         
 <section id="aio-01-navigation"><p>Content from <a href="01-navigation.html">Navigation</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/01-navigation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
@@ -582,7 +582,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-02-gitlab-projects"><p>Content from <a href="02-gitlab-projects.html">GitLab Projects</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/02-gitlab-projects.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 36 minutes </p>
@@ -833,7 +833,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-03-fill-repository"><p>Content from <a href="03-fill-repository.html">Adding Files to a Project Repository</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/03-fill-repository.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -1094,8 +1094,11 @@ still have it open).</p>
 navigate to the project’s homepage, unless we are already on that page.
 Below the heading “The repository for this project is empty” there are
 several buttons. We click the one labeled “New file”, which brings us to
-a new page, the so called WebIDE. In the middle of that page is a menu
-item, again labeled “New file…”, which we click on.</p>
+a new page, the so called WebIDE.</p>
+<p>The WebIDE shows a list of files on the left and a tabbed environment
+for open files on the right. Wen we first open it, it shows a Welcome
+page, which we can safely close by clicking the “x” labeled button on
+the Welcome page’s tab at the top.</p>
 <div id="changing-the-webide-theme" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1105,24 +1108,26 @@ item, again labeled “New file…”, which we click on.</p>
 </h3>
 <div class="callout-content">
 <p>GitLab’s WebIDE uses a dark theme by default. To change it, click on
-the gear icon in the lower left corner and select “Color Theme” from the
-opening menu. This opens a dialog to select a color theme for the IDE.
-Light themes are listed at the top and dark themes at the bottom.
-“GitLab Light” is GitLab’s own light theme. Select a theme by clicking
-on its name.</p>
+the gear icon in the lower left corner and select “Themes”, then “Color
+Theme” from the opening menu. This opens a dialog to select a color
+theme for the IDE. Light themes are listed at the top and dark themes at
+the bottom. “GitLab Light” is GitLab’s own light theme. Select a theme
+by clicking on its name.</p>
 </div>
 </div>
 </div>
-<p>This opens a dialog titled “New file…”, which prompts us for a
-filename. We type <code>README.md</code> into the field and confirm by
-pressing the return key and clicking the button labeled “OK”. This
-closes the dialog.</p>
-<p>The WebIDE page now shows a list of files on the left and a text
-editor on the right. The list of files should only have one entry:
-<code>README.md</code>. The text editor itself shows the contents of the
-file <code>README.md</code>. We see the filename at the top in a tab,
-which indicates that we can open multiple files and switch between them
-using the tabs at the top.</p>
+<p>To actually create a new file, we click on the button labeled with a
+icon representing a sheet of paper with a plus sign in the lower right
+corner. Note thate this button is only visible, if you mouse hovers over
+the list of files, which is currently empty, on the left. An text input
+field appears below the button, which prompts us for a filename. We type
+<code>README.md</code> into the field and confirm by pressing the return
+key.</p>
+<p>The list of files should only have one entry: <code>README.md</code>.
+The text editor itself shows the contents of the file
+<code>README.md</code>: nothing so far. We see the filename at the top
+in a tab, which indicates that we can open multiple files and switch
+between them using the tabs at the top.</p>
 <div id="markdown-headlines" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1184,7 +1189,7 @@ chronological order, constitute the history of a Git repository.</p>
 <p>To get there, we click on the button on the left showing an icon that
 indicates a branching from one circle to two others. The button should
 be overlaid with the number 1 in a circle.</p>
-<p>A dialog will replace with list of files. At the top is a text field
+<p>A dialog will replace the list of files. At the top is a text field
 for a commit message. Then comes a button labeled “Commit &amp; Push”,
 followed by a list of all files that were changed, added, or
 deleted.</p>
@@ -1192,7 +1197,7 @@ deleted.</p>
 the commit. <a href="https://cbea.ms/git-commit/" class="external-link">Good commit
 messages</a> are what makes the history of a repository useful.</p>
 <p>We enter a good commit message, for example “Add README.md” and click
-the button labeled “Commit &amp; Push”.</p>
+the button labeled “Commit to ‘main’”.</p>
 <p>Having done that, we are done editing and navigate back to the
 project’s homepage. To get there, we need to click on the button labeled
 “GitLab” in the lower left of the screen and select “Go to
@@ -1204,23 +1209,23 @@ settings of your browser.</project></p>
 <hr class="half-width">
 <p>We are greeted by the project homepage, similar to the following
 screenshot:</p>
-<figure><img src="../fig/first-push.png" alt="Project homepage of a project. On the left, a menu leading to other project pages. On the right, taking up most of the width, the project homepage. Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 72KB files, 72 KB Storage). Under these we see the description: “My research diary, a collection of Markdown files”. In the next line we see a drop-down field for branches showing “main”, the project slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”, “Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by a box giving information on the last commit of the current branch: the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button. This is followed by some buttons that allow to add or upload new files or setup some of GitLab features for the project. Next is a list of files, in this case only `README.md`, with information when it was last updated and through which commit. Finally, we see a rendering of `README.md`." class="figure mx-auto d-block"><figcaption>Project homepage after first push</figcaption></figure><p>Let us look at what has changed compared to its initial state. The
+<figure><img src="../fig/first-push.png" alt="Project homepage of a project. On the left, a menu leading to other project pages. On the right, taking up most of the width, the project homepage. Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 209B Project Storage). Under these we see the description: “My research diary, a collection of Markdown files”. This is followed by a box giving information on the last commit of the current branch: the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button. In the next line we see a drop-down field for branches showing “main”, the project slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”, “Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by some buttons that allow to add or upload new files or setup some of GitLab features for the project. Next is a list of files, in this case only `README.md`, with information when it was last updated and through which commit. Finally, we see a rendering of `README.md`." class="figure mx-auto d-block"><figcaption>Project homepage after first push</figcaption></figure><p>Let us look at what has changed compared to its initial state. The
 interface elements encouraging us to add members to the project are
-gone. Of course, we can still navigate to the project’s Members later
-on, if we need to. We also, correctly, no longer get told that the
+gone. Of course, we can still navigate to the project’s Members page
+later on, if we need to. We also, correctly, no longer get told that the
 repository is empty and the instructions on how to push content to the
 repository have vanished.</p>
 <p>Instead, we see some statistics below the project’s title: 1 Commit,
-1 Branch, 0 Tags, 72 KB Storage. They double as buttons other project
-pages.</p>
+1 Branch, 0 Tags, 209B Project Storage. They double as buttons to other
+project pages.</p>
 <p>Below the description is a box presenting information on the last
 commit of the currently selected branch, followed by a new button
 bar.</p>
 <p>The following buttons, that we saw earlier, allow us to add specific
 files or navigate to the configuration of certain GitLab features. Note
 that one button changed from reading “Add README” to just “README”,
-since we added <code>README.md</code>. The button is now a link to the
-latest version of that file in the current branch.</p>
+since we added a file called <code>README.md</code>. The button is now a
+link to the latest version of that file in the current branch.</p>
 <p>Then we see a list of files. So far, there is only
 <code>README.md</code>. The list also tells us through which commit it
 was last changed and when that commit was created.</p>
@@ -1251,7 +1256,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-04-collaboration"><p>Content from <a href="04-collaboration.html">Collaboration</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/04-collaboration.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
@@ -1293,7 +1298,7 @@ any links that you are not going to use.
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>This episode consists of two alternative parts.</p>
 <p>The first alternative uses Git for collaboration. It consists of the
@@ -1526,7 +1531,7 @@ chronological order, constitute the history of a Git repository.</p>
 <p>To get there, we click on the button on the left showing an icon that
 indicates a branching from one circle to two others. The button should
 be overlaid with the number 1 in a circle.</p>
-<p>A dialog will replace with list of files. At the top is a text field
+<p>A dialog will replace the list of files. At the top is a text field
 for a commit message. Then comes a button labeled “Commit &amp; Push”,
 followed by a list of all files that were changed, added, or
 deleted.</p>
@@ -1572,7 +1577,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-05-groups"><p>Content from <a href="05-groups.html">Groups</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/05-groups.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
@@ -1715,7 +1720,7 @@ not point to a new project.</a></p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1786,7 +1791,7 @@ settings.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1823,7 +1828,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-06-issues"><p>Content from <a href="06-issues.html">Issues</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/06-issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
@@ -2069,7 +2074,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-07-merge-requests"><p>Content from <a href="07-merge-requests.html">Merge Requests</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/07-merge-requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 30 minutes </p>
@@ -2394,7 +2399,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-08-process-automation"><p>Content from <a href="08-process-automation.html">Process Automation</a></p>
 <hr>
-<p> Last updated on 2023-11-07 | 
+<p> Last updated on 2023-11-08 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/08-process-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 0 minutes </p>
@@ -2682,7 +2687,7 @@ error.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
@@ -2796,9 +2801,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
-  "dateCreated": "2023-11-03",
-  "dateModified": "2023-11-07",
-  "datePublished": "2023-11-07"
+  "dateCreated": "2023-11-08",
+  "dateModified": "2023-11-08",
+  "datePublished": "2023-11-08"
 }
 
   </script><script>
