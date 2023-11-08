@@ -276,14 +276,16 @@ We are now going to add a file to our project.
 To do this, we first navigate to the project’s homepage, unless we are already on that page.
 Below the heading “The repository for this project is empty” there are several buttons.
 We click the one labeled “New file”, which brings us to a new page, the so called WebIDE.
-In the middle of that page is a menu item, again labeled “New file…”, which we click on.
+
+The WebIDE shows a list of files on the left and a tabbed environment for open files on the right.
+Wen we first open it, it shows a Welcome page, which we can safely close by clicking the “x” labeled button on the Welcome page’s tab at the top.
 
 ::: callout
 
 ### Changing the WebIDE Theme
 
 GitLab’s WebIDE uses a dark theme by default.
-To change it, click on the gear icon in the lower left corner and select “Color Theme” from the opening menu.
+To change it, click on the gear icon in the lower left corner and select “Themes”, then “Color Theme” from the opening menu.
 This opens a dialog to select a color theme for the IDE.
 Light themes are listed at the top and dark themes at the bottom.
 “GitLab Light” is GitLab’s own light theme.
@@ -291,13 +293,13 @@ Select a theme by clicking on its name.
 
 :::
 
-This opens a dialog titled “New file…”, which prompts us for a filename.
-We type `README.md` into the field and confirm by pressing the return key and clicking the button labeled “OK”.
-This closes the dialog.
+To actually create a new file, we click on the button labeled with a icon representing a sheet of paper with a plus sign in the lower right corner.
+Note thate this button is only visible, if you mouse hovers over the list of files, which is currently empty, on the left.
+An text input field appears below the button, which prompts us for a filename.
+We type `README.md` into the field and confirm by pressing the return key.
 
-The WebIDE page now shows a list of files on the left and a text editor on the right.
 The list of files should only have one entry: `README.md`.
-The text editor itself shows the contents of the file `README.md`.
+The text editor itself shows the contents of the file `README.md`: nothing so far.
 We see the filename at the top in a tab, which indicates that we can open multiple files and switch between them using the tabs at the top.
 
 ```{r, child=c('markdown-headlines.md')}
@@ -333,7 +335,7 @@ We use the Markdown format for our files.
 A commit message should summarize the changes that are packaged into the commit.
 [Good commit messages][CommitMessages] are what makes the history of a repository useful.
 
-We enter a good commit message, for example “Add README.md” and click the button labeled “Commit & Push”.
+We enter a good commit message, for example “Add README.md” and click the button labeled “Commit to 'main'”.
 
 Having done that, we are done editing and navigate back to the project’s homepage.
 To get there, we need to click on the button labeled “GitLab” in the lower left of the screen and select “Go to <project name> project on GitLab” from the list that pops up at the top.
@@ -346,36 +348,33 @@ screenshot:
 
 ![Project homepage after first push](fig/first-push.png){alt="Project homepage
 of a project. On the left, a menu leading to other project pages. On the right,
-taking up most of the width, the project homepage. Starting from the top, we
-first have the project title, Research Diary, followed by a line of statistical
-values (1 Commit, 1 Branch, 0 Tags, 72KB files, 72 KB Storage). Under these we
-see the description: “My research diary, a collection of Markdown files”. In
+taking up most of the width, the project homepage.
+Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 209B Project Storage).
+Under these we see the description: “My research diary, a collection of Markdown files”.
+This is followed by a box giving information on the last commit of the current branch:
+the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button.
+In
 the next line we see a drop-down field for branches showing “main”, the project
 slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”,
-“Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by a
-box giving information on the last commit of the current branch: the commit
-message “Add README.md”, the authors name and how far in the past the commit was
-authored, as well as prefix of the commit’s hash with a copy-to-clipboard
-button. This is followed by some buttons that allow to add or upload new files
+“Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by some buttons that allow to add or upload new files
 or setup some of GitLab features for the project. Next is a list of files, in
 this case only `README.md`, with information when it was last updated and
 through which commit. Finally, we see a rendering of `README.md`."}
 
 Let us look at what has changed compared to its initial state. The interface
-elements encouraging us to add members to the project are gone. Of course, we
-can still navigate to the project’s Members later on, if we need to. We also,
-correctly, no longer get told that the repository is empty and the instructions
+elements encouraging us to add members to the project are gone.
+Of course, we can still navigate to the project’s Members page later on, if we need to.
+We also, correctly, no longer get told that the repository is empty and the instructions
 on how to push content to the repository have vanished.
 
-Instead, we see some statistics below the project’s title: 1 Commit, 1 Branch, 0
-Tags, 72 KB Storage.
-They double as buttons other project pages.
+Instead, we see some statistics below the project’s title: 1 Commit, 1 Branch, 0 Tags, 209B Project Storage.
+They double as buttons to other project pages.
 
 Below the description is a box presenting information on the last commit of the currently selected branch, followed by a new button bar.
 
 The following buttons, that we saw earlier, allow us to add specific files or
 navigate to the configuration of certain GitLab features.
-Note that one button changed from reading “Add README” to just “README”, since we added `README.md`.
+Note that one button changed from reading “Add README” to just “README”, since we added a file called `README.md`.
 The button is now a link to the latest version of that file in the current branch.
 
 Then we see a list of files. So far, there is only `README.md`. The list also
