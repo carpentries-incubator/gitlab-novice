@@ -20,7 +20,7 @@ exercises: 15
 
 :::
 
-In the first episode, we already learned bout groups; GitLab’s way to organize projects.
+In the first episode, we already learned about groups; GitLab’s way to organize projects.
 A group might hold projects of a research group or those of a research project with contributors from multiple institutions.
 Together with members and their permissions groups can be used to manage access to multiple repositories (for example, restrict access to certain repositories to staff while others may be accessed by student assistants as well).
 
@@ -29,7 +29,7 @@ how members of a group relate to its subgroups and projects.
 
 ## Creating a Group
 
-In the top menu bar, we open the drop-down menu labeled with a boxed plus and select the menu item “New Group”.
+To create a group, we click on the button with the “+” symbol near the top of the side menu on the right and select “New group”.
 On the next page, we select “Create group”.
 
 This leads to the following page:
@@ -40,7 +40,7 @@ input fields labeled “Group name”, “Group URL”, a radio button element l
 labeled “Role”, a radio button element labeled “Who will be using this group?”
 with options “My company or team” and “Just me”, a drop-down field labeled “What
 will you use this group for?” and an text input field labeled “Email 1” with a
-button to add more under the heading “Invite members (optional)”."}
+button to add more under the heading “Invite members (optional)”, and finally two buttons labeled “Create group” and “Cancel”."}
 
 Choose any name for the group, for example a fictional research group like
 “Ant-Sized Elephants’ Applications Lab”. When you move the focus out of the
@@ -53,7 +53,7 @@ like that of a project.
 
 We will leave the remaining fields as they are and create the group by clicking the blue button labeled “Create group”.
 GitLab will navigate to the group home page, which usually lists the group’s subgroups and projects.
-Since there are currently none, it shows to big buttons for creating a new subgroup and a new project.
+Since there are currently none, it shows two big buttons for creating a new subgroup and a new project.
 
 We will have a look at how to create a project in the new group.
 
@@ -73,7 +73,7 @@ But we will not do that.
 Instead, we will now move our project to our group.
 
 We start, by navigating to our project’s homepage.
-On the side menu, we select “Settings” then “General”.
+Once there, we select “Settings” then “General” in the side menu.
 On that page, we expand the section labeled “Advanced” and scroll down to the subsection labeled “Transfer Project”.
 
 Now, please read the subsections notes, with an emphasis on the list of things
@@ -145,7 +145,7 @@ This exercise should take about 5 minutes.
 Steps to solve the challenge:
 
 1. Navigate to the group home page.
-2. Select “Group information”, then “Members” from the side bar menu.
+2. Select “Manage”, then “Members” from the side bar menu.
 3. Click the “Invite members” button.
 4. Fill in the dialog to invite your instructor with the “Guest” role.
 5. Click the “Invite” button.
@@ -154,12 +154,11 @@ Steps to solve the challenge:
 
 :::
 
-After adding a member to the group, we have look at the member list of our
-research diary project.
+After adding a member to the group, we a have look at the member list of our research diary project.
 
 The list has three entries: ourselves, our co-learner, and our instructor. We
 have the “Owner” role and, as its creator, are a direct member of the project.
-Our co-learner has the “Developer” role that we assigned them and are also a
+Our co-learner has the “Maintainer” role that we assigned them and are also a
 direct member of the project, as we added them directly to the project.
 
 The entry we are really interested in is that of the instructor. We added them
