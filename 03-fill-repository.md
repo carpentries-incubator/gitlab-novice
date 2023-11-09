@@ -17,7 +17,9 @@ exercises: 0
 
 :::
 
-::: instructor
+::: callout
+
+### Two Alternative Episode Versions
 
 This episode consists of two alternative parts.
 

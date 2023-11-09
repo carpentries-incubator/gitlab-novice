@@ -18,7 +18,9 @@ exercises: 5
 
 :::
 
-::: instructor
+::: callout
+
+### Two Alternative Episode Versions
 
 This episode consists of two alternative parts.
 
@@ -43,25 +45,17 @@ to our GitLab project.
 
 Using the menu on the left side of the project homepage (or nearly any other
 project page), we navigate to the project members page hovering over or clicking
-on “Project Information” and then clicking on “Members” in the submenu. The
+on “Manage” and then clicking on “Members” in the submenu. The
 project member page should look similar to the following screenshot:
 
-![Project members page](fig/initial-members.png){alt="Webpage coutout titled
-“Project Members” with three buttons next to the title: “Import from a project”,
-“Invite a group”, and “Invite members”. Below a table listing the project’s
-members, showing account holder‘s name with account name, the membership source,
-when access was granted, the member’s maximum role and the membership expiration
-date. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct
-member, 2 weeks ago by himself, Maintainer, and no Expiration date."}
+![Project members page](fig/initial-members.png){alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, the member’s maximum role, the membership expiration date, and three activity timestamps: User created, Access granted, and Last activity.
+The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member Philipp Matthias Schäfer, Owner, no expiration date, and three dates for the activity timestamps."}
 
 On the page we can see the page title, “Project members”, three buttons to the
 left of the title, and a filterable table of members, currently only listing
 ourselves.
 
-The table shows our full name and account name, why we are a member of this
-project, when we got access—at the moment we created the project—what our
-maximum role is—more on that in a bit—and a disabled membership expiration date
-widget.
+The table shows our full name and account name, why we are a member of this project, what our maximum role is–more on that in a bit–, when we got access—at the moment we created the project—, a disabled membership expiration date widget, and three dates on our activity.
 
 For practice we will all add an instructor to our project and remove them again
 right away. Click the button labeled “Invite members”, type in the username your
@@ -83,9 +77,9 @@ The page reloads itself and the entry vanishes from the table.
 
 ### Adding Members
 
-Get into pairs and add each other with the role “Developer” to your projects.
+Get into pairs and add each other with the role “Maintainer” to your projects.
 
-The “Developer” role grants just enough permissions for all the collaborative
+The “Maintainer” role grants just enough permissions for all the collaborative
 tasks we will practice in this lesson.
 
 This exercise should take about 5 minutes.
@@ -244,25 +238,23 @@ We successfully collaborated through GitLab on a project of text files.
 Now that we are members of the project of one of our co-learners, we can contribute to each others projects.
 We will add a diary entry for imaginary work that we did on their experiments last weekend.
 
-To navigate to our co-learner's project, we open the burger menu in the upper left corner of the page, select “Projects” and click on “View all projects”.
+To navigate to our co-learner's project, we click on the GitLab-Logo in the upper left corner of the page.
 The list under “Your projects” should now contain at least two projects: the one we created ourselves in the beginning and the project of our co-learner.
 We click on the name of our co-learner’s project to navigate to it’s homepage.
 
-To add a file, we click on the button labeled “Web IDE” in the line just below the
-project’s description. This redirects us to a page with a file browser in a
-column on the left, with most of the screen taken up by a box informing us how to use
-the Web IDE: “Select a file from the left sidebar to begin editing. Afterwards,
-you’ll be able to commit your changes.”
+To add a file, we click on the button labeled “Edit” towards the right of page above the list of files, and select WebIDE from the popup-menu.
+This redirects us to a page with a file browser in a
+column on the left, with most of the screen taken up by a box welcoming us to the WebIDE.
 
-We do not want to edit an existing file, but want to create a new one.
+We want to create a new file, as we created the `README.md` file before.
 To do that we click on the button above the list of files on the left that is marked with an icon representing a sheet of paper with a +-sign on top of it.
-The button is only visible, when the mouse hovers of the list of files.
+The button is only visible, when the mouse hovers over the list of files.
 
-A pop-up text input field prompts us for a name, which we will provide: `2023-02-05.md`, the date in which we did the work in the laboratory.
+A pop-up text input field prompts us for a name, which we will provide: `2023-02-05.md`, the date on which we did the work in the laboratory.
 We confirm the file name by pressing the return key.
 
-We see the result of our action in two ways: A file named `2022-03-13.md`
-appeared in the list of files on the left and a tab labeled `2022-03-13.md`
+We see the result of our action in two ways: A file named `2023-02-05.md`
+appeared in the list of files on the left and a tab labeled `2023-02-05.md`
 showing an text editor appeared in the space to the right of the list of files.
 
 We will now add a list of things we supposedly did in the laboratory last Sunday, for example:
@@ -307,11 +299,11 @@ Then comes a button labeled “Commit & Push”, followed by a list of all files
 A commit message should summarize the changes that are packaged into the commit.
 [Good commit messages][CommitMessages] are what makes the history of a repository useful.
 
-We enter a good commit message, for example “Record work on experiment A-13” and click the button labeled “Commit & Push”.
+We enter a good commit message, for example “Record work on experiment A-13” and click the button labeled “Commit to 'main'”.
 
-In the dialog that pops up in the center top of the screen, we select “No Use the current branch "main"”
+In the dialog that pops up in the center top of the screen, we select “Continue”.
 
-Having done that, we are done editing and navigate back to our project’s homepage.
+Having done that, we are done editing and navigate back to **our** project’s homepage.
 To get there, we lick on the button labeled “GitLab” in the lower left of the screen and select “Go to GitLab” from the list that pops up at the top.
 This will open the project view in a new window or tab, depending on the settings of your browser.
 We select our own project from the list of projects under “Your projects”.
