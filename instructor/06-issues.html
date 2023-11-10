@@ -287,7 +287,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Issues</h1>
-        <p> Last updated on 2023-11-09 | 
+        <p> Last updated on 2023-11-10 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/06-issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -342,7 +342,7 @@ anything themselves.</p>
 bar menu on the left we click the entry labeled “Issues” and on the
 following page we click on the button labeled “New issue”.</p>
 <p>This leads us to the following form:</p>
-<figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title” with subscript “Add description templates to help your contributors communicate effectively!”, the second and third word being a link, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description”, a check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example
+<figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title”, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description” with subscript “Add description templates to help your contributors communicate effectively!”, an unchecked check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example
 “Recognize outside contributors” and a description:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -350,7 +350,7 @@ following page we click on the button labeled “New issue”.</p>
 <pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Outside contributors should be mentioned in the project’s documentation. Their</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>names could be listed in one of the following locations:</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a section of <span class="in">`README.md`</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a section in <span class="in">`README.md`</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a separate <span class="in">`CONTRIBUTORS.md`</span> file</span></code></pre>
 </div>
 <div id="markdown-code-spans-and-blocks" class="callout callout">
@@ -398,17 +398,18 @@ def some_function():
 </div>
 </div>
 <p>We assign the new issue to our co-learner by selecting their account
-in the drop-down field labeled “Assignee”.</p>
+in the drop-down field labeled “Assignee”. They need to be a member of
+the project, directory or indirectly, in order to be listed in that
+field.</p>
 <p>Then we click the button labeled “Create issue”. This redirects us to
 the new issue’s page. Near top we see its title followed by its
-description. That we created the issue is mentioned above the title. A
-text field below the description can be used to create a comment and a
-side bar on left lists more fields that could be used to further specify
-properties of that issue.</p>
+description. A text field below the description can be used to create a
+comment and a side bar on right lists more fields that could be used to
+further specify properties of that issue.</p>
 </section><section id="add-a-label"><h2 class="section-heading">Add a Label<a class="anchor" aria-label="anchor" href="#add-a-label"></a>
 </h2>
-<hr class="half-width"><p>One of those, the field labeled ”Labels”, we will get to know,
-now.</p>
+<hr class="half-width"><p>We will assign a value to one of the fields, the one labeled
+“Labels”, now.</p>
 <p>We want to know when our co-learner starts to work on the issue. To
 communicate that fact through GitLab’s issue system we can use its Label
 feature. Issues can be defined for groups and projects. In the case of
@@ -432,26 +433,29 @@ dialog by clicking on the x in the upper right corner.</p>
 </h2>
 <hr class="half-width"><p>We provided a generic description of the issue in its description,
 but we want to make sure that our co-learner does not forget to include
-us. We intend to write a comment regarding our inclusion.</p>
+us. So we write a comment regarding our inclusion.</p>
 <p>To support our case we want to reference our contribution. For this,
 we can use another feature of GitLab’s markdown: When we mention a
 commit of the project’s repository by its identifier, GitLab will
 automatically convert it to a link to the page of the commit.</p>
-<p>We navigate to the project’s commit history by clicking the submenu
-item “Commits” of the menu item “Repository” in the side menu. There we
-find our commit at the top with its short identifier shown on the right.
-Right next to that short identifier is a button with an icon that looks
-like a clipboard. As its tooltip tells us, clicking it will copy the
-commit SHA (identifier). So, we click on the button.</p>
+<p>First we need to know the identifier of our commit. We navigate to
+the project’s commit history by clicking the submenu item “Commits” of
+the menu item “Code” in the side menu. There we find our commit at the
+top with a short sequence of numbers and letters on the right. This is
+beginning, the prefix, of the commit’s identifier, which is also called
+a SHA due to how it is created. Right next to the prefix is a button
+with an icon that looks like a clipboard. As its tooltip tells us,
+clicking it will copy the commit SHA (identifier). We click on the
+button.</p>
 <p>We navigate back to our issue by clicking the menu item “Issues” in
-the side menu and clicking on the title of our issue in the opened
-list.</p>
+the side menu and clicking on the title of our issue in the list that
+opened.</p>
 <p>Using the copied commit identifier, we formulate our commit similar
 to</p>
-<pre><code>Please mention me as a contributor due to commit
-4eac24cafbcebc4f0d528bd2e1246a4624265085.</code></pre>
-<p>and click the button labeled “Comment”. We notice, that GitLab uses
-and shortened version of the commits identifier for the link text, which
+<pre><code>Please mention me as a contributor due to commit 4eac24cafbcebc4f0d528bd2e1246a4624265085.</code></pre>
+<p>and click the button labeled “Comment”. A new box shows up above the
+comment text area showing our message. We can see that GitLab uses and
+shortened version of the commits identifier for the link text, which
 makes it slightly more readable.</p>
 <p>Before we move on, please note the button labeled “Close issue” under
 the comment text field. An issue starts in the open state and can be
@@ -461,18 +465,18 @@ we can add a final comment before closing the issue.</p>
 <p>This is a very important feature, allowing us to distinguish between
 issues that have yet to be dealt with and those that have already been
 dealt with. We do not, in general, delete issues, because they are often
-useful to check whether a certain issue was already discussed or has
-already come up in the past.</p>
+still useful even if closed already. For example, we can use the search
+to check whether a certain topic was already discussed in the past.</p>
 </section><section id="issue-boards"><h2 class="section-heading">Issue Boards<a class="anchor" aria-label="anchor" href="#issue-boards"></a>
 </h2>
 <hr class="half-width"><p>Now, we will have a look at boards, a feature that uses labels to
 visually organize a project’s issues.</p>
 <p>We navigate to our project’s issue board by clicking the submenu item
-“Boards” of the menu item “Issues” in the side menu.</p>
+“Issue boards” of the menu item “Plan” in the side menu.</p>
 <p>The following page loads:</p>
-<figure><img src="../fig/board.png" alt="Issue board page with a menu bar on the left and content on the right. At the top of the content area is a drop-down field with “Development” selected followed by a button labeled “New board” a search field, a check box labeled “Show labels”, and two buttons the first labeled “Edit board”, the second “Create list”. Below these elements are two columns, each with a title bar, one titled “Open”, the other “Closed”. In the “Open” column there is a box representing an issue, showing its title “Recognize outside contributors”, a label “WIP”, the issue number “#1” and an avatar of a user." class="figure mx-auto d-block"><figcaption>Issue board page</figcaption></figure><p>GitLab creates on board, called “Development”, by default for each
+<figure><img src="../fig/board.png" alt="Issue board page with a menu bar on the left and content on the right. At the top of the content area is a drop-down field with “Development” selected followed by a search field, a check box labeled “Show labels”, and two buttons the first labeled “Edit board”, the second “Create list”. Below these elements are two columns, each with a title bar, one titled “Open”, the other “Closed”. In the “Open” column there is a box representing an issue, showing its title “Recognize outside contributors”, a label “WIP”, the issue number “#1” and an avatar of a user." class="figure mx-auto d-block"><figcaption>Issue board page</figcaption></figure><p>By default, GitLab creates one board, called “Development”, for each
 project. This is the board we see. It has two so called lists
-configured, labeled “Open” and “Closed”, that list all open and closed
+configured, labeled “Open” and “Closed”, which list all open and closed
 issues of the project, respectively. These two lists cannot be
 deleted.</p>
 <p>We will now create another list for issues that are work in progress,
@@ -483,18 +487,18 @@ select our label “WIP” and click the button labeled “Add to board”.</p>
 <p>The new list is created between the “Open” and “Closed” lists. Those
 two will always be on the left and right end, respectively. We can
 reorder the lists created by us however we want between these two.</p>
-<p>Note, that our issue is initially show in the “Open” and our new
-list. When we reload the page, it disappears from the “Open” list. In
-general, open issues that belong to one of the lists due to their labels
-will not appear in the “Open” list. Closed issues, however, will always
-only appear in the “Closed” list.</p>
+<p>Note, that our issue is initially shown in the “Open” list and our
+new list. When we reload the page, it disappears from the “Open” list.
+In general, open issues that belong to one of the custom lists, due to
+their labels, will not appear in the “Open” list. Closed issues,
+however, will always only appear in the “Closed” list.</p>
 <p>Boards can not only be used to get an overview of a project’s issues.
 They can also be used to manipulate their labels. If we drag an issue
 from one list to another, the label of the originating list will be
 removed and that of the target list will be added (unless it is one of
 the “Open” and “Closed” lists). Moving an issue to the “Closed” list
 will close the issue, while moving an issue out of the “Closed” list
-will open it.</p>
+will reopen it.</p>
 <p>We note that we added the “WIP” label to our issue, however, that is
 not accurate. Our co-learner should add the label whenever they start to
 work on it. To remove the label we drag the issue to the “Open”
@@ -502,10 +506,10 @@ list.</p>
 <p>We click on the issue’s title to navigate to its page. Initially the
 comment text field was directly under the description. By now, there is
 a list that chronicles the changes to the issue. It starts with the
-assignment to our co-learner (still from creating the issue), next we
-see that the “WIP” label was added by us, then comes our comment, and
-finally it lists that we removed the ”WIP” label again.</p>
-<p>This helps keep track of who did what with an issue</p>
+assignment to our co-learner (from creating the issue), next we see that
+the “WIP” label was added by us, then comes our comment, and finally it
+lists that we removed the ”WIP” label again.</p>
+<p>This helps keep track of who did what at which point in time.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -564,7 +568,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.0" class="external-link">sandpaper (0.14.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.14.1" class="external-link">sandpaper (0.14.1)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.7.1" class="external-link">pegboard (0.7.1)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.3.3" class="external-link">varnish (0.3.3)</a>.</p>
 			</div>
@@ -586,9 +590,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/06-issues.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/06-issues.html",
-  "dateCreated": "2023-11-09",
-  "dateModified": "2023-11-09",
-  "datePublished": "2023-11-09"
+  "dateCreated": "2023-11-10",
+  "dateModified": "2023-11-10",
+  "datePublished": "2023-11-10"
 }
 
   </script><script>
