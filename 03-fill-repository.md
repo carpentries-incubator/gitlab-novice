@@ -295,7 +295,7 @@ Select a theme by clicking on its name.
 
 :::
 
-To actually create a new file, we click on the button labeled with a icon representing a sheet of paper with a plus sign in the lower right corner.
+To actually create a new file, we click on the button labeled with an icon representing a sheet of paper with a plus sign in the lower right corner.
 Note thate this button is only visible, if you mouse hovers over the list of files, which is currently empty, on the left.
 An text input field appears below the button, which prompts us for a filename.
 We type `README.md` into the field and confirm by pressing the return key.
