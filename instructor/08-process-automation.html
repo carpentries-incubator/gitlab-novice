@@ -286,7 +286,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Process Automation</h1>
-        <p> Last updated on 2023-11-10 | 
+        <p> Last updated on 2023-11-13 | 
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/08-process-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -331,12 +331,10 @@ our research diary every day. Now it is time to make use of it.</p>
 <p>We want to share it with the world, because what we do is so
 important and everyone should now about it. So we want to create a
 website based on the diary and update it whenever our Markdown files
-change.</p>
-<p>Just as much based in reality as the rest of this lesson’s story, we
-know how to do that, but we do not want to do it by hand. Instead, we
-are going to let GitLab automatically turn our Markdown files into HTML,
-whenever our repository changes. To achieve it, we will use two GitLab
-features: CI/CD-Pipelines and Pages.</p>
+change. But we do not want to do that by hand. Instead, we are going to
+let GitLab automatically turn our Markdown files into HTML, whenever our
+repository changes. To achieve it, we will use two GitLab features:
+CI/CD-Pipelines and Pages.</p>
 <div id="cicd-or-continuous-integrationcontinuous-deployment" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -350,26 +348,26 @@ Deployment<a class="anchor" aria-label="anchor" href="#cicd-or-continuous-integr
 come from the fields of software engineering and software operation.</p>
 <p>A software project uses CI, if it has setup a process that
 automatically runs some (or all) tests for a software project, whenever
-changes are committed or even just proposed (for example through a merge
-request) to the main branch of a repository. In particular, when tests
-run already for proposed changes this can help prevent bugs to reach the
-code base, while freeing the developer of remembering to run all the
-tests, before creating a merge request.</p>
+changes are committed to the main branch of a repository or even just
+proposed (for example through a merge request). In particular, when
+tests are already run for proposed changes this can help prevent bugs to
+reach the code base, while freeing the developer from remembering to run
+all the tests, before creating a merge request.</p>
 <p>CD is a process that updates the software on the production machines
 (deploys) as soon as a new change reaches the code base, generally after
 having passed the CI process.</p>
 <p>Both processes can be implemented by running scripts, called jobs on
-GitLab, triggered either by changes to the code base or by the
-successful completion of other jobs, which lead to the CI/CD feature of
-GitLab.</p>
+GitLab, triggered either by changes to the code base, the creating of
+merge request, or by the successful completion of other jobs, which lead
+to the CI/CD feature of GitLab.</p>
 </div>
 </div>
 </div>
 <section id="example-configuration"><h2 class="section-heading">Example Configuration<a class="anchor" aria-label="anchor" href="#example-configuration"></a>
 </h2>
 <hr class="half-width"><p>To configure our automatic process, we navigate to our project page
-and click the menu item labeled “CI/CD” in the main menu on the
-left.</p>
+and click the menu item labeled “Pipelines” in the submenu “Build” of
+the main menu on the left.</p>
 <p>The page that this leads to invites us to “use a sample
 <code>.gitlab-ci.yml</code> template file to explore how CI/CD works.”
 The GitLab CI is configured by providing a file called
@@ -419,11 +417,11 @@ ignore those.</p>
 process. Together the jobs defined in a project’s
 <code>.gitlab-ci.yml</code> file form a so called
 <strong>pipeline</strong>.</p>
-<p>By default a pipeline has three <strong>stages</strong>, called
-<code>build</code>, <code>test</code>, and <code>deploy</code>, and
-their order is important. The terminology comes from software
-development again. A pipeline is executed by running all jobs of the
-first stage and, if they succeed, to then continue with jobs of the next
+<p>By default a pipeline in GitLab has three <strong>stages</strong>,
+called <code>build</code>, <code>test</code>, and <code>deploy</code>,
+and their order is important. The terminology comes again from software
+development. A pipeline is executed by running all jobs of the first
+stage and, if they succeed, to then continue with jobs of the next
 stage, repeating this until a job fails or all stages complete.</p>
 <p>The four jobs in the example are named similar to the stages they are
 assigned to. The assignment is done through the keyword
@@ -488,7 +486,8 @@ into an HTML file, so we use the official pandoc Docker image. The next
 line, with the keyword <code>entrypoint</code> is necessary, because the
 pandoc Docker image is configured to directly run pandoc, when started
 in a container (pandoc is configured as its entrypoint). However, GitLab
-CI expects to run scripts in the Docker container in a shell.</p>
+CI expects to runs the provided scripts in a shell in the specified
+Docker images.</p>
 <div id="pandoc" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -512,7 +511,7 @@ instructs it to output a file <code>diary.html</code>. Pandoc deduces
 from the file extension that it should be in HTML format.</p>
 <p>The final three lines, starting with the keyword
 <code>artifacts</code>, specify that GitLab CI should save the file
-<code>diary.HTML</code> from the Docker container the job runs in and
+<code>diary.html</code> from the Docker container the job runs in and
 provide it for download on its web interface.</p>
 <p>This completes our GitLab CI configuration. There are a lot more
 configuration options, for example to have a process run only for
@@ -546,9 +545,10 @@ projects to use that runner.</p>
 informed at the top of the page about the status of the pipeline run
 that was initiated by committing the <code>.gitlab-ci.yml</code> to the
 repository.</p>
-<p>To get a better overview, we select “CI/CD” from the main menu on the
-right side. This brings us to the list of pipeline runs. We should see
-exactly one entry in the list, as we have just configured the CI.</p>
+<p>To get a better overview, we click the menu item labeled “Pipelines”
+in the submenu “Build” of the main menu on the left. This brings us to
+the list of pipeline runs. We should see exactly one entry in the list,
+as we have just configured the CI.</p>
 <p>A blue, red, or green box in the “Status” column informs on the left
 informs us about the state of the pipeline. Blue indicates a running
 pipeline, red a failed pipeline, and green a pipeline that successfully
@@ -559,10 +559,10 @@ triggered the pipeline run, the number of the pipeline run, for example
 <code>#11071</code>, the branch the commit is part of as well as the
 short identifier of the commit. Most of these serve as links to pages
 for their respective entities.</p>
-<p>The ”Triggerer” column tells us who caused the pipeline run. In our
+<p>The ”Created By” column tells us who caused the pipeline run. In our
 case that’s the author of the commit.</p>
 <p>The ”Stages” column visualizes the stages and their state. In
-addition to the colors discussed above, there are stages colored in
+addition to the colors discussed above, there can be stages colored in
 gray. They are waiting for their predecessor stages (or need to be
 manually triggered, if configured that way).</p>
 <p>We wait until our pipeline ran through. It should complete without
@@ -575,7 +575,7 @@ error.</p>
   Instructor Note
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
@@ -602,7 +602,8 @@ we wanted to publish it on the web.</p>
 <p>To achieve this goal, we can use a feature of GitLab called Pages. It
 allows us to publish the results of a specific job of a CI pipeline to
 the web under the <code>gitlab.io</code> domain.</p>
-<p>TODO: DESCRIBE HOW TO GET THERE</p>
+<p>We navigate to the editor of the CI-configuration, by clicking on
+“Pipeline editor” under “Build” in the menu on the right.</p>
 <p>We change the configuration of our second job to look as follows:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -626,16 +627,17 @@ for our web page. Then we create the HTML file in a directory called
 to <code>public</code> as well. The directory <code>public</code> is,
 again by convention, the place from which GitLab will take the contents
 to be published.</p>
-<p>TODO: DESCRIBE HOW TO SAVE</p>
-<p>After committing our change, the pipeline will automatically run.
-When it has successfully completed, we select Pages under the Settings
-heading of the menu on the left. In the section called “Access pages”,
-we find a link to our web page. This will lead to a page informing us
-that the requested resource was not found. The reason is, that we do not
-provide a file called <code>index.html</code>. Instead, we need to
-append <code>diary.html</code> at the end of the URL shown in the
-settings page. Now we see the rendered version of that diary, published
-in the web.</p>
+<p>We enter the commit message “Setup GitLab-Page publication” and click
+on “Commit changes”. Afterwards change, the pipeline will automatically
+run.</p>
+<p>When it has successfully completed, we select “Pages” under the
+“Deploy” submenu of the menu on the left. In the section called “Access
+pages”, we find a link to the base path of our web page. This will lead
+to a page informing us that the requested resource was not found. The
+reason is, that we do not provide a file called <code>index.html</code>.
+Instead, we need to append <code>/diary.html</code> at the end of the
+URL shown in the settings page. Now we see the rendered version of that
+diary, published in the web.</p>
 <!-- 
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use. 
@@ -698,9 +700,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://zedif.github.io/gitlab-novice/instructor/08-process-automation.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/08-process-automation.html",
-  "dateCreated": "2023-11-10",
-  "dateModified": "2023-11-10",
-  "datePublished": "2023-11-10"
+  "dateCreated": "2023-11-13",
+  "dateModified": "2023-11-13",
+  "datePublished": "2023-11-13"
 }
 
   </script><script>
