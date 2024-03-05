@@ -328,7 +328,7 @@
         
 <section id="aio-01-navigation"><p>Content from <a href="01-navigation.html">Navigation</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/01-navigation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
@@ -415,12 +415,12 @@ episode. For now, we want to learn how to navigate GitLab.</p>
 <p>For that we select “Explore public projects”. This leads us to an
 overview page of projects that are visible to us. The project is the
 main organizational unit of GitLab.</p>
-<div id="homepage" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="homepage" class="callout-inner">
-<h3 class="callout-title">Homepage<a class="anchor" aria-label="anchor" href="#homepage"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="homepage">Homepage<a class="anchor" aria-label="anchor" href="#homepage"></a>
 </h3>
 <div class="callout-content">
 <p>The welcome page is only shown as long as you are not a member of any
@@ -452,7 +452,8 @@ Play around with the filters and sort settings.</p>
 </div>
 </div>
 <p>The “Explore projects” page looks like this:</p>
-<figure><img src="../fig/project-explore.png" alt="Explore projects page with tab “Most starred” open. The tab shows a list of projects with icon, name, descriptions, and four statistical values for each entry." class="figure mx-auto d-block"><figcaption>Project overview page</figcaption></figure><p>The first tab, “All”, lists all projects that are visible to you in
+<figure><img src="../fig/project-explore.png" alt="Explore projects page with tab “Most starred” open. The tab shows a list of projects with icon, name, descriptions, and four statistical values for each entry." class="figure mx-auto d-block"><div class="figcaption">Project overview page</div>
+</figure><p>The first tab, “All”, lists all projects that are visible to you in
 most recently updated order.</p>
 <p>The second tab, “Most starred projects”, also lists all projects, but
 this time ordered most starred first. Users of a GitLab instance can
@@ -578,7 +579,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-02-gitlab-projects"><p>Content from <a href="02-gitlab-projects.html">GitLab Projects</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/02-gitlab-projects.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 36 minutes</p>
@@ -625,7 +626,8 @@ project/repository”.</p>
 this lesson we will only look at, and use, the first option: “Create
 blank project”. So click on that.</p>
 <p>This leads to the following page:</p>
-<figure><img src="../fig/create-project.png" alt="Create blank project form with text input fields labeled “Project name”, “Project URL”, “Project slug”, “Project deployment target (optional)”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, and two checkboxes labeled “Initialize repository with a README” and “Enable Static Application Security Testing (SAST)”." class="figure mx-auto d-block"><figcaption>Create blank project form</figcaption></figure><p>The “Project name” field is for just that, the project name. Its
+<figure><img src="../fig/create-project.png" alt="Create blank project form with text input fields labeled “Project name”, “Project URL”, “Project slug”, “Project deployment target (optional)”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, and two checkboxes labeled “Initialize repository with a README” and “Enable Static Application Security Testing (SAST)”." class="figure mx-auto d-block"><div class="figcaption">Create blank project form</div>
+</figure><p>The “Project name” field is for just that, the project name. Its
 value has no other purpose and can be changed at anytime without
 indirect consequences (the direct consequence being, that its name will
 be different). We will call it “Research Diary”.</p>
@@ -638,12 +640,12 @@ to the current user’s username. The default, indicated by the user’s
 name, is the location for a user’s projects (and groups). Other options
 in the drop-down list are the groups in which the current user may
 create projects.</p>
-<div id="project-url-and-project-slug" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="project-url-and-project-slug" class="callout-inner">
-<h3 class="callout-title">Project URL and Project Slug<a class="anchor" aria-label="anchor" href="#project-url-and-project-slug"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="project-url-and-project-slug">Project URL and Project Slug<a class="anchor" aria-label="anchor" href="#project-url-and-project-slug"></a>
 </h3>
 <div class="callout-content">
 <p>The two fields under labels “Project URL” and “Project slug” are the
@@ -659,12 +661,12 @@ on other systems, for example on contributors’ machines.</p>
 (optional)”.</p>
 <p>The choice under label “Visibility Level” determines the project’s
 visibility.</p>
-<div id="visiblity" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="visiblity" class="callout-inner">
-<h3 class="callout-title">Visiblity<a class="anchor" aria-label="anchor" href="#visiblity"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="visiblity">Visiblity<a class="anchor" aria-label="anchor" href="#visiblity"></a>
 </h3>
 <div class="callout-content">
 <p>GitLab offers three settings for the visibility of a project: public,
@@ -688,12 +690,12 @@ README” is checked, the project’s repository will be initialized with a
 commit that adds a file called <code>README.md</code>. Otherwise, a the
 project will start with an empty repository. We will add such a file
 later ourselves, so we uncheck the box.</p>
-<div id="readme" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="readme" class="callout-inner">
-<h3 class="callout-title">README<a class="anchor" aria-label="anchor" href="#readme"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="readme">README<a class="anchor" aria-label="anchor" href="#readme"></a>
 </h3>
 <div class="callout-content">
 <p>A project’s README file usually contains basic information about the
@@ -712,7 +714,8 @@ GitLab instances configuration.</p>
 <p>After clicking the “Create project” button, GitLab creates the
 project and redirects us to the project’s homepage, which looks similar
 to this:</p>
-<figure><img src="../fig/new-project.png" alt="Project homepage for a new project. On the left, a menu starting with three buttons for issues, merge requests, and to-do lists, as well as a search field. Those are followed by a list of links and  sub-menus: the project name, open sub-menu Pinned with items Issues and  Merge requests, sub-menus Manage, Plan, Code, Build, Secure, Deploy, Operate, Monitor, Analyze, Settings, and Help. On the right, taking up the major part of the page width, the project page: Starting at the top, the project’s name “Research Diary“, an encouragement to “Invite your team” with a button “Invite members”, the statement that “The repository for this project is empty” with various buttons for getting initial content into the repository. At the bottom, the beginning of instructions on how to push an existing repository are visible, but cut off." class="figure mx-auto d-block"><figcaption>Fresh project homepage</figcaption></figure><p>The page is split into the menu on the left and the project overview
+<figure><img src="../fig/new-project.png" alt="Project homepage for a new project. On the left, a menu starting with three buttons for issues, merge requests, and to-do lists, as well as a search field. Those are followed by a list of links and sub-menus: the project name, open sub-menu Pinned with items Issues and Merge requests, sub-menus Manage, Plan, Code, Build, Secure, Deploy, Operate, Monitor, Analyze, Settings, and Help. On the right, taking up the major part of the page width, the project page: Starting at the top, the project’s name “Research Diary“, an encouragement to “Invite your team” with a button “Invite members”, the statement that “The repository for this project is empty” with various buttons for getting initial content into the repository. At the bottom, the beginning of instructions on how to push an existing repository are visible, but cut off." class="figure mx-auto d-block"><div class="figcaption">Fresh project homepage</div>
+</figure><p>The page is split into the menu on the left and the project overview
 on the right.</p>
 <p>The menu leads to pages related to various properties, processes, and
 content of the project. It is visible on each of these pages. The number
@@ -751,12 +754,12 @@ forget to click the “Save changes” button once you are done.</p>
 </div>
 </div>
 </div>
-<div id="markdown" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown" class="callout-inner">
-<h3 class="callout-title">Markdown<a class="anchor" aria-label="anchor" href="#markdown"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown">Markdown<a class="anchor" aria-label="anchor" href="#markdown"></a>
 </h3>
 <div class="callout-content">
 <p>Markdown is a markup language like HTML, on which the World Wide Web
@@ -829,7 +832,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-03-fill-repository"><p>Content from <a href="03-fill-repository.html">Adding Files to a Project Repository</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/03-fill-repository.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -864,12 +867,12 @@ interface.</li>
 </div>
 </div>
 </div>
-<div id="two-alternative-episode-versions" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="two-alternative-episode-versions" class="callout-inner">
-<h3 class="callout-title">Two Alternative Episode Versions<a class="anchor" aria-label="anchor" href="#two-alternative-episode-versions"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="two-alternative-episode-versions">Two Alternative Episode Versions<a class="anchor" aria-label="anchor" href="#two-alternative-episode-versions"></a>
 </h3>
 <div class="callout-content">
 <p>This episode consists of two alternative parts.</p>
@@ -931,7 +934,7 @@ message</a> for your commit.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We start by creating and navigating to a new directory,
 <code>research-diary</code>. There we initialize a git repository.</p>
@@ -1008,13 +1011,13 @@ completing the analogy.</p>
 <p>Going back to the shell, we configure our project’s repository as a
 remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
-<div id="https-vs-git" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="https-vs-git" class="callout-inner">
-<h3 class="callout-title">
-<a href="https://" class="external-link uri">https://</a>vs
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="https-vs-git">
+<a href="https://" class="external-link uri">https://</a> vs
 git@<a class="anchor" aria-label="anchor" href="#https-vs-git"></a>
 </h3>
 <div class="callout-content">
@@ -1041,12 +1044,12 @@ project’s repository on GitLab. It will be different for everyone.</p>
 <p>Note also, that we skipped the second line of the instructions. It
 renames an existing remote <code>origin</code> to
 <code>old-origin</code>, but we have no existing remote.</p>
-<div id="names-for-remotes" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="names-for-remotes" class="callout-inner">
-<h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#names-for-remotes"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="names-for-remotes">Names for remotes<a class="anchor" aria-label="anchor" href="#names-for-remotes"></a>
 </h3>
 <div class="callout-content">
 <p>Apart from following restrictions that Git puts on remote names,
@@ -1090,12 +1093,12 @@ a new page, the so called WebIDE.</p>
 for open files on the right. Wen we first open it, it shows a Welcome
 page, which we can safely close by clicking the “x” labeled button on
 the Welcome page’s tab at the top.</p>
-<div id="changing-the-webide-theme" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="changing-the-webide-theme" class="callout-inner">
-<h3 class="callout-title">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#changing-the-webide-theme"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="changing-the-webide-theme">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#changing-the-webide-theme"></a>
 </h3>
 <div class="callout-content">
 <p>GitLab’s WebIDE uses a dark theme by default. To change it, click on
@@ -1119,12 +1122,12 @@ The text editor itself shows the contents of the file
 <code>README.md</code>: nothing so far. We see the filename at the top
 in a tab, which indicates that we can open multiple files and switch
 between them using the tabs at the top.</p>
-<div id="markdown-headlines" class="callout callout">
+<div id="callout5" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown-headlines" class="callout-inner">
-<h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#markdown-headlines"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown-headlines">Markdown Headlines<a class="anchor" aria-label="anchor" href="#markdown-headlines"></a>
 </h3>
 <div class="callout-content">
 <p>In Markdown, headlines are marked by one up to six <code>#</code>
@@ -1155,17 +1158,17 @@ number of <code>#</code> characters indicates the heading’s level, with
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>We type something similar to the following into the text editor:</p>
 <div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Research Diary</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>This repository contains our research diary.</span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>Each day gets its own file.</span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>We use the Markdown format for our files.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a><span class="fu"># Research Diary</span></span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a>This repository contains our research diary.</span>
+<span id="cb20-4"><a href="#cb20-4" tabindex="-1"></a>Each day gets its own file.</span>
+<span id="cb20-5"><a href="#cb20-5" tabindex="-1"></a>We use the Markdown format for our files.</span></code></pre>
 </div>
 </div>
 </div>
@@ -1198,7 +1201,8 @@ settings of your browser.</project></p>
 <hr class="half-width">
 <p>We are greeted by the project homepage, similar to the following
 screenshot:</p>
-<figure><img src="../fig/first-push.png" alt="Project homepage of a project. On the left, a menu leading to other project pages. On the right, taking up most of the width, the project homepage. Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 209B Project Storage). Under these we see the description: “My research diary, a collection of Markdown files”. This is followed by a box giving information on the last commit of the current branch: the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button. In the next line we see a drop-down field for branches showing “main”, the project slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”, “Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by some buttons that allow to add or upload new files or setup some of GitLab features for the project. Next is a list of files, in this case only `README.md`, with information when it was last updated and through which commit. Finally, we see a rendering of `README.md`." class="figure mx-auto d-block"><figcaption>Project homepage after first push</figcaption></figure><p>Let us look at what has changed compared to its initial state. The
+<figure><img src="../fig/first-push.png" alt="Project homepage of a project. On the left, a menu leading to other project pages. On the right, taking up most of the width, the project homepage. Starting from the top, we first have the project title, Research Diary, followed by a line of statistical values (1 Commit, 1 Branch, 0 Tags, 209B Project Storage). Under these we see the description: “My research diary, a collection of Markdown files”. This is followed by a box giving information on the last commit of the current branch: the commit message “Add README.md”, the authors name and how far in the past the commit was authored, as well as prefix of the commit’s hash with a copy-to-clipboard button. In the next line we see a drop-down field for branches showing “main”, the project slug¸“test”, a drop-down button labeled “+”, and buttons labeled “History”, “Find file”, “Web IDE”, a download symbol, and ”Clone”. This is followed by some buttons that allow to add or upload new files or setup some of GitLab features for the project. Next is a list of files, in this case only `README.md`, with information when it was last updated and through which commit. Finally, we see a rendering of `README.md`." class="figure mx-auto d-block"><div class="figcaption">Project homepage after first push</div>
+</figure><p>Let us look at what has changed compared to its initial state. The
 interface elements encouraging us to add members to the project are
 gone. Of course, we can still navigate to the project’s Members page
 later on, if we need to. We also, correctly, no longer get told that the
@@ -1245,7 +1249,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-04-collaboration"><p>Content from <a href="04-collaboration.html">Collaboration</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/04-collaboration.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -1279,12 +1283,12 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<div id="two-alternative-episode-versions" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="two-alternative-episode-versions" class="callout-inner">
-<h3 class="callout-title">Two Alternative Episode Versions<a class="anchor" aria-label="anchor" href="#two-alternative-episode-versions"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="two-alternative-episode-versions">Two Alternative Episode Versions<a class="anchor" aria-label="anchor" href="#two-alternative-episode-versions"></a>
 </h3>
 <div class="callout-content">
 <p>This episode consists of two alternative parts.</p>
@@ -1310,7 +1314,8 @@ any other project page), we navigate to the project members page
 hovering over or clicking on “Manage” and then clicking on “Members” in
 the submenu. The project member page should look similar to the
 following screenshot:</p>
-<figure><img src="../fig/initial-members.png" alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, the member’s maximum role, the membership expiration date, and three activity timestamps: User created, Access granted, and Last activity. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member Philipp Matthias Schäfer, Owner, no expiration date, and three dates for the activity timestamps." class="figure mx-auto d-block"><figcaption>Project members page</figcaption></figure><p>On the page we can see the page title, “Project members”, three
+<figure><img src="../fig/initial-members.png" alt="Webpage coutout titled “Project Members” with three buttons next to the title: “Import from a project”, “Invite a group”, and “Invite members”. Below a table listing the project’s members, showing account holder‘s name with account name, the membership source, the member’s maximum role, the membership expiration date, and three activity timestamps: User created, Access granted, and Last activity. The table contains one column: ”Philipp Matthias Schäfer, @fiveop, Direct member Philipp Matthias Schäfer, Owner, no expiration date, and three dates for the activity timestamps." class="figure mx-auto d-block"><div class="figcaption">Project members page</div>
+</figure><p>On the page we can see the page title, “Project members”, three
 buttons to the left of the title, and a filterable table of members,
 currently only listing ourselves.</p>
 <p>The table shows our full name and account name, why we are a member
@@ -1379,15 +1384,15 @@ date on which we did the work, listing the work we did:</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Injected transformational fluid into moss sample.</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Moss turned into several butterflys. SUCCESS!</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="ss">* </span>Injected transformational fluid into moss sample.</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="ss">* </span>Moss turned into several butterflys. SUCCESS!</span></code></pre>
 </div>
-<div id="markdown-lists" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown-lists" class="callout-inner">
-<h3 class="callout-title">Markdown Lists<a class="anchor" aria-label="anchor" href="#markdown-lists"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown-lists">Markdown Lists<a class="anchor" aria-label="anchor" href="#markdown-lists"></a>
 </h3>
 <div class="callout-content">
 <p>Lists can be represented in Markdown by starting their items with a
@@ -1447,8 +1452,8 @@ files contents shows us, what our colleague did:</p>
 <div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Started the centrifuge.</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Put the used tools in the autoclave.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="ss">* </span>Started the centrifuge.</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="ss">* </span>Put the used tools in the autoclave.</span></code></pre>
 </div>
 <p>We successfully collaborated through GitLab on a project of text
 files.</p>
@@ -1486,15 +1491,15 @@ last Sunday, for example:</p>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Started the centrifuge.</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Put the used tools in the autoclave.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="ss">* </span>Started the centrifuge.</span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a><span class="ss">* </span>Put the used tools in the autoclave.</span></code></pre>
 </div>
-<div id="markdown-lists-1" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown-lists-1" class="callout-inner">
-<h3 class="callout-title">Markdown Lists<a class="anchor" aria-label="anchor" href="#markdown-lists-1"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown-lists-1">Markdown Lists<a class="anchor" aria-label="anchor" href="#markdown-lists-1"></a>
 </h3>
 <div class="callout-content">
 <p>Lists can be represented in Markdown by starting their items with a
@@ -1562,7 +1567,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-05-groups"><p>Content from <a href="05-groups.html">Groups</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/05-groups.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -1617,7 +1622,8 @@ projects.</p>
 the top of the side menu on the right and select “New group”. On the
 next page, we select “Create group”.</p>
 <p>This leads to the following page:</p>
-<figure><img src="../fig/create-group.png" alt="Create group form with text input fields labeled “Group name”, “Group URL”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, a drop-down field labeled “Role”, a radio button element labeled “Who will be using this group?” with options “My company or team” and “Just me”, a drop-down field labeled “What will you use this group for?” and an text input field labeled “Email 1” with a button to add more under the heading “Invite members (optional)”, and finally two buttons labeled “Create group” and “Cancel”." class="figure mx-auto d-block"><figcaption>Create group form</figcaption></figure><p>Choose any name for the group, for example a fictional research group
+<figure><img src="../fig/create-group.png" alt="Create group form with text input fields labeled “Group name”, “Group URL”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, a drop-down field labeled “Role”, a radio button element labeled “Who will be using this group?” with options “My company or team” and “Just me”, a drop-down field labeled “What will you use this group for?” and an text input field labeled “Email 1” with a button to add more under the heading “Invite members (optional)”, and finally two buttons labeled “Create group” and “Cancel”." class="figure mx-auto d-block"><div class="figcaption">Create group form</div>
+</figure><p>Choose any name for the group, for example a fictional research group
 like “Ant-Sized Elephants’ Applications Lab”. When you move the focus
 out of the input field, for example by pressing the tabulator key,
 GitLab will suggest a URL for the group. Usually, we might want to adapt
@@ -1703,7 +1709,7 @@ not point to a new project.</a></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1771,7 +1777,7 @@ settings.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Steps to solve the challenge:</p>
 <ol style="list-style-type: decimal">
@@ -1808,7 +1814,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-06-issues"><p>Content from <a href="06-issues.html">Issues</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/06-issues.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
@@ -1861,23 +1867,24 @@ anything themselves.</p>
 bar menu on the left we click the entry labeled “Issues” and on the
 following page we click on the button labeled “New issue”.</p>
 <p>This leads us to the following form:</p>
-<figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title”, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description” with subscript “Add description templates to help your contributors communicate effectively!”, an unchecked check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><figcaption>New issue form</figcaption></figure><p>For our issue we provide a short, descriptive title, for example
+<figure><img src="../fig/issue.png" alt="New issue form with a text input field labeled “Title”, a drop-down field labeled “Type” showing the word “Issue“, a multi-line text input field with buttons for text formatting labeled “Description” with subscript “Add description templates to help your contributors communicate effectively!”, an unchecked check box labeled “This issue is confidential and should only be visible to team members with at least Reporter access.”, drop-down fields labeled “Assignee“, “Milestone”, and “Label” showing “Unassigned“, “Milestone”, and “Labels”, respectively, a date input field labeled “Due date”, and two buttons labeled “Create Issue” and “Cancel”." class="figure mx-auto d-block"><div class="figcaption">New issue form</div>
+</figure><p>For our issue we provide a short, descriptive title, for example
 “Recognize outside contributors” and a description:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Outside contributors should be mentioned in the project’s documentation. Their</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>names could be listed in one of the following locations:</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a section in <span class="in">`README.md`</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>a separate <span class="in">`CONTRIBUTORS.md`</span> file</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>Outside contributors should be mentioned in the project’s documentation. Their</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>names could be listed in one of the following locations:</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ss">* </span>a section in <span class="in">`README.md`</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="ss">* </span>a separate <span class="in">`CONTRIBUTORS.md`</span> file</span></code></pre>
 </div>
-<div id="markdown-code-spans-and-blocks" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown-code-spans-and-blocks" class="callout-inner">
-<h3 class="callout-title">Markdown Code Spans and Blocks<a class="anchor" aria-label="anchor" href="#markdown-code-spans-and-blocks"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown-code-spans-and-blocks">Markdown Code Spans and Blocks<a class="anchor" aria-label="anchor" href="#markdown-code-spans-and-blocks"></a>
 </h3>
 <div class="callout-content">
 <p>Markdown provides syntax for formatting text in a monospaced font,
@@ -1889,7 +1896,7 @@ for example</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>The filename <span class="in">`README.md`</span> will be set in a monospaced font.</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>The filename <span class="in">`README.md`</span> will be set in a monospaced font.</span></code></pre>
 </div>
 <p>will be typeset as:</p>
 <p>The filename <code>README.md</code> will be set in a monospaced
@@ -1901,12 +1908,12 @@ example</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in"># This python code will also be set in a monospaced font, which preserves</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="in"># relative indentation between lines.</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="in">def some_function():</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="in">    pass</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="in"># This python code will also be set in a monospaced font, which preserves</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="in"># relative indentation between lines.</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="in">def some_function():</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="in">    pass</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="in">```</span></span></code></pre>
 </div>
 <p>will be typeset as:</p>
 <pre><code># This python code will also be set in a monospaced font, which preserves
@@ -1996,7 +2003,8 @@ visually organize a project’s issues.</p>
 <p>We navigate to our project’s issue board by clicking the submenu item
 “Issue boards” of the menu item “Plan” in the side menu.</p>
 <p>The following page loads:</p>
-<figure><img src="../fig/board.png" alt="Issue board page with a menu bar on the left and content on the right. At the top of the content area is a drop-down field with “Development” selected followed by a search field, a check box labeled “Show labels”, and two buttons the first labeled “Edit board”, the second “Create list”. Below these elements are two columns, each with a title bar, one titled “Open”, the other “Closed”. In the “Open” column there is a box representing an issue, showing its title “Recognize outside contributors”, a label “WIP”, the issue number “#1” and an avatar of a user." class="figure mx-auto d-block"><figcaption>Issue board page</figcaption></figure><p>By default, GitLab creates one board, called “Development”, for each
+<figure><img src="../fig/board.png" alt="Issue board page with a menu bar on the left and content on the right. At the top of the content area is a drop-down field with “Development” selected followed by a search field, a check box labeled “Show labels”, and two buttons the first labeled “Edit board”, the second “Create list”. Below these elements are two columns, each with a title bar, one titled “Open”, the other “Closed”. In the “Open” column there is a box representing an issue, showing its title “Recognize outside contributors”, a label “WIP”, the issue number “#1” and an avatar of a user." class="figure mx-auto d-block"><div class="figcaption">Issue board page</div>
+</figure><p>By default, GitLab creates one board, called “Development”, for each
 project. This is the board we see. It has two so called lists
 configured, labeled “Open” and “Closed”, which list all open and closed
 issues of the project, respectively. These two lists cannot be
@@ -2058,7 +2066,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-07-merge-requests"><p>Content from <a href="07-merge-requests.html">Merge Requests</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/07-merge-requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 30 minutes</p>
@@ -2130,12 +2138,12 @@ create a new project.</p>
 <p>We need to select a namespace (group or our personal space) in which
 the fork should be created. We click on the drop-down list under
 “Project URL” and select our username.</p>
-<div id="unique-project-name" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="unique-project-name" class="callout-inner">
-<h3 class="callout-title">Unique Project Name<a class="anchor" aria-label="anchor" href="#unique-project-name"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="unique-project-name">Unique Project Name<a class="anchor" aria-label="anchor" href="#unique-project-name"></a>
 </h3>
 <div class="callout-content">
 <p>If there already is a project with the name or the same slug, GitLab
@@ -2170,12 +2178,12 @@ over the list of files.</p>
 <p>A pop-up dialog prompts us for a name, which we will provide:
 <code>CONTRIBUTORS.md</code>. Then we confirm the file name by pressing
 the return key.</p>
-<div id="all-caps-filenames" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="all-caps-filenames" class="callout-inner">
-<h3 class="callout-title">All caps filenames<a class="anchor" aria-label="anchor" href="#all-caps-filenames"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="all-caps-filenames">All caps filenames<a class="anchor" aria-label="anchor" href="#all-caps-filenames"></a>
 </h3>
 <div class="callout-content">
 <p>In software projects it is customary to name certain files with
@@ -2198,9 +2206,9 @@ editor:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">The following persons have contributed to my research diary:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conner Learner</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="an">The following persons have contributed to my research diary:</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ss">- </span>Conner Learner</span></code></pre>
 </div>
 <p><code>{r, child=c('webide-commit.md')}</code></p>
 <p>We enter an appropriate commit message, for example</p>
@@ -2221,7 +2229,8 @@ files.</p>
 requests” in the menu on the left and on the following page on the
 button labeled “New merge request”.</p>
 <p>This gets us to the following dialog:</p>
-<figure><img src="../fig/merge-request.png" alt="New merge request page. Below the page title, “New merge request”, there are two UI elements side-by-side. The one on the left, titled ”Source branch”, has two drop-down fields, one to select the project, the other to select the branch. The former reads “fiveop-test/research-diary-2”, the latter “Select source branch”. Below the two drop-down files is a box stating “Select a branch to compare” The UI element on the right, titled “Target branch”, has the same two drop-down fields. In this case the former reads “fiveop/research-diary” and the latter ”main”. Below the two drop-down fields is a box with information about the last commit on the “main” branch: message, author, date and identifier prefix. At the bottom of the page is a button labeled “Compare branches and continue”. " class="figure mx-auto d-block"><figcaption>New merge request page</figcaption></figure><p>On the left side, we select the main branch for our change. Once
+<figure><img src="../fig/merge-request.png" alt="New merge request page. Below the page title, “New merge request”, there are two UI elements side-by-side. The one on the left, titled ”Source branch”, has two drop-down fields, one to select the project, the other to select the branch. The former reads “fiveop-test/research-diary-2”, the latter “Select source branch”. Below the two drop-down files is a box stating “Select a branch to compare” The UI element on the right, titled “Target branch”, has the same two drop-down fields. In this case the former reads “fiveop/research-diary” and the latter ”main”. Below the two drop-down fields is a box with information about the last commit on the “main” branch: message, author, date and identifier prefix. At the bottom of the page is a button labeled “Compare branches and continue”. " class="figure mx-auto d-block"><div class="figcaption">New merge request page</div>
+</figure><p>On the left side, we select the main branch for our change. Once
 done, a box with details of the last commit on that branch appears below
 the drop-down fields on the left.</p>
 <p>We click the button labeled “Compare branches and continue”. On the
@@ -2232,12 +2241,12 @@ filed, we write</p>
 <pre><code><span><span class="va">Resolves</span> <span class="co">#1</span></span></code></pre>
 <p>in the merge request description. Everything else, we leave with its
 default value or in its default state.</p>
-<div id="closing-issues-automatically" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="closing-issues-automatically" class="callout-inner">
-<h3 class="callout-title">Closing Issues Automatically<a class="anchor" aria-label="anchor" href="#closing-issues-automatically"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="closing-issues-automatically">Closing Issues Automatically<a class="anchor" aria-label="anchor" href="#closing-issues-automatically"></a>
 </h3>
 <div class="callout-content">
 <p>Whenever a merge request is merged to the default branch of a project
@@ -2281,12 +2290,12 @@ appear at the start of the line. When we press it, a text field for a
 comment appears. We can use that to comment on individual lines. This
 feature allows users to have separate discussions for different changes
 of a merge request.</p>
-<div id="code-review" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="code-review" class="callout-inner">
-<h3 class="callout-title">Code Review<a class="anchor" aria-label="anchor" href="#code-review"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="code-review">Code Review<a class="anchor" aria-label="anchor" href="#code-review"></a>
 </h3>
 <div class="callout-content">
 <p>Being able to comment on individual lines is a useful feature for a
@@ -2352,7 +2361,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-08-process-automation"><p>Content from <a href="08-process-automation.html">Process Automation</a></p>
 <hr>
-<p>Last updated on 2024-02-27 |
+<p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/08-process-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -2398,12 +2407,12 @@ change. But we do not want to do that by hand. Instead, we are going to
 let GitLab automatically turn our Markdown files into HTML, whenever our
 repository changes. To achieve it, we will use two GitLab features:
 CI/CD-Pipelines and Pages.</p>
-<div id="cicd-or-continuous-integrationcontinuous-deployment" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="cicd-or-continuous-integrationcontinuous-deployment" class="callout-inner">
-<h3 class="callout-title">CI/CD or Continuous Integration/Continuous
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="cicd-or-continuous-integrationcontinuous-deployment">CI/CD or Continuous Integration/Continuous
 Deployment<a class="anchor" aria-label="anchor" href="#cicd-or-continuous-integrationcontinuous-deployment"></a>
 </h3>
 <div class="callout-content">
@@ -2454,18 +2463,18 @@ line:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> busybox:latest</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> busybox:latest</span></span></code></pre>
 </div>
 <p>This line states that the scripts that are provided later on should
 be executed in Docker containers build from the stated Docker image.
 Busybox is a very small Linux distribution, reduced to the bare minimum,
 that provides bash, a shell.</p>
-<div id="docker" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="docker" class="callout-inner">
-<h3 class="callout-title">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="docker">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
 </h3>
 <div class="callout-content">
 <p>TODO</p>
@@ -2505,9 +2514,9 @@ want to have descriptive names for our use case:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stages</span><span class="kw">:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> check</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> publish</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">stages</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> check</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> publish</span></span></code></pre>
 </div>
 <p>In the first stage, we will do some testing, in the second we will
 create the HTML version of our diary and publish it.</p>
@@ -2517,11 +2526,11 @@ have accidentally removed them all.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">check-for-mds</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span><span class="at"> bash:latest</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> check</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> compgen -G '*.md'</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">check-for-mds</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span><span class="at"> bash:latest</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> check</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> compgen -G '*.md'</span></span></code></pre>
 </div>
 <p>We use the docker image <code>bash</code>, because Bash provides the
 <code>compgen</code> command that allows us to check for the existence
@@ -2534,16 +2543,16 @@ second job and call it <code>publish-on-web</code>.</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">publish-on-web</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pandoc/core:latest</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">entrypoint</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"/bin/sh"</span><span class="kw">,</span><span class="at"> </span><span class="st">"-c"</span><span class="kw">]</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> publish</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o diary.html</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">artifacts</span><span class="kw">:</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> diary.html</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">publish-on-web</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="at">        </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pandoc/core:latest</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="at">        </span><span class="fu">entrypoint</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"/bin/sh"</span><span class="kw">,</span><span class="at"> </span><span class="st">"-c"</span><span class="kw">]</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> publish</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o diary.html</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="at">    </span><span class="fu">artifacts</span><span class="kw">:</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> diary.html</span></span></code></pre>
 </div>
 <p>After giving the name of the job, we again provide an Docker image in
 which the job should run. We use pandoc to convert our Markdown files
@@ -2553,12 +2562,12 @@ pandoc Docker image is configured to directly run pandoc, when started
 in a container (pandoc is configured as its entrypoint). However, GitLab
 CI expects to runs the provided scripts in a shell in the specified
 Docker images.</p>
-<div id="pandoc" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="pandoc" class="callout-inner">
-<h3 class="callout-title">Pandoc<a class="anchor" aria-label="anchor" href="#pandoc"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="pandoc">Pandoc<a class="anchor" aria-label="anchor" href="#pandoc"></a>
 </h3>
 <div class="callout-content">
 <p>Pandoc converts text documents from one format to another, for
@@ -2585,12 +2594,12 @@ Handbook</a></p>
 <p>We change the commit message to ”Configure CI”, leave the branch as
 it is (<code>main</code>), and click the button labeled “Commit
 changes”.</p>
-<div id="shared-runners" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="shared-runners" class="callout-inner">
-<h3 class="callout-title">Shared Runners<a class="anchor" aria-label="anchor" href="#shared-runners"></a>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="shared-runners">Shared Runners<a class="anchor" aria-label="anchor" href="#shared-runners"></a>
 </h3>
 <div class="callout-content">
 <p>The software that runs CI jobs is called a runner. GitLab provides so
@@ -2638,7 +2647,7 @@ error.</p>
   <h3 class="accordion-header" id="headingInstructor1">
 <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>Instructor Note</h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>The behavior of the CI is the most fragile step of this course. There
 are some outside influences that can cause the pipeline to fail. This
@@ -2672,17 +2681,17 @@ the web under the <code>gitlab.io</code> domain.</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pages</span><span class="kw">:</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pandoc/core:latest</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">entrypoint</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"/bin/sh"</span><span class="kw">,</span><span class="at"> </span><span class="st">"-c"</span><span class="kw">]</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> publish</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> mkdir public</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o public/diary.html</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">artifacts</span><span class="kw">:</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> public</span></span></code></pre>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">pages</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="at">    </span><span class="fu">image</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="at">        </span><span class="fu">name</span><span class="kw">:</span><span class="at"> pandoc/core:latest</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="at">        </span><span class="fu">entrypoint</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"/bin/sh"</span><span class="kw">,</span><span class="at"> </span><span class="st">"-c"</span><span class="kw">]</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="at">    </span><span class="fu">stage</span><span class="kw">:</span><span class="at"> publish</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="at">    </span><span class="fu">script</span><span class="kw">:</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> mkdir public</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> pandoc *.md -o public/diary.html</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="at">    </span><span class="fu">artifacts</span><span class="kw">:</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="at">        </span><span class="fu">paths</span><span class="kw">:</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> public</span></span></code></pre>
 </div>
 <p>We change the job name to <code>pages</code>. This name is a
 convention to tell GitLab, that we want this job to create the contents
@@ -2754,8 +2763,8 @@ any links that you are not going to use.
   "url": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
   "identifier": "https://zedif.github.io/gitlab-novice/instructor/aio.html",
   "dateCreated": "2023-11-13",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

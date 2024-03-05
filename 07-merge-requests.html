@@ -287,7 +287,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Merge Requests</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/07-merge-requests.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -359,13 +359,12 @@ create a new project.</p>
 <p>We need to select a namespace (group or our personal space) in which
 the fork should be created. We click on the drop-down list under
 “Project URL” and select our username.</p>
-<div id="unique-project-name" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="unique-project-name" class="callout-inner">
-<h3 class="callout-title">Unique Project Name<a class="anchor" aria-label="anchor" href="#unique-project-name"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="unique-project-name">Unique Project Name<a class="anchor" aria-label="anchor" href="#unique-project-name"></a></h3>
 <div class="callout-content">
 <p>If there already is a project with the name or the same slug, GitLab
 will show you an error message when you try to create the for. At the
@@ -398,13 +397,12 @@ over the list of files.</p>
 <p>A pop-up dialog prompts us for a name, which we will provide:
 <code>CONTRIBUTORS.md</code>. Then we confirm the file name by pressing
 the return key.</p>
-<div id="all-caps-filenames" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="all-caps-filenames" class="callout-inner">
-<h3 class="callout-title">All caps filenames<a class="anchor" aria-label="anchor" href="#all-caps-filenames"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="all-caps-filenames">All caps filenames<a class="anchor" aria-label="anchor" href="#all-caps-filenames"></a></h3>
 <div class="callout-content">
 <p>In software projects it is customary to name certain files with
 information about the project in all caps. One example we already
@@ -426,9 +424,9 @@ editor:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">MARKDOWN<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">The following persons have contributed to my research diary:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Conner Learner</span></code></pre>
+<pre class="sourceCode markdown" tabindex="0"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="an">The following persons have contributed to my research diary:</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ss">- </span>Conner Learner</span></code></pre>
 </div>
 <p><code>{r, child=c('webide-commit.md')}</code></p>
 <p>We enter an appropriate commit message, for example</p>
@@ -448,7 +446,8 @@ files.</p>
 requests” in the menu on the left and on the following page on the
 button labeled “New merge request”.</p>
 <p>This gets us to the following dialog:</p>
-<figure><img src="fig/merge-request.png" alt="New merge request page. Below the page title, “New merge request”, there are two UI elements side-by-side. The one on the left, titled ”Source branch”, has two drop-down fields, one to select the project, the other to select the branch. The former reads “fiveop-test/research-diary-2”, the latter “Select source branch”. Below the two drop-down files is a box stating “Select a branch to compare” The UI element on the right, titled “Target branch”, has the same two drop-down fields. In this case the former reads “fiveop/research-diary” and the latter ”main”. Below the two drop-down fields is a box with information about the last commit on the “main” branch: message, author, date and identifier prefix. At the bottom of the page is a button labeled “Compare branches and continue”. " class="figure mx-auto d-block"><figcaption>New merge request page</figcaption></figure><p>On the left side, we select the main branch for our change. Once
+<figure><img src="fig/merge-request.png" alt="New merge request page. Below the page title, “New merge request”, there are two UI elements side-by-side. The one on the left, titled ”Source branch”, has two drop-down fields, one to select the project, the other to select the branch. The former reads “fiveop-test/research-diary-2”, the latter “Select source branch”. Below the two drop-down files is a box stating “Select a branch to compare” The UI element on the right, titled “Target branch”, has the same two drop-down fields. In this case the former reads “fiveop/research-diary” and the latter ”main”. Below the two drop-down fields is a box with information about the last commit on the “main” branch: message, author, date and identifier prefix. At the bottom of the page is a button labeled “Compare branches and continue”. " class="figure mx-auto d-block"><div class="figcaption">New merge request page</div>
+</figure><p>On the left side, we select the main branch for our change. Once
 done, a box with details of the last commit on that branch appears below
 the drop-down fields on the left.</p>
 <p>We click the button labeled “Compare branches and continue”. On the
@@ -459,13 +458,12 @@ filed, we write</p>
 <pre><code><span><span class="va">Resolves</span> <span class="co">#1</span></span></code></pre>
 <p>in the merge request description. Everything else, we leave with its
 default value or in its default state.</p>
-<div id="closing-issues-automatically" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="closing-issues-automatically" class="callout-inner">
-<h3 class="callout-title">Closing Issues Automatically<a class="anchor" aria-label="anchor" href="#closing-issues-automatically"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="closing-issues-automatically">Closing Issues Automatically<a class="anchor" aria-label="anchor" href="#closing-issues-automatically"></a></h3>
 <div class="callout-content">
 <p>Whenever a merge request is merged to the default branch of a project
 and its description or the description of one of its commits contains
@@ -508,13 +506,12 @@ appear at the start of the line. When we press it, a text field for a
 comment appears. We can use that to comment on individual lines. This
 feature allows users to have separate discussions for different changes
 of a merge request.</p>
-<div id="code-review" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="code-review" class="callout-inner">
-<h3 class="callout-title">Code Review<a class="anchor" aria-label="anchor" href="#code-review"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="code-review">Code Review<a class="anchor" aria-label="anchor" href="#code-review"></a></h3>
 <div class="callout-content">
 <p>Being able to comment on individual lines is a useful feature for a
 practice called code review. Code review entails that a peer of the
@@ -632,8 +629,8 @@ any links that you are not going to use.
   "url": "https://zedif.github.io/gitlab-novice/07-merge-requests.html",
   "identifier": "https://zedif.github.io/gitlab-novice/07-merge-requests.html",
   "dateCreated": "2023-11-13",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>

@@ -285,7 +285,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>GitLab Projects</h1>
-        <p>Last updated on 2024-02-27 |
+        <p>Last updated on 2024-03-05 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/02-gitlab-projects.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -332,7 +332,8 @@ project/repository”.</p>
 this lesson we will only look at, and use, the first option: “Create
 blank project”. So click on that.</p>
 <p>This leads to the following page:</p>
-<figure><img src="fig/create-project.png" alt="Create blank project form with text input fields labeled “Project name”, “Project URL”, “Project slug”, “Project deployment target (optional)”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, and two checkboxes labeled “Initialize repository with a README” and “Enable Static Application Security Testing (SAST)”." class="figure mx-auto d-block"><figcaption>Create blank project form</figcaption></figure><p>The “Project name” field is for just that, the project name. Its
+<figure><img src="fig/create-project.png" alt="Create blank project form with text input fields labeled “Project name”, “Project URL”, “Project slug”, “Project deployment target (optional)”, a radio button element labeled “Visibility Level” with options “Private” and “Public”, and two checkboxes labeled “Initialize repository with a README” and “Enable Static Application Security Testing (SAST)”." class="figure mx-auto d-block"><div class="figcaption">Create blank project form</div>
+</figure><p>The “Project name” field is for just that, the project name. Its
 value has no other purpose and can be changed at anytime without
 indirect consequences (the direct consequence being, that its name will
 be different). We will call it “Research Diary”.</p>
@@ -345,13 +346,12 @@ to the current user’s username. The default, indicated by the user’s
 name, is the location for a user’s projects (and groups). Other options
 in the drop-down list are the groups in which the current user may
 create projects.</p>
-<div id="project-url-and-project-slug" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="project-url-and-project-slug" class="callout-inner">
-<h3 class="callout-title">Project URL and Project Slug<a class="anchor" aria-label="anchor" href="#project-url-and-project-slug"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="project-url-and-project-slug">Project URL and Project Slug<a class="anchor" aria-label="anchor" href="#project-url-and-project-slug"></a></h3>
 <div class="callout-content">
 <p>The two fields under labels “Project URL” and “Project slug” are the
 only fields in this form for which changing the value later might cause
@@ -366,13 +366,12 @@ on other systems, for example on contributors’ machines.</p>
 (optional)”.</p>
 <p>The choice under label “Visibility Level” determines the project’s
 visibility.</p>
-<div id="visiblity" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="visiblity" class="callout-inner">
-<h3 class="callout-title">Visiblity<a class="anchor" aria-label="anchor" href="#visiblity"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="visiblity">Visiblity<a class="anchor" aria-label="anchor" href="#visiblity"></a></h3>
 <div class="callout-content">
 <p>GitLab offers three settings for the visibility of a project: public,
 internal, and private. Publicly visible projects can be looked at by
@@ -395,13 +394,12 @@ README” is checked, the project’s repository will be initialized with a
 commit that adds a file called <code>README.md</code>. Otherwise, a the
 project will start with an empty repository. We will add such a file
 later ourselves, so we uncheck the box.</p>
-<div id="readme" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="readme" class="callout-inner">
-<h3 class="callout-title">README<a class="anchor" aria-label="anchor" href="#readme"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="readme">README<a class="anchor" aria-label="anchor" href="#readme"></a></h3>
 <div class="callout-content">
 <p>A project’s README file usually contains basic information about the
 project: what it contains, how it can be used (for example built or
@@ -419,7 +417,8 @@ GitLab instances configuration.</p>
 <p>After clicking the “Create project” button, GitLab creates the
 project and redirects us to the project’s homepage, which looks similar
 to this:</p>
-<figure><img src="fig/new-project.png" alt="Project homepage for a new project. On the left, a menu starting with three buttons for issues, merge requests, and to-do lists, as well as a search field. Those are followed by a list of links and  sub-menus: the project name, open sub-menu Pinned with items Issues and  Merge requests, sub-menus Manage, Plan, Code, Build, Secure, Deploy, Operate, Monitor, Analyze, Settings, and Help. On the right, taking up the major part of the page width, the project page: Starting at the top, the project’s name “Research Diary“, an encouragement to “Invite your team” with a button “Invite members”, the statement that “The repository for this project is empty” with various buttons for getting initial content into the repository. At the bottom, the beginning of instructions on how to push an existing repository are visible, but cut off." class="figure mx-auto d-block"><figcaption>Fresh project homepage</figcaption></figure><p>The page is split into the menu on the left and the project overview
+<figure><img src="fig/new-project.png" alt="Project homepage for a new project. On the left, a menu starting with three buttons for issues, merge requests, and to-do lists, as well as a search field. Those are followed by a list of links and sub-menus: the project name, open sub-menu Pinned with items Issues and Merge requests, sub-menus Manage, Plan, Code, Build, Secure, Deploy, Operate, Monitor, Analyze, Settings, and Help. On the right, taking up the major part of the page width, the project page: Starting at the top, the project’s name “Research Diary“, an encouragement to “Invite your team” with a button “Invite members”, the statement that “The repository for this project is empty” with various buttons for getting initial content into the repository. At the bottom, the beginning of instructions on how to push an existing repository are visible, but cut off." class="figure mx-auto d-block"><div class="figcaption">Fresh project homepage</div>
+</figure><p>The page is split into the menu on the left and the project overview
 on the right.</p>
 <p>The menu leads to pages related to various properties, processes, and
 content of the project. It is visible on each of these pages. The number
@@ -458,13 +457,12 @@ forget to click the “Save changes” button once you are done.</p>
 </div>
 </div>
 </div>
-<div id="markdown" class="callout callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div id="markdown" class="callout-inner">
-<h3 class="callout-title">Markdown<a class="anchor" aria-label="anchor" href="#markdown"></a>
-</h3>
+<div class="section level3 callout-title callout-inner">
+<h3 class="callout-title" id="markdown">Markdown<a class="anchor" aria-label="anchor" href="#markdown"></a></h3>
 <div class="callout-content">
 <p>Markdown is a markup language like HTML, on which the World Wide Web
 is based, or wikitext, which is used to write Wikipedia’s content. Its
@@ -589,8 +587,8 @@ any links that you are not going to use.
   "url": "https://zedif.github.io/gitlab-novice/02-gitlab-projects.html",
   "identifier": "https://zedif.github.io/gitlab-novice/02-gitlab-projects.html",
   "dateCreated": "2023-11-13",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
