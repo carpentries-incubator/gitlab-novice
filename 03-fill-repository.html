@@ -288,7 +288,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Adding Files to a Project Repository</h1>
-        <p>Last updated on 2024-03-12 |
+        <p>Last updated on 2024-03-19 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/03-fill-repository.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -324,12 +324,13 @@ interface.</li>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
+<div id="two-alternative-episode-versions" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="two-alternative-episode-versions">Two Alternative Episode Versions<a class="anchor" aria-label="anchor" href="#two-alternative-episode-versions"></a></h3>
+<div id="two-alternative-episode-versions" class="callout-inner">
+<h3 class="callout-title">Two Alternative Episode Versions<a class="anchor" aria-label="anchor" href="#two-alternative-episode-versions"></a>
+</h3>
 <div class="callout-content">
 <p>This episode consists of two alternative parts.</p>
 <p>The first alternative shows how to push a local Git repository to the
@@ -464,14 +465,15 @@ completing the analogy.</p>
 <p>Going back to the shell, we configure our project’s repository as a
 remote in our local repository:</p>
 <pre><code>$ git remote add origin https://gitlab.com/somenovice/research-diary.git</code></pre>
-<div id="callout2" class="callout">
+<div id="https-vs-git" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="https-vs-git">
-<a href="https://" class="external-link uri">https://</a> vs
-git@<a class="anchor" aria-label="anchor" href="#https-vs-git"></a></h3>
+<div id="https-vs-git" class="callout-inner">
+<h3 class="callout-title">
+<a href="https://" class="external-link uri">https://</a>vs
+git@<a class="anchor" aria-label="anchor" href="#https-vs-git"></a>
+</h3>
 <div class="callout-content">
 <p>We assume throughout this lesson that the user has no SSH key is
 configured, because we do not want to make the setup of such a key a
@@ -496,12 +498,13 @@ project’s repository on GitLab. It will be different for everyone.</p>
 <p>Note also, that we skipped the second line of the instructions. It
 renames an existing remote <code>origin</code> to
 <code>old-origin</code>, but we have no existing remote.</p>
-<div id="callout3" class="callout">
+<div id="names-for-remotes" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="names-for-remotes">Names for remotes<a class="anchor" aria-label="anchor" href="#names-for-remotes"></a></h3>
+<div id="names-for-remotes" class="callout-inner">
+<h3 class="callout-title">Names for remotes<a class="anchor" aria-label="anchor" href="#names-for-remotes"></a>
+</h3>
 <div class="callout-content">
 <p>Apart from following restrictions that Git puts on remote names,
 which can be avoided without much thought by using only letters,
@@ -543,12 +546,13 @@ a new page, the so called WebIDE.</p>
 for open files on the right. Wen we first open it, it shows a Welcome
 page, which we can safely close by clicking the “x” labeled button on
 the Welcome page’s tab at the top.</p>
-<div id="callout4" class="callout">
+<div id="changing-the-webide-theme" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="changing-the-webide-theme">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#changing-the-webide-theme"></a></h3>
+<div id="changing-the-webide-theme" class="callout-inner">
+<h3 class="callout-title">Changing the WebIDE Theme<a class="anchor" aria-label="anchor" href="#changing-the-webide-theme"></a>
+</h3>
 <div class="callout-content">
 <p>GitLab’s WebIDE uses a dark theme by default. To change it, click on
 the gear icon in the lower left corner and select “Themes”, then “Color
@@ -571,12 +575,13 @@ The text editor itself shows the contents of the file
 <code>README.md</code>: nothing so far. We see the filename at the top
 in a tab, which indicates that we can open multiple files and switch
 between them using the tabs at the top.</p>
-<div id="callout5" class="callout">
+<div id="markdown-headlines" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="markdown-headlines">Markdown Headlines<a class="anchor" aria-label="anchor" href="#markdown-headlines"></a></h3>
+<div id="markdown-headlines" class="callout-inner">
+<h3 class="callout-title">Markdown Headlines<a class="anchor" aria-label="anchor" href="#markdown-headlines"></a>
+</h3>
 <div class="callout-content">
 <p>In Markdown, headlines are marked by one up to six <code>#</code>
 characters followed by a space character in front of the text. The
@@ -728,7 +733,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.2" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.3" class="external-link">sandpaper (0.16.3)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -750,8 +755,8 @@ any links that you are not going to use.
   "url": "https://zedif.github.io/gitlab-novice/03-fill-repository.html",
   "identifier": "https://zedif.github.io/gitlab-novice/03-fill-repository.html",
   "dateCreated": "2023-11-13",
-  "dateModified": "2024-03-12",
-  "datePublished": "2024-03-12"
+  "dateModified": "2024-03-19",
+  "datePublished": "2024-03-19"
 }
 
   </script><script>

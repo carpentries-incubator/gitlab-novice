@@ -286,7 +286,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Process Automation</h1>
-        <p>Last updated on 2024-03-12 |
+        <p>Last updated on 2024-03-19 |
         
         <a href="https://github.com/zedif/gitlab-novice/edit/main/episodes/08-process-automation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -333,13 +333,14 @@ change. But we do not want to do that by hand. Instead, we are going to
 let GitLab automatically turn our Markdown files into HTML, whenever our
 repository changes. To achieve it, we will use two GitLab features:
 CI/CD-Pipelines and Pages.</p>
-<div id="callout1" class="callout">
+<div id="cicd-or-continuous-integrationcontinuous-deployment" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="cicd-or-continuous-integrationcontinuous-deployment">CI/CD or Continuous Integration/Continuous
-Deployment<a class="anchor" aria-label="anchor" href="#cicd-or-continuous-integrationcontinuous-deployment"></a></h3>
+<div id="cicd-or-continuous-integrationcontinuous-deployment" class="callout-inner">
+<h3 class="callout-title">CI/CD or Continuous Integration/Continuous
+Deployment<a class="anchor" aria-label="anchor" href="#cicd-or-continuous-integrationcontinuous-deployment"></a>
+</h3>
 <div class="callout-content">
 <p>The terms continuous integration (CI) and continuous deployment (CD)
 come from the fields of software engineering and software operation.</p>
@@ -393,12 +394,13 @@ line:</p>
 be executed in Docker containers build from the stated Docker image.
 Busybox is a very small Linux distribution, reduced to the bare minimum,
 that provides bash, a shell.</p>
-<div id="callout2" class="callout">
+<div id="docker" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="docker">Docker<a class="anchor" aria-label="anchor" href="#docker"></a></h3>
+<div id="docker" class="callout-inner">
+<h3 class="callout-title">Docker<a class="anchor" aria-label="anchor" href="#docker"></a>
+</h3>
 <div class="callout-content">
 <p>TODO</p>
 </div>
@@ -484,12 +486,13 @@ pandoc Docker image is configured to directly run pandoc, when started
 in a container (pandoc is configured as its entrypoint). However, GitLab
 CI expects to runs the provided scripts in a shell in the specified
 Docker images.</p>
-<div id="callout3" class="callout">
+<div id="pandoc" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="pandoc">Pandoc<a class="anchor" aria-label="anchor" href="#pandoc"></a></h3>
+<div id="pandoc" class="callout-inner">
+<h3 class="callout-title">Pandoc<a class="anchor" aria-label="anchor" href="#pandoc"></a>
+</h3>
 <div class="callout-content">
 <p>Pandoc converts text documents from one format to another, for
 example from Markdown to HTML. It supports many formats for the source
@@ -515,12 +518,13 @@ Handbook</a></p>
 <p>We change the commit message to ”Configure CI”, leave the branch as
 it is (<code>main</code>), and click the button labeled “Commit
 changes”.</p>
-<div id="callout4" class="callout">
+<div id="shared-runners" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
-<div class="section level3 callout-title callout-inner">
-<h3 class="callout-title" id="shared-runners">Shared Runners<a class="anchor" aria-label="anchor" href="#shared-runners"></a></h3>
+<div id="shared-runners" class="callout-inner">
+<h3 class="callout-title">Shared Runners<a class="anchor" aria-label="anchor" href="#shared-runners"></a>
+</h3>
 <div class="callout-content">
 <p>The software that runs CI jobs is called a runner. GitLab provides so
 called shared runners on its platform for free (within certain usage
@@ -656,7 +660,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.2" class="external-link">sandpaper (0.16.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.3" class="external-link">sandpaper (0.16.3)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.4" class="external-link">pegboard (0.7.4)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.1" class="external-link">varnish (1.0.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -678,8 +682,8 @@ any links that you are not going to use.
   "url": "https://zedif.github.io/gitlab-novice/08-process-automation.html",
   "identifier": "https://zedif.github.io/gitlab-novice/08-process-automation.html",
   "dateCreated": "2023-11-13",
-  "dateModified": "2024-03-12",
-  "datePublished": "2024-03-12"
+  "dateModified": "2024-03-19",
+  "datePublished": "2024-03-19"
 }
 
   </script><script>
