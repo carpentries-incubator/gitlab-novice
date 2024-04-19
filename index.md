@@ -19,11 +19,11 @@ Depending on previous knowledge of learners, the material can either be taught u
 
 # Required Previous Knowledge
 
-The material can be taught using solely in the GitLab web interface.
+The material can be taught solely in the GitLab web interface.
 In that case no previous knowledge is required.
 
 Optionally, the interaction of local Git repositories with GitLab can be taught.
-In that case, the a basic familiarity with the Git command-line interface is required.
+In that case a basic familiarity with the Git command-line interface is required.
 
 To understand the material on GitLab’s continuous integration (CI) feature, basic knowledge of Bash and how [Docker] works is required.
 
