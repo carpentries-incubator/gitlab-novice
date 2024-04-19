@@ -33,7 +33,7 @@ To understand the material on GitLab’s continuous integration (CI) feature, ba
 
 # GitLab Instance
 
-GitLab instances do not all have the same features and behavior.
+Not all GitLab instances have the same features and behavior.
 Depending on version and configuration they may vary in many details.
 If you plan to run this course on an instance other than gitlab.com, we recommend you go through the lesson once before teaching.
 Even when teaching on gitlab.com this might be a good idea, because the platform is changing constantly.
