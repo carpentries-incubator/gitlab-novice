@@ -206,7 +206,7 @@ $ git remote add origin https://gitlab.com/somenovice/research-diary.git
 
 ### https:// vs git@
 
-We assume throughout this lesson that the user has no SSH key is configured,
+We assume throughout this lesson that the user has no SSH key configured,
 because we do not want to make the setup of such a key a prerequisite.
 
 If however, a user has configured an SSH key for their account, GitLab would
