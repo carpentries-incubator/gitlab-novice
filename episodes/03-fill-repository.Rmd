@@ -154,11 +154,11 @@ time at the instructions toward the bottom of the page. They read:
 > ```
 > git clone https://gitlab.com/somenovice/research-diary.git
 > cd test
-> git switch -c main
+> git switch --create main
 > touch README.md
 > git add README.md
 > git commit -m "add README"
-> git push -u origin main
+> git push --set-upstream origin main
 > ```
 >
 > **Push an existing folder**
@@ -169,7 +169,7 @@ time at the instructions toward the bottom of the page. They read:
 > git remote add origin https://gitlab.com/somenovice/research-diary.git
 > git add .
 > git commit -m "Initial commit"
-> git push -u origin main
+> git push --set-upstream origin main
 > ```
 >
 > **Push an existing Git repository**
@@ -178,8 +178,8 @@ time at the instructions toward the bottom of the page. They read:
 > cd existing_repo
 > git remote rename origin old-origin
 > git remote add origin https://gitlab.com/somenovice/research-diary.git
-> git push -u origin --all
-> git push -u origin --tags
+> git push --set-upstream origin --all
+> git push --set-upstream origin --tags
 > ```
 
 We already covered the global setup.
