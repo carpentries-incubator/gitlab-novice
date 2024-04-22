@@ -257,7 +257,7 @@ Finally, we push our changes to the remote repository. The command will prompt
 for our user name and password:
 
 ```
-$ git push -u origin --all
+$ git push --set-upstream origin --all
 ```
 ```
 Enumerating objects: 3, done.
