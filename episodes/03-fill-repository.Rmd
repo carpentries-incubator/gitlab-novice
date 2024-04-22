@@ -204,7 +204,7 @@ $ git remote add origin https://gitlab.com/somenovice/research-diary.git
 
 ::: callout
 
-### https:// vs git@
+### https:// vs git@
 
 We assume throughout this lesson that the user has no SSH key is configured,
 because we do not want to make the setup of such a key a prerequisite.
