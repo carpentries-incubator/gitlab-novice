@@ -204,9 +204,9 @@ $ git remote add origin https://gitlab.com/somenovice/research-diary.git
 
 ::: callout
 
-### https:// vs git@
+### https:// vs git@
 
-We assume throughout this lesson that the user has no SSH key is configured,
+We assume throughout this lesson that the user has no SSH key configured,
 because we do not want to make the setup of such a key a prerequisite.
 
 If however, a user has configured an SSH key for their account, GitLab would
@@ -225,10 +225,10 @@ shown by default.
 
 :::
 
-We instruct Git to add a remote called `origin` with the last part as the
-address. Make sure to copy that last part from the project overview page,
-because it represents the Git address of your project’s repository on GitLab. It
-will be different for everyone.
+We instruct Git to add a remote called `origin` with the address `https://gitlab.com/somenovice/research-diary.git`.
+Make sure to copy that URL from the project overview page,
+because it represents the Git address of your project’s repository on GitLab.
+It will be different for everyone.
 
 Note also, that we skipped the second line of the instructions. It renames an
 existing remote `origin` to `old-origin`, but we have no existing remote.
@@ -257,7 +257,7 @@ Finally, we push our changes to the remote repository. The command will prompt
 for our user name and password:
 
 ```
-$ git push -u origin --all
+$ git push --set-upstream origin --all
 ```
 ```
 Enumerating objects: 3, done.
