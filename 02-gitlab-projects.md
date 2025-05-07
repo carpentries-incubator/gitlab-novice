@@ -20,7 +20,7 @@ exercises: 16
 
 ## Creating a Project
 
-After knowing how to find groups and projects. We want to go from passively
+After knowing how to find groups and projects we want to go from passively
 browsing GitLab to actively using it. We are going to create a project and
 connect a local Git repository to it.
 
