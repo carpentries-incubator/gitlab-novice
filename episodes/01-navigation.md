@@ -156,7 +156,7 @@ This exercise should take about 5 minutes.
 :::
 
 Similar as for projects, GitLab provides an “Explore groups” page.
-You can navigate there by clicking on the GitLab log in the upper right corner, selecting “Groups” in the menu on the left and then clicking on “Explore groups” near the upper right corner.
+You can navigate there by clicking on the GitLab logo in the upper right corner, selecting “Groups” in the menu on the left and then clicking on “Explore groups” near the upper right corner.
 
 You will only find one list of groups that is searchable and sortable using the widgets at the top right of the list.
 
