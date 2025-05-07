@@ -199,7 +199,7 @@ ever think that is the right thing to do.
 ::: keypoints
 
 - Creating a GitLab project requires not more than a few clicks and providing a name.
-- Changing the name of description of a GitLab project after creation has no indirect consequences.
+- Changing the name or description of a GitLab project after creation has no indirect consequences.
 - A project’s visibility can be set to either private, internal, or public.
 - You can archive a project (and you can delete a project, but often should not.)
 
