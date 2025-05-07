@@ -80,7 +80,7 @@ something to the whole internet.
 We choose “Private” for our project’s visibility.
 
 If, as per default, the checkbox “Initialize repository with a README” is checked, the project’s repository will be initialized with a commit that adds a file called `README.md`.
-Otherwise, a the project will start with an empty repository.
+Otherwise, the project will start with an empty repository.
 We will add such a file later ourselves, so we uncheck the box.
 
 ::: callout
