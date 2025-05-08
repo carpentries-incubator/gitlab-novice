@@ -297,7 +297,7 @@ At the top is a text field for a commit message.
 Then comes a button labeled “Commit & Push”, followed by a list of all files that were changed, added, or deleted.
 
 A commit message should summarize the changes that are packaged into the commit.
-[Good commit messages][CommitMessages] are what makes the history of a repository useful.
+[Good commit messages](https://cbea.ms/git-commit/) are what makes the history of a repository useful.
 
 We enter a good commit message, for example “Record work on experiment A-13” and click the button labeled “Commit to 'main'”.
 
