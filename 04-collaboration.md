@@ -304,7 +304,7 @@ We enter a good commit message, for example “Record work on experiment A-13”
 In the dialog that pops up in the center top of the screen, we select “Continue”.
 
 Having done that, we are done editing and navigate back to **our** project’s homepage.
-To get there, we lick on the button labeled “GitLab” in the lower left of the screen and select “Go to GitLab” from the list that pops up at the top.
+To get there, we click on the button labeled “GitLab” in the lower left of the screen and select “Go to GitLab” from the list that pops up at the top.
 This will open the project view in a new window or tab, depending on the settings of your browser.
 We select our own project from the list of projects under “Your projects”.
 
