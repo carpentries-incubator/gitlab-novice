@@ -237,8 +237,8 @@ existing remote `origin` to `old-origin`, but we have no existing remote.
 
 ### Names for remotes
 
-Apart from following restrictions that Git puts on remote names, which can be
-avoided without much thought by using only letters, numbers, underscores, and
+Apart from the restrictions that Git puts on remote names, which can be
+adhered to without much thought by using only letters, numbers, underscores, and
 hyphens, we should choose meaningful names for remotes, in particular, when we
 add multiple remotes to a local repository.
 
