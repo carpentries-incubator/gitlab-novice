@@ -280,7 +280,7 @@ Below the heading “The repository for this project is empty” there are sever
 We click the one labeled “New file”, which brings us to a new page, the so called WebIDE.
 
 The WebIDE shows a list of files on the left and a tabbed environment for open files on the right.
-Wen we first open it, it shows a Welcome page, which we can safely close by clicking the “x” labeled button on the Welcome page’s tab at the top.
+When we first open it, it shows a Welcome page, which we can safely close by clicking the “x” labeled button on the Welcome page’s tab at the top.
 
 ::: callout
 
