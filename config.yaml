@@ -64,7 +64,7 @@ episodes:
   - 04-collaboration.Rmd
   - 05-groups.md
   - 06-issues.md
-  - 07-merge-requests.md
+  - 07-merge-requests.Rmd
   - 08-process-automation.md
 
 # Information for Learners
