@@ -1,0 +1,36 @@
+'@context': https://schema.org/
+creativeWorkStatus: Incomplete
+type: LearningResource
+name: Introduction to GitLab
+description: >-
+  This lesson will give you a foundational understanding of GitLab’s features,
+  so you can make informed decisions on how to use it as a tool.
+license: https://creativecommons.org/licenses/by/4.0/deed.de
+id: https://github.com/carpentries-incubator/gitlab-novice
+creator:
+  - givenName: Philipp Matthias
+    familyName: Schäfer
+    type: Person
+    affiliation: ''
+  - givenName: Christian
+    familyName: Knüpfer
+    id: 0000-0002-1323-5445
+    type: Person
+    affiliation:
+      name: Friedrich-Schiller-Universität Jena
+      id: https://ror.org/05qpz1x62
+      type: Organization
+keywords:
+  - project management
+  - git
+  - gitlab
+  - version control
+inLanguage:
+  - en
+about:
+  - https://w3id.org/kim/hochschulfaechersystematik/n079
+image: https://carpentries-incubator.github.io/gitlab-novice/
+learningResourceType:
+  - https://w3id.org/kim/hcrt/course
+educationalLevel:
+  - https://w3id.org/kim/educationalLevel/level_A
