@@ -14,7 +14,7 @@ creator:
     affiliation: ''
   - givenName: Christian
     familyName: Knüpfer
-    id: 0000-0002-1323-5445
+    id: https://orcid.org/0000-0002-1323-5445
     type: Person
     affiliation:
       name: Friedrich-Schiller-Universität Jena
