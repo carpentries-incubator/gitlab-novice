@@ -34,3 +34,9 @@ learningResourceType:
   - https://w3id.org/kim/hcrt/course
 educationalLevel:
   - https://w3id.org/kim/educationalLevel/level_A
+topics:
+  - project management
+  - Git
+  - issue tracker
+  - merge requests
+  - continuous integration
